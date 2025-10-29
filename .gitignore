@@ -1,0 +1,36 @@
+# Arquivos gerados
+*.docx
+*.pdf
+*.html
+
+# Figuras geradas automaticamente
+2-FIGURAS/*.png
+2-FIGURAS/*.jpg
+2-FIGURAS/*.jpeg
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*~
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Ambiente Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Output de R
+*.Rout
+output*.txt
+
+# Dados temporários
+.DS_Store
+Thumbs.db
+
+# Documentos de análise (temporários)
+analise_*.md
