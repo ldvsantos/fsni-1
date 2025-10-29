@@ -1,0 +1,11 @@
+"Grupo","Relacionamento","Coeficiente"
+"Cerrado","N_humico -> N_total",1.286
+"Cerrado","N_labil -> N_total",-0.313
+"Agricultura","N_humico -> N_total",1.18
+"Agricultura","N_labil -> N_total",-0.237
+"Mogno","N_humico -> N_total",1.271
+"Mogno","N_labil -> N_total",-0.277
+"Eucalipto","N_humico -> N_total",1.275
+"Eucalipto","N_labil -> N_total",-0.283
+"Teca","N_humico -> N_total",1.372
+"Teca","N_labil -> N_total",-0.445

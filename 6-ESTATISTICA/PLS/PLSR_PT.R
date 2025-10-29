@@ -11,7 +11,7 @@ rm(list = ls())
 gc()
 
 # Carregar dados
-dados <- read_excel("banco_dados.xlsx", sheet = "dados") %>% na.omit()
+dados <- read_excel("../banco_dados.xlsx", sheet = "DADOS") %>% na.omit()
 names(dados) <- trimws(names(dados))  # Corrigir espaços nos nomes
 
 # Variáveis preditoras relacionadas ao fósforo (P)
@@ -62,7 +62,7 @@ circle <- data.frame(
 )
 
 # Gráfico PLSR com ajustes visuais
-ggplot() +
+biplot_pt <- ggplot() +
   geom_path(data = circle, aes(x = x, y = y),
             linetype = "dotted", color = "gray40") +
   geom_hline(yintercept = 0, color = "gray50") +
@@ -77,9 +77,24 @@ ggplot() +
   coord_fixed(xlim = c(-0.5, 0.5), ylim = c(-0.5, 0.5)) +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +
-  labs(x = label_x, y = label_y, color = "Ambiente", shape = "Ambiente") +
+  labs(
+    title = "Biplot PLSR para PT",
+    x = label_x, 
+    y = label_y, 
+    color = "Ambiente", 
+    shape = "Ambiente"
+  ) +
   theme_minimal(base_size = 14) +
-  theme(panel.grid = element_blank(), legend.position = "right")
+  theme(
+    panel.grid = element_blank(), 
+    legend.position = "right",
+    plot.title = element_text(face = "bold", hjust = 0.5)
+  )
+
+print(biplot_pt)
+
+# Exportar biplot
+ggsave("../../2-FIGURAS/biplot_plsr_pt.png", plot = biplot_pt, width = 10, height = 8, dpi = 300)
 
 
 # TABELA 1 – Estatísticas descritivas
@@ -129,7 +144,7 @@ tabela_vip <- data.frame(
 ) %>% arrange(desc(VIP))
 
 # Gráfico de VIP
-ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
+grafico_vip_pt <- ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
   geom_segment(aes(xend = Variável, y = 0, yend = VIP), color = "blue", size = 0.7) +
   geom_point(color = "blue", size = 2.5) +
   geom_hline(yintercept = 0.8, linetype = "dashed", color = "black") +
@@ -142,6 +157,11 @@ ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         plot.title = element_text(face = "bold", hjust = 0.5))
 
+print(grafico_vip_pt)
+
+# Exportar gráfico VIP
+ggsave("../../2-FIGURAS/vip_pt.png", plot = grafico_vip_pt, width = 10, height = 8, dpi = 300)
+
 # Exibir tabelas no console
 print("TABELA 1 – Estatísticas descritivas:")
 print(tabela_descr, digits = 3)
@@ -151,6 +171,9 @@ print("TABELA 3 – Loadings das variáveis:")
 print(tabela_loadings, digits = 3)
 print("TABELA 4 – VIP (Critério de Wold):")
 print(tabela_vip)
+
+# Exportar tabela VIP
+write.csv(tabela_vip, "../../5-GRAFICOS/tabela_vip_pt.csv", row.names = FALSE)
 
 
 
@@ -175,7 +198,7 @@ linha_trend <- data.frame(
 linha_trend$Predito <- predict(modelo_lm, newdata = linha_trend)
 
 # Gráfico final
-ggplot(df_pred, aes(x = Observado, y = Predito)) +
+grafico_pred_pt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
   geom_point(aes(fill = Ambiente), shape = 21, color = "black", size = 3, stroke = 1) +
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
@@ -191,6 +214,11 @@ ggplot(df_pred, aes(x = Observado, y = Predito)) +
     plot.title = element_text(face = "bold", hjust = 0.5)
   )
 
+print(grafico_pred_pt)
+
+# Exportar gráfico de predição
+ggsave("../../2-FIGURAS/predicoes_pt.png", plot = grafico_pred_pt, width = 10, height = 8, dpi = 300)
+
        
 # ==========================
 # FIGURA 5 – Resíduos vs. Y predito
@@ -198,13 +226,18 @@ ggplot(df_pred, aes(x = Observado, y = Predito)) +
 residuos <- Y_PT - y_pred[, , 1]
 df_resid <- data.frame(Predito = y_pred[, , 1], Resíduo = residuos)
 
-ggplot(df_resid, aes(x = Predito, y = Resíduo)) +
+grafico_resid_pt <- ggplot(df_resid, aes(x = Predito, y = Resíduo)) +
   geom_point(alpha = 0.7) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "gray50") +
   labs(
-    title = "Figura 5. Resíduos vs. valores preditos (PLSR)",
+    title = "Resíduos vs. valores preditos (PLSR)",
     x = "PT predito",
     y = "Resíduo"
   ) +
   theme_minimal(base_size = 14)
+
+print(grafico_resid_pt)
+
+# Exportar gráfico de resíduos
+ggsave("../../2-FIGURAS/residuos_pt.png", plot = grafico_resid_pt, width = 10, height = 8, dpi = 300)
 

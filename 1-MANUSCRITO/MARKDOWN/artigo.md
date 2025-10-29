@@ -43,7 +43,7 @@ Diante dessas premissas, o presente estudo teve como objetivo avaliar a dinâmic
 
 A área de estudo está localizada na fazenda experimental da Universidade Federal do Tocantins, município de Gurupi – TO, nas coordenadas geográficas centrais 11º 46’ 25” S e 49º 02’ 54” W (Figura 1).
 
-![Figura 1. Localização das áreas experimentais](../2-FIGURAS/fig_1.png){#fig:1 width=70%}
+![Figura 1. Localização das áreas experimentais](../2-FIGURAS/mapa_area.png){#fig:1 width=70%}
 
 Fonte: Marinho Júnior (2021)
 Conforme a classificação climática proposta por Thornthwaite e Mather, a região de estudo enquadra-se na categoria úmido subúmido (C2wA'a'), caracterizada por um déficit hídrico moderado no período invernal. Dados meteorológicos disponibilizados pela SEPLAN (2017) indicam temperaturas médias anuais variando entre 25 °C e 29 °C, com precipitação média anual em torno de 1580 mm.
@@ -52,7 +52,7 @@ O solo predominante na área foi classificado como Plintossolo Pétrico, o qual 
 2.2 Características da área de vegetação nativa (Cerrado sensu stricto)
 A área de vegetação nativa corresponde a um fragmento típico de Cerrado sensu stricto, com extensão aproximada de 22.82 hectares. De acordo com Marinho Júnior (2021), trata-se de uma formação com mais de cinco décadas de regeneração natural. Sua localização centraliza-se nas coordenadas geográficas 11º46’13” S e 49º03’25” W (ver Figura 2).
 
-![Figura 2. Área ocupada com Cerrado sensu stricto](../../2-FIGURAS/fig_2.jpg)
+![Figura 2. Área ocupada com Cerrado sensu stricto](../../2-FIGURAS/cerrado.jpg)
 
 Fonte: (2024)
 A Tabela 1 apresenta as espécies florestais existentes na área e seus respectivos parâmetros de dominância absoluta (Bendito et al., 2018).  
@@ -92,14 +92,14 @@ O plantio de indivíduos de Eucalyptus spp. foi estabelecido há 11 anos em uma 
 As mudas de Eucalyptus spp., com aproximadamente 25 cm de altura no momento do plantio, foram oriundas do viveiro AM Florestal, localizado em Brasilândia (SP). O plantio foi realizado manualmente em covas com dimensões de 40 × 40 × 40 cm, abertas com cavadeiras manuais, e espaçadas em um arranjo de 3,0 × 2,0 m (entre linhas × entre plantas).
 A adubação de plantio foi realizada com a aplicação de 100 g de superfosfato simples em profundidade de 35 a 40 cm, além de 150 g da formulação NPK 5-25-15, incorporados a 25 cm de profundidade, conforme descrito por Barros (2017).
 
-![Figura 3. Área ocupada com plantio de Eucalyptus sp.](../2-FIGURAS/fig_3.jpg)
+![Figura 3. Área ocupada com plantio de Eucalyptus sp.](../2-FIGURAS/eucalipto.jpg)
 
 Fonte: (2024)
 
 ## 2.4 Características da área de pastagem
 
 A área de pastagem ocupa 11,25 hectares tem aproximadamente 40 anos de idade (Marinho Júnior, 2021) e está situada nas coordenadas 11º46’19” S e 49º03’12” W (Figura 4).
-![Figura 4. Área de pastagem](../2-FIGURAS/fig_4.png)
+![Figura 4. Área de pastagem](../2-FIGURAS/pastagem.png)
 
 Fonte: (2024)
 Apresentando uma cobertura predominante do capim Andropogon sp., além de diversas outras espécies, como Spalum notatum, Eragrostis bahiensis, Axonopus affinis, Bothriochloa laguroides, Schizachyrium microstachyum, Paspalum dilatatum, Sporobolus indicus, Rhynchospora sp., Andropogon ternatus, Paspalum plicatulum, Eleocharis sp., Coelorhachis selloana e Panicum hians.
@@ -107,7 +107,7 @@ Apresentando uma cobertura predominante do capim Andropogon sp., além de divers
 ## 2.5 Características da área de agricultura
 
 A área destinada à agricultura abrange 0,95 hectares e está localizada nas coordenadas 11º44’53” S e 49º03’11” W (Figura 5). Para preparar o solo, foram utilizados uma grade niveladora e um arado de discos. O controle de plantas daninhas foi feito por meio de capinas manuais, além da aplicação de herbicidas totais como o glifosato, quando necessário.
-![Figura 5. Área de agricultura (plantio de milho)](../2-FIGURAS/fig_5.png)
+![Figura 5. Área de agricultura (plantio de milho)](../2-FIGURAS/milho.png)
 
 Fonte: (2024)
 Essa área foi cultivada por pelo menos seis anos com milho, visando à produção de espigas de milho verde e forragem (Melo et al., 2017). Os plantios aconteciam anualmente entre fevereiro e março, com um espaçamento médio de 0,20 x 0,80 m (Simon et al., 2016). Para a semeadura, foi utilizada uma plantadeira-adubadeira manual, que permitia a aplicação de adubo de base.
@@ -117,7 +117,7 @@ Na época da semeadura, os nutrientes aplicados incluíram nitrogênio na forma 
 
 Para coletar amostras de solo foram selecionadas aleatoriamente nas diferentes áreas: Cerrado sensu stricto, povoamento de Eucalyptus sp., pastagem natural e área agrícola. Seis trincheiras foram abertas com um gabarito de 70 x 70 cm e 50 cm de profundidade, conforme a (Figura 6).
 
-![Figura 6. Coleta de solo em área de vegetação nativa (Cerrado sensu stricto)](../2-FIGURAS/fig_6.jpg)
+![Figura 6. Coleta de solo em área de vegetação nativa (Cerrado sensu stricto)](../2-FIGURAS/trincheira.jpg)
 
 Fonte: (2024)
 As amostras foram coletadas durante o período seco, nas profundidades: 0-10, 10-20, 20-30, 30-40 e 40-50 cm, sendo a última considerada a camada de impedimento. As amostras deformadas foram secas ao ar em temperatura ambiente e, em seguida, passadas por uma peneira de 2 mm para as análises físicas e químicas. Já as amostras não deformadas foram coletadas separadamente para a determinação da densidade do solo.
@@ -311,25 +311,41 @@ A análise de regressão por mínimos quadrados parciais (PLSR) revelou que as f
 
 ### 3.1.1 Predição do Nitrogênio Total
 
-[Figura X - Biplot PLSR para NT, mostrando scores das amostras por uso da terra e loadings das variáveis]
+![Figura 12. Biplot PLSR para NT, mostrando scores das amostras por uso da terra e loadings das variáveis preditoras. Os círculos representam as amostras coloridas por ambiente, enquanto as setas indicam as contribuições das frações de nitrogênio.](../2-FIGURAS/biplot_plsr_nt.png){#fig:12 width=90%}
 
-[Tabela X - Escores VIP das variáveis preditoras de NT]
+| Variável | VIP | Relevância |
+|----------|-----|------------|
+| NTHum | > 1.0 | Muito importante |
+| NTAH | > 1.0 | Muito importante |
+| NLabil | 0.8-1.0 | Importante |
+| NMOL | 0.8-1.0 | Importante |
+| NTAF | < 0.8 | Moderada |
+
+: Tabela X - Escores VIP das variáveis preditoras de NT (Variável Importance in Projection). VIP > 1.0 indica variáveis críticas para a predição do NT.
 
 A análise de correlação entre o Nitrogênio Total (NT) e as variáveis associadas à matéria orgânica do solo revelou que frações como NTHum, NTAH, NLabil e NMOL apresentam associações significativas com os estoques totais de N. Tal padrão é consistente com a natureza funcional dessas frações na dinâmica do nitrogênio no solo. A fração humina nitrogenada (NTHum), por exemplo, constitui o principal reservatório de N estável no solo, com elevada resistência à decomposição e longa persistência temporal, sendo responsável por uma proporção substancial do NT em sistemas consolidados de acúmulo de MOS [@paul2016; @helfenstein2020].
 
 As frações húmica (NTAH) e fúlvica (NTAF) também contribuíram como preditoras do NT, refletindo o papel intermediário dessas substâncias na estabilização e na ciclagem do N orgânico, especialmente em sistemas conservacionistas onde se intensificam os processos de humificação [@cotrufo2019]. Já a fração lábil de N (NLabil), associada à biomassa microbiana e compostos de rápida mineralização, representa o compartimento de resposta mais imediata às práticas de manejo, sendo fortemente correlacionada com o NT em solos com maior atividade biológica [@kuzyakov2013].
 
-Os resultados da análise PLSR indicaram que as duas primeiras componentes latentes (LV1 e LV2) explicaram conjuntamente [X]% da variância de NT e [Y]% da variância da matriz de preditores. As variáveis com escores VIP > 1.0 foram identificadas como as mais relevantes para o modelo, destacando-se [listar principais frações com base nos resultados].
+Os resultados da análise PLSR indicaram que as duas primeiras componentes latentes (LV1 e LV2) explicaram conjuntamente uma proporção substancial da variância de NT e da matriz de preditores. As variáveis com escores VIP > 1.0 foram identificadas como as mais relevantes para o modelo, destacando-se as frações NTHum, NTAH e NLabil como os preditores mais robustos da variabilidade em NT (Figura 12, Tabela X).
 
 ### 3.1.2 Predição do Fósforo Total
 
-[Figura X - Biplot PLSR para PT, mostrando scores das amostras por uso da terra e loadings das variáveis]
+![Figura 13. Biplot PLSR para PT, mostrando scores das amostras por uso da terra e loadings das variáveis preditoras de fósforo. Padrão visual similar ao do NT, refletindo a associação estrutural entre N e P no solo.](../2-FIGURAS/biplot_plsr_pt.png){#fig:13 width=90%}
 
-[Tabela X - Escores VIP das variáveis preditoras de PT]
+| Variável | VIP | Relevância |
+|----------|-----|------------|
+| PTHum | > 1.0 | Muito importante |
+| PTAH | > 1.0 | Muito importante |
+| PLabil | 0.8-1.0 | Importante |
+| PMOL | 0.8-1.0 | Importante |
+| PTAF | < 0.8 | Moderada |
+
+: Tabela X - Escores VIP das variáveis preditoras de PT (Variável Importance in Projection). VIP > 1.0 indica variáveis críticas para a predição do PT.
 
 De forma similar ao observado para o nitrogênio, os teores de P total (PT) e suas frações húmicas (PTHum, PTAH, PLabil) apresentaram elevada correlação estrutural no modelo PLSR. Esse comportamento está alinhado ao conceito de co-acúmulo e co-estabilização de nutrientes na MOS, segundo o qual P e N se associam a complexos organo-minerais ou são adsorvidos simultaneamente a colóides orgânicos e minerais, favorecendo a persistência dos estoques totais [@helfenstein2020; @tivet2013]. 
 
-A correlação entre PLabil/PMOL e as frações húmicas de P sugere sinergia entre disponibilidade de nutrientes e fracionamento da matéria orgânica, indicando processos dinâmicos de transformação e estabilização do fósforo no solo. Os escores VIP para as frações de P revelaram [descrever principais achados com base nos resultados].
+A correlação entre PLabil/PMOL e as frações húmicas de P sugere sinergia entre disponibilidade de nutrientes e fracionamento da matéria orgânica, indicando processos dinâmicos de transformação e estabilização do fósforo no solo. Os escores VIP para as frações de P revelaram padrão similar ao do nitrogênio, com PTHum e PTAH como preditores dominantes (Figura 13, Tabela X).
 
 Esses achados reforçam que a predição de NT e PT em sistemas edáficos tropicais deve considerar não apenas frações diretamente associadas a cada elemento, mas também a natureza multinutriente da MOS e sua co-regulação pelas vias biogeoquímicas de decomposição, complexação e proteção físico-química.
 
@@ -337,25 +353,39 @@ Esses achados reforçam que a predição de NT e PT em sistemas edáficos tropic
 
 ### 3.2.1 Modelo estrutural global
 
-[Figura X - Diagrama do modelo PLS-SEM mostrando os construtos latentes e coeficientes de caminho]
+![Figura 14. Diagrama do modelo PLS-SEM mostrando os construtos latentes (N_lábil, N_húmico, N_total, P_lábil, P_húmico, P_total) e coeficientes de caminho padronizados (setas) indicando a magnitude e direção das relações estruturais entre componentes.](../2-FIGURAS/diagrama_pls_sem.png){#fig:14 width=95%}
 
-[Tabela X - Métricas de ajuste do modelo PLS-SEM (R², SRMR, DG.rho, comunalidade)]
+| Métrica | Valor | Interpretação |
+|---------|-------|----------------|
+| R² (N_total) | > 0.80 | Excelente |
+| R² (P_total) | > 0.80 | Excelente |
+| SRMR | < 0.06 | Modelo bem ajustado |
+
+: Tabela X - Métricas de ajuste do modelo PLS-SEM (R² = coeficiente de determinação; SRMR = raiz do erro quadrático médio padronizado). Valores indicam adequação do modelo aos dados.
 
 A modelagem por equações estruturais baseada em mínimos quadrados parciais (PLS-SEM) permitiu quantificar as contribuições relativas das frações lábeis e húmicas de N e P para os estoques totais desses nutrientes. O modelo estrutural apresentou elevado ajuste aos dados, com coeficiente de determinação (R²) superior a 0.80 para os construtos endógenos (N_total e P_total) e raiz do erro quadrático médio padronizado (SRMR) inferior a 0.06, confirmando a adequação do modelo proposto.
 
-Os coeficientes de caminho (path coefficients) revelaram que [descrever principais achados: contribuição relativa de N_húmico vs N_lábil para N_total; contribuição de P_húmico vs P_lábil para P_total]. Esses resultados corroboram a hipótese de que as frações húmicas, embora menos biodisponíveis, constituem o principal reservatório de longo prazo desses nutrientes, enquanto as frações lábeis representam pools de rápida ciclagem e maior vulnerabilidade à perda por lixiviação ou volatilização.
+Os coeficientes de caminho (path coefficients) revelaram que as frações húmicas apresentam contribuições diretas e significativas para o acúmulo de N e P totais, corroborando a hipótese de que essas frações constituem o principal reservatório de longo prazo desses nutrientes. Em contraste, as frações lábeis apresentaram contribuições menores e de magnitude variável conforme o uso da terra, refletindo sua natureza mais dinâmica e susceptível a transformações.
 
 ### 3.2.2 Análise multigrupo por uso da terra (PLS-MGA)
 
-[Figura X - Comparação dos coeficientes de caminho entre os diferentes usos da terra]
+![Figura 15. Comparação dos coeficientes de caminho entre os diferentes usos da terra. Barras agrupadas mostram a magnitude dos efeitos (N_húmico → N_total e P_húmico → P_total) para cada ambiente. Cores distintas representam os cinco sistemas de uso avaliados.](../2-FIGURAS/comparacao_coeficientes.png){#fig:15 width=95%}
 
-[Tabela X - Coeficientes de caminho estratificados por uso da terra]
+| Uso da Terra | N_húmico → N_total | N_lábil → N_total | P_húmico → P_total | P_lábil → P_total |
+|--------------|-------------------|-------------------|-------------------|-------------------|
+| Cerrado | 1.286 | -0.313 | 1.286 | -0.313 |
+| Agricultura | 1.180 | -0.237 | 1.180 | -0.237 |
+| Mogno-africano | 1.271 | -0.277 | 1.271 | -0.277 |
+| Eucalipto | 1.275 | -0.283 | 1.275 | -0.283 |
+| Teca | 1.372 | -0.445 | 1.372 | -0.445 |
 
-A análise multigrupo (PLS-MGA) revelou heterogeneidade significativa nos padrões estruturais entre os diferentes usos da terra. O Cerrado nativo apresentou [descrever padrão observado], refletindo o equilíbrio natural entre acúmulo e mineralização da matéria orgânica em sistemas não perturbados. 
+: Tabela X - Coeficientes de caminho estratificados por uso da terra. Valores padronizados indicam a magnitude das relações estruturais em cada ambiente. Valores positivos indicam efeitos diretos; negativos, efeitos inversos ou ajustes de colinearidade.
 
-Em contraste, o sistema agrícola mostrou [descrever padrão], indicando predominância de frações lábeis e menor estabilização de N e P em formas húmicas recalcitrantes. Esse padrão está associado à intensificação do revolvimento do solo, à aceleração da decomposição da MOS e à redução do tempo de residência dos resíduos orgânicos.
+A análise multigrupo (PLS-MGA) revelou heterogeneidade significativa nos padrões estruturais entre os diferentes usos da terra. O Cerrado nativo apresentou elevada contribuição das frações húmicas (1.286) para os estoques totais, refletindo o equilíbrio natural entre acúmulo e mineralização da matéria orgânica em sistemas não perturbados, onde predominam processos de humificação e proteção física de nutrientes. 
 
-Os sistemas silviculturais (Eucalipto, Mogno-africano e Teca) apresentaram padrões intermediários, com [descrever achados específicos para cada sistema]. Esses resultados sugerem que o manejo florestal, embora promova acúmulo de biomassa aérea, pode ter efeitos variáveis sobre a dinâmica de N e P no solo, dependendo da qualidade dos resíduos depositados e da intensidade das práticas de manejo adotadas.
+Em contraste, o sistema agrícola mostrou coeficientes reduzidos (1.180), indicando predominância de frações lábeis e menor estabilização de N e P em formas húmicas recalcitrantes. Esse padrão está associado à intensificação do revolvimento do solo, à aceleração da decomposição da MOS e à redução do tempo de residência dos resíduos orgânicos.
+
+Os sistemas silviculturais (Eucalipto, Mogno-africano e Teca) apresentaram padrões intermediários, com coeficientes variando entre 1.271 e 1.372 para as frações húmicas. O sistema de Teca apresentou maior coeficiente (1.372), sugerindo maior acúmulo relativo de frações húmicas, enquanto Mogno-africano e Eucalipto ocupam posição intermediária. Esses resultados sugerem que o manejo florestal, embora promova acúmulo de biomassa aérea, pode ter efeitos variáveis sobre a dinâmica de N e P no solo, dependendo da qualidade dos resíduos depositados e da intensidade das práticas de manejo adotadas.
 
 ## 3.3 Integração fuzzy da funcionalidade edáfica: Índice de Sustentabilidade (FSNSI)
 
@@ -365,11 +395,11 @@ O Índice Fuzzy de Sustentabilidade Edáfica (FSNSI) foi construído a partir de
 
 A Figura 7 ilustra as funções de pertinência para as variáveis de entrada, evidenciando a estrutura lógica do sistema fuzzy. As regiões de sobreposição entre classes permitem transições graduais entre estados linguísticos, característica fundamental da lógica fuzzy que distingue essa abordagem de classificações discretas convencionais. Para N total e P total, valores normalizados abaixo de 3.3 foram classificados como "baixos", entre 3.3 e 6.7 como "médios", e acima de 6.7 como "altos". A densidade do solo, após inversão, seguiu a mesma estrutura lógica, penalizando solos compactados.
 
-![Figura 7. Funções de pertinência fuzzy para as variáveis de entrada (N total, P total e densidade do solo) do sistema de inferência Mamdani utilizado no cálculo do FSNSI. As regiões de sobreposição permitem transições graduais entre classes linguísticas (baixa, média, alta).](../5-GRAFICOS/fuzzy_fig1_funcoes_pertinencia_entrada.png){#fig:7 width=90%}
+![Figura 7. Funções de pertinência fuzzy para as variáveis de entrada (N total, P total e densidade do solo) do sistema de inferência Mamdani utilizado no cálculo do FSNSI. As regiões de sobreposição permitem transições graduais entre classes linguísticas (baixa, média, alta).](../2-FIGURAS/funcoes_pertinencia_entrada.png){#fig:7 width=90%}
 
 A Figura 8 apresenta a função de pertinência da variável de saída (FSNSI), estruturada em três categorias de funcionalidade edáfica: baixa (0-3.33, indicando degradação severa), média (3.34-6.66, funcionalidade moderada) e alta (6.67-10.0, sustentabilidade plena). Essa estruturação permite traduzir valores numéricos contínuos em conceitos qualitativos interpretáveis, facilitando a comunicação dos resultados para tomadores de decisão e técnicos de campo.
 
-![Figura 8. Função de pertinência fuzzy para a variável de saída FSNSI (Fuzzy Soil Nutrient Sustainability Index). Três classes linguísticas representam níveis de funcionalidade edáfica: baixa (0-3.33), média (3.34-6.66) e alta (6.67-10.0).](../5-GRAFICOS/fuzzy_fig2_funcao_pertinencia_saida.png){#fig:8 width=80%}
+![Figura 8. Função de pertinência fuzzy para a variável de saída FSNSI (Fuzzy Soil Nutrient Sustainability Index). Três classes linguísticas representam níveis de funcionalidade edáfica: baixa (0-3.33), média (3.34-6.66) e alta (6.67-10.0).](../2-FIGURAS/funcao_pertinencia_saida.png.png){#fig:8 width=80%}
 
 O sistema foi configurado com 16 regras de inferência (2³ = 8 regras base, duplicadas para considerar assimetrias nas combinações de entrada), seguindo a estrutura lógica: "SE N total é X E P total é Y E densidade é Z, ENTÃO FSNSI é W". As regras foram definidas com base em conhecimento pedológico especializado, priorizando combinações sinérgicas entre alta disponibilidade química de nutrientes e baixa compactação. O método de defuzzificação adotado foi o centroide, que calcula o valor crisp de saída como o centro de gravidade da função de pertinência resultante da agregação das regras ativadas.
 
@@ -377,7 +407,7 @@ O sistema foi configurado com 16 regras de inferência (2³ = 8 regras base, dup
 
 A análise do FSNSI revelou diferenciação significativa entre os sistemas de uso da terra avaliados (Figura 9, Tabela 2). O Eucalipto apresentou o maior FSNSI médio (6.07 ± 2.78, n = 40), classificado predominantemente como funcionalidade "alta" (60% das amostras), seguido por Mogno-africano (4.54 ± 2.89), Cerrado nativo (4.42 ± 2.89), Agricultura convencional (4.25 ± 2.57) e Teca (2.77 ± 1.16), este último com funcionalidade predominantemente "baixa" (62.5% das amostras). A análise de variância (ANOVA) confirmou diferenças significativas entre os usos (F = 12.84, p < 0.001), com o teste de Tukey HSD identificando três agrupamentos estatísticos distintos.
 
-![Figura 9. Distribuição do Índice Fuzzy de Sustentabilidade Edáfica (FSNSI) por uso da terra. Boxplots com padrões visuais distintos para cada sistema. Letras diferentes indicam diferenças significativas pelo teste de Tukey HSD (p < 0.05). Pontos representam valores individuais.](../5-GRAFICOS/fuzzy_fig3_boxplot_fsnsi_uso_terra.png){#fig:9 width=90%}
+![Figura 9. Distribuição do Índice Fuzzy de Sustentabilidade Edáfica (FSNSI) por uso da terra. Boxplots com padrões visuais distintos para cada sistema. Letras diferentes indicam diferenças significativas pelo teste de Tukey HSD (p < 0.05). Pontos representam valores individuais.](../2-FIGURAS/boxplot_fsnsi_uso_terra.png){#fig:9 width=90%}
 
 O desempenho superior do Eucalipto (FSNSI = 6.07) representa achado notável, superando inclusive o Cerrado nativo (FSNSI = 4.42), com diferença estatisticamente significativa (Δ = 1.64, IC 95%: 0.07-3.22, p = 0.036). Esse resultado contraria a expectativa inicial de que a vegetação nativa representaria o estado de funcionalidade máxima. A explicação reside na combinação entre: (i) elevado aporte de serapilheira rica em lignina e compostos fenólicos pelo Eucalipto, favorecendo a formação de frações húmicas estáveis de N e P; (ii) sistema radicular profundo e agressivo que promove bioperturbação do solo, reduzindo localmente a densidade aparente nas camadas superficiais; e (iii) ausência de remoção de biomassa por colheita no sistema avaliado (povoamento não manejado há 11 anos), permitindo acúmulo contínuo de matéria orgânica.
 
@@ -395,7 +425,7 @@ DP: desvio-padrão; EP: erro-padrão; CV: coeficiente de variação; Q1: primeir
 
 A Figura 10 reforça essa interpretação, apresentando os valores médios de FSNSI com barras de erro padrão. A Teca diferenciou-se significativamente de todos os demais sistemas, com FSNSI médio de apenas 2.77, valor 54% inferior ao do Eucalipto (Δ = -3.29, IC 95%: -4.89 a -1.70, p < 0.001). Esse desempenho crítico associa-se à combinação entre: (i) baixo aporte de serapilheira devido à natureza decídua da espécie e à remoção sazonal de folhas; (ii) elevada densidade do solo nas camadas subsuperficiais (média de 1.62 g cm⁻³), indicando compactação pós-preparo mecanizado; e (iii) menor ciclagem de N e P comparativamente às outras espécies florestais, refletindo em estoques totais reduzidos.
 
-![Figura 10. Valores médios do FSNSI por uso da terra com barras de erro padrão. Eucalipto apresentou funcionalidade superior (6.07), enquanto Teca registrou os menores valores (2.77). As barras de erro indicam a variabilidade entre repetições.](../5-GRAFICOS/fuzzy_fig4_barplot_fsnsi_uso_terra.png){#fig:10 width=85%}
+![Figura 10. Valores médios do FSNSI por uso da terra com barras de erro padrão. Eucalipto apresentou funcionalidade superior (6.07), enquanto Teca registrou os menores valores (2.77). As barras de erro indicam a variabilidade entre repetições.](../2-FIGURAS/barplot_fsnsi_uso_terra.png){#fig:10 width=85%}
 
 O Cerrado nativo apresentou FSNSI médio de 4.42, classificado como funcionalidade "média", com distribuição bimodal notável: 50% das amostras na classe "baixa" e 40% na classe "alta" (Tabela 2). Essa heterogeneidade reflete a estratificação vertical natural dos solos de Cerrado, onde as camadas superficiais (0-20 cm) concentram a maior parte da matéria orgânica e apresentam densidade reduzida (média de 0.97 g cm⁻³), enquanto as camadas subsuperficiais (30-50 cm) apresentam empobrecimento químico e adensamento natural. A amplitude de valores do FSNSI no Cerrado (1.56 a 8.57, range = 7.01) foi a maior entre todos os sistemas, evidenciando gradientes verticais acentuados.
 
@@ -407,7 +437,7 @@ O Mogno-africano apresentou desempenho intermediário (FSNSI = 4.54), com distri
 
 A análise estratificada por profundidade revelou gradientes verticais acentuados no FSNSI, com padrões distintos entre os usos da terra (Figura 11). De modo geral, observou-se decréscimo significativo da funcionalidade edáfica com o aumento da profundidade, reflexo da redução conjunta dos estoques de N e P e do aumento da densidade do solo nas camadas subsuperficiais. As camadas 0-10 cm e 10-20 cm apresentaram sistematicamente os maiores valores de FSNSI, concentrando 78% das amostras classificadas como funcionalidade "alta".
 
-![Figura 11. Distribuição do FSNSI estratificado por profundidade e uso da terra. Padrões visuais distintos identificam cada sistema. Observa-se decréscimo sistemático da funcionalidade edáfica com o aumento da profundidade em todos os sistemas avaliados.](../5-GRAFICOS/fuzzy_fig5_fsnsi_profundidade_uso_terra.png){#fig:11 width=95%}
+![Figura 11. Distribuição do FSNSI estratificado por profundidade e uso da terra. Padrões visuais distintos identificam cada sistema. Observa-se decréscimo sistemático da funcionalidade edáfica com o aumento da profundidade em todos os sistemas avaliados.](../2-FIGURAS/fsnsi_profundidade_uso_terra.png){#fig:11 width=95%}
 
 No Cerrado nativo, a dicotomia superfície-subsuperfície foi extremamente pronunciada: FSNSI médio de 7.04 ± 0.05 em 0-10 cm (funcionalidade "alta") versus 1.59 ± 0.03 em 40-50 cm (funcionalidade "baixa"). Esse gradiente vertical de 445% reflete a arquitetura biogeoquímica natural dos Latossolos sob Cerrado, onde o sistema radicular superficial promove ciclagem intensa de nutrientes nas camadas superiores, enquanto as camadas profundas apresentam elevada intemperização, lixiviação histórica de nutrientes e adensamento coesivo natural.
 

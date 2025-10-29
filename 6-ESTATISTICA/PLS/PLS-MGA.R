@@ -1,24 +1,12 @@
 # modelagem PLS-SEM multigrupo aplicada ao estudo ("Avaliar as concentrações e estoques de nitrogênio e fósforo no solo, frações húmicas e frações lábeis em diferentes usos da terra no Cerrado")
 
-
-# Instalar pacotes se necessário
-install.packages("seminr")
-install.packages("readxl")
-install.packages("dplyr")
-install.packages("DiagrammeR")
-install.packages("DiagrammeRsvg")
-install.packages("rsvg")
-
 library(seminr)
 library(DiagrammeR)
-library(DiagrammeRsvg)
-library(rsvg)
-library(seminr)
 library(readxl)
 library(dplyr)
 
 # 1. Carregar dados
-dados <- read_excel("banco_dados.xlsx", sheet = "dados")
+dados <- read_excel("../banco_dados.xlsx", sheet = "DADOS")
 
 # Preparar dados
 dados <- dados %>%
@@ -58,39 +46,53 @@ for (grupo in levels(dados$Amb)) {
 }
 
 # 5. Resultados por grupo
+tabela_coeficientes <- data.frame()
+tabela_r2 <- data.frame()
+
 for (grupo in names(resultados_mg)) {
   cat("\n==== Resultados para:", grupo, "====\n")
   print(summary(resultados_mg[[grupo]]))
   
   cat("\n--- Coeficientes de Caminho (Path Coefficients) ---\n")
-  print(resultados_mg[[grupo]]$path_coefficients)
+  coef_path <- resultados_mg[[grupo]]$path_coefficients
+  print(coef_path)
+  
+  # Organizar tabela de coeficientes por grupo
+  if (!is.null(coef_path)) {
+    coef_df <- as.data.frame(coef_path)
+    coef_df$Grupo <- grupo
+    tabela_coeficientes <- rbind(tabela_coeficientes, coef_df)
+  }
   
   cat("\n--- R² das variáveis endógenas ---\n")
-  print(resultados_mg[[grupo]]$r_squared)
+  r2 <- resultados_mg[[grupo]]$r_squared
+  print(r2)
+  
+  if (!is.null(r2)) {
+    r2_df <- as.data.frame(r2)
+    r2_df$Variavel <- rownames(r2_df)
+    r2_df$Grupo <- grupo
+    tabela_r2 <- rbind(tabela_r2, r2_df)
+  }
 }
+
+# Exportar tabelas
+write.csv(tabela_coeficientes, "../../5-GRAFICOS/tabela_coeficientes_caminho.csv", row.names = FALSE)
+write.csv(tabela_r2, "../../5-GRAFICOS/tabela_r2_pls_sem.csv", row.names = FALSE)
 
 
 
 # Supondo que o modelo do grupo "Cerrado" está em resultados_mg[["Cerrado"]]
 modelo_cerrado <- resultados_mg[["Cerrado"]]
-plot(modelo_cerrado)
+tryCatch({
+  plot(modelo_cerrado)
+}, error = function(e) {
+  cat("Aviso: Não foi possível gerar plot do modelo.\n")
+})
 
-modelo_agricultura <- resultados_mg[["Agricultura"]]
-plot(modelo_agricultura)
-
-
-
-
-# Gerar visualização com o seminr
-modelo_plot <- plot(modelo_cerrado)
-
-# Converter para SVG e salvar como PNG
-graph_svg <- export_svg(modelo_plot)  # Exporta em SVG
-graph_png <- charToRaw(graph_svg) %>% rsvg_png("modelo_cerrado.png", width = 1500, height = 1000)
-
-
-
-
+cat("\n✓ Tabelas exportadas com sucesso!\n")
+cat("✓ Coeficientes de caminho: 5-GRAFICOS/tabela_coeficientes_caminho.csv\n")
+cat("✓ R² do modelo: 5-GRAFICOS/tabela_r2_pls_sem.csv\n")
 
 #Exibir
 library(htmltools)
@@ -119,7 +121,7 @@ browsable(do.call(tagList, plots))
 
 library(DiagrammeR)
 
-grViz("
+diagrama_pls_sem <- grViz("
 digraph G {
   graph [layout = dot, rankdir = LR]
   node [shape = box, style = filled, fontname = Helvetica, fixedsize = false]
@@ -174,6 +176,29 @@ digraph G {
 
   }
 ")
+
+print(diagrama_pls_sem)
+
+# Exportar diagrama como PNG
+export_diagram <- function(diagram, filename) {
+  # Usar DiagrammeRsvg para converter SVG para PNG
+  svg_text <- capture.output(print(diagram))
+  svg_file <- tempfile(fileext = ".svg")
+  png_file <- filename
+  
+  # Salvar SVG temporário
+  cat(svg_text, file = svg_file)
+  
+  # Converter para PNG usando DiagrammeRsvg
+  rsvg::rsvg_png(svg = svg_file, file = png_file, width = 1200, height = 800)
+}
+
+# Tentar exportar (pode requer bibliotecas adicionais)
+tryCatch({
+  export_diagram(diagrama_pls_sem, "../../2-FIGURAS/diagrama_pls_sem.png")
+}, error = function(e) {
+  cat("Aviso: Não foi possível exportar PNG. Salve manualmente o diagrama do Viewer.\n")
+})
 
 
 

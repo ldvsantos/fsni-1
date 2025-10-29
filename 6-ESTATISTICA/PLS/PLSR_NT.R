@@ -12,7 +12,7 @@ cat("\014")  # limpa o console
 if (dev.cur() != 1) dev.off()
 
 # Carregar dados
-dados <- read_excel("banco_dados.xlsx", sheet = "dados") %>% na.omit()
+dados <- read_excel("../banco_dados.xlsx", sheet = "DADOS") %>% na.omit()
 
 # Remover espaços ocultos nos nomes das colunas
 names(dados) <- trimws(names(dados))
@@ -52,7 +52,7 @@ label_x <- paste0("LV1 (", round(expl_x[1], 1), "% X)")
 label_y <- paste0("LV2 (", round(expl_x[2], 1), "% X)")
 
 # Gráfico final
-ggplot() +
+biplot_nt <- ggplot() +
   geom_path(data = circle, aes(x = x, y = y), linetype = "dotted", color = "gray40") +
   geom_hline(yintercept = 0, color = "gray50") +
   geom_vline(xintercept = 0, color = "gray50") +
@@ -64,6 +64,7 @@ ggplot() +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +
   labs(
+    title = "Biplot PLSR para NT",
     x = label_x,
     y = label_y,
     color = "Ambiente",
@@ -72,8 +73,14 @@ ggplot() +
   theme_minimal(base_size = 14) +
   theme(
     panel.grid = element_blank(),
-    legend.position = "right"
+    legend.position = "right",
+    plot.title = element_text(face = "bold", hjust = 0.5)
   )
+
+print(biplot_nt)
+
+# Exportar biplot
+ggsave("../../2-FIGURAS/biplot_plsr_nt.png", plot = biplot_nt, width = 10, height = 8, dpi = 300)
 
 
 
@@ -164,11 +171,12 @@ vip_pls <- function(object) {
 # Calcular VIP
 vip_scores <- vip_pls(modelo)
 
-
-
-
-
-
+# Tabela de VIPs
+tabela_vip <- data.frame(
+  Variável = names(vip_scores),
+  VIP = round(vip_scores, 3)
+) %>%
+  arrange(desc(VIP))
 
 # Gráfico tipo Wold VIP plot
 ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
@@ -186,26 +194,12 @@ ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
     plot.title = element_text(face = "bold", hjust = 0.5)
   )
 
-
-# Tabela de VIPs
-tabela_vip <- data.frame(
-  Variável = names(vip_scores),
-  VIP = round(vip_scores, 3)
-) %>%
-  arrange(desc(VIP))
-
 # Visualizar
 print("TABELA 4 – Importância das variáveis (VIP):")
 print(tabela_vip)
 
-
-#VIP > 1 → variável considerada importante para o modelo
-#VIP < 0.8 → pouco relevante
-#VIP entre 0.8 e 1 → relevância intermediária
-
-
-# Exportar (opcional)
-# write.csv(tabela_vip, "tabela_vip.csv", row.names = FALSE)
+# Exportar tabela VIP
+write.csv(tabela_vip, "../../5-GRAFICOS/tabela_vip_nt.csv", row.names = FALSE)
 
 
 
@@ -232,7 +226,7 @@ linha_trend <- data.frame(
 linha_trend$Predito <- predict(modelo_lm, newdata = linha_trend)
 
 # Gráfico com preenchimento e borda preta
-ggplot(df_pred, aes(x = Observado, y = Predito)) +
+grafico_pred_nt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
   geom_point(aes(fill = Ambiente), shape = 21, color = "black", size = 3, stroke = 1) +  # shape 21 = círculo com borda
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
@@ -247,5 +241,10 @@ ggplot(df_pred, aes(x = Observado, y = Predito)) +
     legend.position = "right",
     plot.title = element_text(face = "bold", hjust = 0.5)
   )
+
+print(grafico_pred_nt)
+
+# Exportar gráfico de predição
+ggsave("../../2-FIGURAS/predicoes_nt.png", plot = grafico_pred_nt, width = 10, height = 8, dpi = 300)
 
 
