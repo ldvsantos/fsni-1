@@ -145,7 +145,7 @@ def main():
         print(f"\n⚠️  Arquivo {md_pt} não encontrado, pulando...")
     else:
         # Passar None para apendices_pt pois o artigo ainda não possui apêndices
-        result = gerar_docx(md_pt, docx_pt, bib_file, csl_file, apendices_pt=None)
+        result = gerar_docx(md_pt, docx_pt, bib_file, csl_file, apendices_file=None)
         if result == 0:
             sucessos += 1
     
