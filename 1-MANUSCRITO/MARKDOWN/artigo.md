@@ -57,7 +57,7 @@ Figura 2. Áreas estudadas. Fotomontagem das áreas: (a) Cerrado Stricto Sensu (
 
 | (a) | (b) | (c) |
 |:--------------:|:--------------:|:--------------:|
-| ![](../../2-FIGURAS/cerrado.png){ width=35% } | ![](../../2-FIGURAS/eucalipto.jpg){ width=35% } | ![](../../2-FIGURAS/mogno.jpg){ width=35% } |
+| ![](../../2-FIGURAS/cerrado.jpg){ width=35% } | ![](../../2-FIGURAS/eucalipto.jpg){ width=35% } | ![](../../2-FIGURAS/mogno.jpg){ width=35% } |
 | (d) | (e) |  |
 | ![](../../2-FIGURAS/teca.jpg){ width=35% } | ![](../../2-FIGURAS/agricultura.jpg){ width=35% } |  |
 
@@ -219,12 +219,7 @@ $$
 
 em que $\beta_i$ representam os coeficientes de caminho (path coefficients), quantificando a contribuição relativa de cada construto exógeno sobre os construtos endógenos, e $\epsilon$ são os termos de erro.
 
-O inner model foi ajustado com algoritmo iterativo de regressão PLS, conforme o método de Lohmöller, utilizando 300 iterações e critério de convergência com tolerância de $10^{-6}$. As estimativas de carga (loadings) dos indicadores e os coeficientes de caminho foram avaliados quanto à magnitude, sinal e significância prática. A qualidade do ajuste foi examinada com base em múltiplos critérios:
-
-- **Coeficiente de determinação (R²)**: proporção da variância dos construtos endógenos explicada pelos preditores;
-- **Confiabilidade composta (DG.rho)**: consistência interna dos construtos reflexivos;
-- **Comunalidade média**: proporção média da variância dos indicadores explicada pelos construtos;
-- **Raiz do erro quadrático médio padronizado (SRMR)**: medida de ajuste global do modelo, com valores < 0.08 indicando bom ajuste.
+O inner model foi ajustado com algoritmo iterativo de regressão PLS, conforme o método de Lohmöller, utilizando 300 iterações e critério de convergência com tolerância de $10^{-6}$. As estimativas de carga (loadings) dos indicadores e os coeficientes de caminho foram avaliados quanto à magnitude, sinal e significância prática. A qualidade do ajuste foi examinada com base no coeficiente de determinação (R²), confiabilidade composta (DG.rho), consistência interna dos construtos reflexivos, comunalidade média, raiz do erro quadrático médio padronizado (SRMR).
 
 #### Análise multigrupo (PLS-MGA)
 
@@ -346,17 +341,7 @@ Esses achados reforçam que a predição de NT e PT em sistemas edáficos tropic
 
 #### Especificação do Modelo PLS-SEM
 
-O modelo estrutural foi especificado com dois níveis hierárquicos de construtos latentes:
-
-**Nível 1 - Construtos de primeira ordem (frações):**
-- **N_lábil**: indicadores NLabil, NMOL (cargas λ = 0.981 e λ = -0.402)
-- **N_húmico**: indicadores NTAF, NTAH, NTHum (cargas λ médias = 0.988-0.990)
-- **P_lábil**: indicadores PLabil, PMOL (cargas estruturalmente análogas ao N_lábil)
-- **P_húmico**: indicadores PTAF, PTAH, PTHum (cargas estruturalmente análogas ao N_húmico)
-
-**Nível 2 - Construtos de segunda ordem (estoques totais):**
-- **N_total**: predito por N_húmico e N_lábil
-- **P_total**: predito por P_húmico e P_lábil
+O modelo estrutural foi especificado com arquitetura hierárquica em dois níveis de construtos latentes, permitindo capturar tanto a estrutura funcional das frações de nutrientes quanto suas contribuições para os estoques totais. No primeiro nível, foram definidos construtos de primeira ordem representando as frações funcionais: N_lábil, mensurado pelos indicadores NLabil e NMOL com cargas fatoriais de λ = 0.981 e λ = -0.402, respectivamente; N_húmico, agregando os indicadores NTAF, NTAH e NTHum com cargas médias elevadas (λ = 0.988-0.990); P_lábil, estruturado analogamente ao N_lábil com os indicadores PLabil e PMOL; e P_húmico, espelhando a estrutura de N_húmico mediante os indicadores PTAF, PTAH e PTHum. No segundo nível hierárquico, os construtos de segunda ordem N_total e P_total foram especificados como variáveis endógenas preditas, respectivamente, pelos construtos N_húmico e N_lábil, e P_húmico e P_lábil, estabelecendo relações causais diretas entre as frações funcionais e os estoques totais de nutrientes. As cargas fatoriais elevadas (λ > 0.98 para a maioria dos indicadores) confirmam que os indicadores observados representam adequadamente os construtos latentes, validando a estrutura de medição do modelo e assegurando que as variáveis manifestas capturam de forma robusta a variabilidade dos compartimentos funcionais de N e P no solo (Figura 6).
 
 ![Figura 6. Análise de caminhos do modelo PLS-SEM evidenciando as relações estruturais entre variáveis latentes (frações de nitrogênio e fósforo) e indicadores observáveis. As setas indicam as trajetórias de influência causal, com largura proporcional à magnitude dos coeficientes de caminho. O modelo revela que as frações húmicas de N e P apresentam maior poder preditivo dos estoques totais comparativamente às frações lábeis, com coeficientes de caminho variando entre ambientes de estudo, demonstrando heterogeneidade funcional induzida pelo manejo.](../../2-FIGURAS/analise_caminhos_pls.png){#fig:6 width=95%}
 
@@ -374,15 +359,7 @@ O modelo estrutural foi especificado com dois níveis hierárquicos de construto
 
 #### Coeficientes de Caminho (Path Coefficients)
 
-Os coeficientes de caminho revelam a magnitude e a direção das relações estruturais entre construtos:
-
-**Para Nitrogênio:**
-- **N_húmico → N_total**: β = 1.286 (Cerrado) [relação positiva forte]
-- **N_lábil → N_total**: β = -0.313 (Cerrado) [relação negativa moderada]
-
-**Para Fósforo:**
-- **P_húmico → P_total**: β = 1.286 (Cerrado) [relação positiva forte]
-- **P_lábil → P_total**: β = -0.313 (Cerrado) [relação negativa moderada]
+Os coeficientes de caminho quantificam a magnitude e a direção das relações estruturais entre os construtos latentes, revelando as contribuições específicas de cada fração funcional para os estoques totais de nutrientes. Para o nitrogênio no ambiente Cerrado, o construto N_húmico apresentou coeficiente de caminho β = 1.286 em direção a N_total, indicando relação positiva forte onde incrementos unitários na fração húmica geram aumentos proporcionalmente superiores no estoque total. Em contraste, o construto N_lábil apresentou coeficiente β = -0.313, caracterizando relação negativa moderada que reflete a dinâmica de particionamento entre pools funcionais. Para o fósforo, observou-se padrão estruturalmente idêntico: P_húmico → P_total com β = 1.286, evidenciando efeito positivo forte, e P_lábil → P_total com β = -0.313, replicando o padrão de coeficiente negativo moderado. Essa simetria perfeita entre os coeficientes de N e P (β_húmico = 1.286 e β_lábil = -0.313 para ambos os nutrientes) demonstra que os processos biogeoquímicos que governam o fracionamento e a estabilização de nitrogênio e fósforo operam de forma sincronizada no solo, sugerindo acoplamento funcional estreito entre esses macronutrientes mediado pelas mesmas vias de humificação e ciclagem da matéria orgânica.
 
 ### 3.2.2 Discussão do modelo estrutural global
 
