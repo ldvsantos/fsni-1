@@ -1,0 +1,39 @@
+# Outputs
+_book/
+*.pdf
+*.html
+.quarto/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Renv
+renv.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
+.temp/
+
+/.quarto/
+**/*.quarto_ipynb

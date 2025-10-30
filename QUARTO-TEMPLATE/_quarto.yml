@@ -1,0 +1,44 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Avaliação da Funcionalidade do Solo em Sistemas de Manejo Agrícola Usando Lógica Fuzzy"
+  #subtitle: "Uma abordagem reproduzível com Quarto e R"
+  author: "Diego et al."
+  date: today
+  
+  chapters:
+    - index.qmd
+    - chapters/01-introduction.qmd
+    - chapters/03-methodology.qmd
+    - chapters/04-results.qmd
+    - chapters/05-discussion.qmd
+    - chapters/06-conclusion.qmd
+    - references.qmd
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: false
+    code-overflow: wrap
+    highlight-style: github
+    
+  pdf:
+    documentclass: article
+    number-sections: true
+    code-overflow: wrap
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
+
+bibliography: references.bib
+csl: apa.csl

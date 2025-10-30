@@ -1,0 +1,34 @@
+# Referências {.unnumbered}
+
+::: {#refs}
+:::
+
+---
+
+## Como Adicionar Referências
+
+Para adicionar mais referências ao artigo, edite o arquivo `references.bib` e adicione entradas no formato BibTeX.
+
+**Exemplo**:
+```bibtex
+@article{autor2020,
+  title = {Título do Artigo},
+  author = {Autor, Nome and Coautor, Outro},
+  journal = {Nome do Periódico},
+  year = {2020},
+  volume = {42},
+  number = {3},
+  pages = {123--145},
+  doi = {10.1234/exemplo}
+}
+```
+
+Então cite no texto usando `[@autor2020]`.
+
+## Gestão de Referências
+
+Recomenda-se usar ferramentas como:
+
+- **Zotero** (gratuito): Exportar coleções em BibTeX
+- **Mendeley**: Integração com R via `scholar` package
+- **JabRef**: Editor dedicado a arquivos BibTeX

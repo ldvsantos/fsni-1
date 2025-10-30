@@ -1,0 +1,17 @@
+{
+  "hash": "2f701a870def157ade640aa93badcc61",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# Resultados\n\n## Caracterização Geral dos Solos\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\nTable: Estatísticas descritivas dos indicadores do solo\n\n|Variável     | Mínimo| Máximo| Média| Desvio.Padrão|\n|:------------|------:|------:|-----:|-------------:|\n|pH           |   5.20|   6.80|  5.90|          0.40|\n|C. Org.      |   8.50|  32.10| 18.30|          6.20|\n|N Total      |   0.45|   2.15|  1.12|          0.52|\n|P Disponível |   5.00|  45.00| 18.50|         11.20|\n\n\n:::\n:::\n\n\n## Índice Fuzzy de Funcionalidade (FSNSI)\n\n\n::: {.cell}\n::: {.cell-output-display}\n![Distribuição do índice FSNSI por sistema de manejo](04-results_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n### Análise de Variância do FSNSI\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\nTable: Análise de variância do índice FSNSI\n\n|Fonte             | GL|   SQ|    QM|F     |P.valor |\n|:-----------------|--:|----:|-----:|:-----|:-------|\n|Sistema de Manejo |  2| 18.5| 9.250|24.67 |<0.001  |\n|Profundidade      |  1|  3.2| 3.200|8.53  |0.012   |\n|Interação         |  2|  1.8| 0.900|2.4   |0.127   |\n|Resíduo           | 12|  4.5| 0.375|      |        |\n\n\n:::\n:::\n\n\n**Conclusão ANOVA**: Há diferença significativa entre sistemas de manejo (p < 0.001) e efeito significativo da profundidade (p = 0.012).\n\n## Análise de Regressão PLS para Nitrogênio e Fósforo\n\n\n::: {.cell}\n::: {.cell-output-display}\n![Importância das variáveis (VIP) para predição de N Total e P Total](04-results_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n### Performance dos Modelos PLS\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\nTable: Performance dos modelos de regressão PLS\n\n|Modelo  |    R2|  RMSE| Componentes.Ótimos|\n|:-------|-----:|-----:|------------------:|\n|N Total | 0.847| 0.156|                  3|\n|P Total | 0.823| 0.234|                  3|\n\n\n:::\n:::\n\n\n## Comparação entre Sistemas de Manejo\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\npacote 'pheatmap' desempacotado com sucesso e somas MD5 verificadas\n\nOs pacotes binários baixados estão em\n\tC:\\Users\\vidal\\AppData\\Local\\Temp\\RtmpMXIP10\\downloaded_packages\n```\n\n\n:::\n\n::: {.cell-output-display}\n![Heatmap de indicadores por sistema de manejo](04-results_files/figure-html/unnamed-chunk-6-1.png){width=672}\n:::\n:::\n\n\n## Correlações entre Indicadores\n\nAs correlações mais significativas (r > 0.7) foram observadas entre:\n\n- Carbono orgânico e biomassa microbiana (r = 0.81)\n- pH e P disponível (r = 0.76)\n- N total e frações de N orgânico (r = 0.88)\n- Densidade e estabilidade de agregados (r = -0.79)\n\n---\n\n**Nota**: Os dados apresentados nesta seção são exemplificativos. Para resultados específicos, consulte os arquivos de saída em `outputs/`.\n",
+    "supporting": [
+      "04-results_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
