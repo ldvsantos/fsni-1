@@ -8,7 +8,7 @@ book:
   date: today
   favicon: cover.png
   cover-image: cover.png
-  downloads: [docx]
+  downloads: [pdf, docx]
   reader-mode: true
   sidebar:
     align: left
@@ -44,6 +44,18 @@ format:
     code-overflow: wrap
     link-external-newwindow: true
     html-math-method: mathjax
+  
+  pdf:
+    pdf-engine: lualatex
+    documentclass: book
+    number-sections: true
+    toc: true
+    code-overflow: wrap
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
   
   docx:
     number-sections: true
