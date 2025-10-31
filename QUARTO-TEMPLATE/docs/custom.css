@@ -1,0 +1,20 @@
+/* Aumentar o tamanho da imagem de capa */
+.quarto-title-banner {
+  background-size: contain !important;
+  min-height: 400px !important;
+}
+
+.quarto-title .quarto-title-block .quarto-title-banner img {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Ajustar a imagem de capa na página index */
+img[src*="cover"] {
+  max-width: 600px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto 2rem auto !important;
+}

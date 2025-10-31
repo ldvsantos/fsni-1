@@ -1,7 +1,7 @@
-# Arquivos gerados
-*.docx
-*.pdf
-*.html
+# Arquivos gerados (exceto docs/)
+/*.docx
+/*.pdf
+/*.html
 
 # Figuras geradas automaticamente
 2-FIGURAS/*.png
