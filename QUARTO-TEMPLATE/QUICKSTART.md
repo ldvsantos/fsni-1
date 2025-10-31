@@ -50,3 +50,9 @@
 ---
 
 **Pronto!** Comece editando os capítulos em `chapters/`.
+
+
+
+Gerar apenas PDF: quarto render --to pdf
+Gerar apenas HTML: quarto render --to html
+Gerar tudo (HTML, PDF, DOCX): quarto render

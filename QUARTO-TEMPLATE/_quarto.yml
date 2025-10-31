@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: docs
+  output-dir: ../docs
 
 book:
   title: "Modelagem Fuzzy-PLS da Dinâmica de Fósforo e Nitrogênio em Usos do Solo no Sul do Tocantins"

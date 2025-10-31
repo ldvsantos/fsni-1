@@ -12,9 +12,20 @@
 
 /* Ajustar a imagem de capa na página index */
 img[src*="cover"] {
-  max-width: 600px !important;
+  max-width: 400px !important;
   width: 100% !important;
   height: auto !important;
   display: block !important;
-  margin: 0 auto 2rem auto !important;
+  margin: 3rem auto 2rem auto !important;
+  padding: 2rem 0 !important;
+}
+
+/* Centralizar melhor o conteúdo do resumo */
+#resumo + p {
+  text-align: center;
+}
+
+/* Adicionar espaço ao redor da imagem */
+.quarto-title-block {
+  text-align: center;
 }
