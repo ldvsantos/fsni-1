@@ -1,4 +1,4 @@
-﻿# Discussão
+﻿<!-- # Discussão
 
 ## Interpretação dos Resultados
 
@@ -14,4 +14,4 @@ Os achados estão alinhados com estudos anteriores que demonstram o efeito do ma
 
 ## Limitações
 
-Este estudo foi realizado em uma única localidade e em período limitado.
+Este estudo foi realizado em uma única localidade e em período limitado. -->

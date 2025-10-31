@@ -1,15 +1,15 @@
 # Metodologia
 
-## 2.1 Área de estudo
+## Área de estudo
 
-A pesquisa foi desenvolvida, no município de São Valério da Natividade em Tocantins, com área total de 53,23 ha, nas coordenadas geográficas 11º54'37" S e 48º12'31" O (Figura 1). 
+A pesquisa foi desenvolvida, no município de São Valério da Natividade em Tocantins, com área total de 53,23 ha, nas coordenadas geográficas 11º54'37" S e 48º12'31" O (Figura 1).
 
 
-![Figura 1. Localização das áreas experimentais](../../../2-FIGURAS/mapa_area.png){#fig:1 width=70%}
+![Figura 1. Localização das áreas experimentais](../figures/mapa_area.png){#fig:1 width=70%}
 
 O clima do município, é do tipo úmido subsumido com moderada deficiência hídrica (C2wA'a"), com duas estações bem definidas, inverno seco que vai de maio a outubro e verão chuvoso, de novembro a abril [@thornthwaite1948]. De acordo com a classificação climática de Köppen, o município de São Valério da Natividade possui pluviosidade média anual de 1643.3 mm, temperatura média 26°C. Está localizado a uma altitude de 320.48 m, e possui 90% da região com declividade inferior a 8º, indicando solos planos [@cho2021]. Os solos das áreas experimentais foram classificados como Latossolo Vermelho-Amarelo, possui uma estrutura granular a subagregada, com boa a excelente drenagem, porém é naturalmente pobre em nutrientes, especialmente nitrogênio, fósforo e potássio [@ker1997; @lopes1996].
 
-## 2.2 Características das áreas de estudo
+## Características das áreas de estudo
 
 A área preservada com Cerrado (Sensu Stricto) (Figura 2a) considerada como testemunha possui 44,82 ha, com mais 40 anos, localizada nas coordenadas 11°54'57''S e 48°11'59''W (Figura 2). A vegetação possui características do tipo denso, com árvore que variam entre 5 a 8 metros de altura, uma vez que, a vegetação do cerrado sensu stricto não possui uma fisionomia única, pelo contrário, é bastante diversificada, apresentando desde formas campestres bem abertas, até formas relativamente densas (florestais) [@sano2019; @klink2005].
 
@@ -17,9 +17,9 @@ Figura 2. Áreas estudadas. Fotomontagem das áreas: (a) Cerrado Stricto Sensu (
 
 | (a) | (b) | (c) |
 |:--------------:|:--------------:|:--------------:|
-| ![](../../../2-FIGURAS/cerrado.jpg){ width=35% } | ![](../../../2-FIGURAS/eucalipto.jpg){ width=35% } | ![](../../../2-FIGURAS/mogno.jpg){ width=35% } |
+| ![](../figures/cerrado.jpg){ width=35% } | ![](../figures/eucalipto.jpg){ width=35% } | ![](../figures/mogno.jpg){ width=35% } |
 | (d) | (e) |  |
-| ![](../../../2-FIGURAS/teca.jpg){ width=35% } | ![](../../../2-FIGURAS/agricultura.jpg){ width=35% } |  |
+| ![](../figures/teca.jpg){ width=35% } | ![](../figures/agricultura.jpg){ width=35% } |  |
 
 
 Um inventario foi realizado e calculado os parâmetros fitossociológicos: Densidade Relativa - DR, Dominância Relativa - DMR, Frequência Relativa – FR e Índice de Valor de Importância - IVI [@queiroz2017] (Apêndice A).
@@ -36,12 +36,12 @@ Por fim a área de agricultura possui 3,06 ha, possui mais de 10 anos, localizad
 Já o cultivo do milho, estende-se entre os meses janeiro a março, em virtude das condições favoráveis promovidas pela precipitação. O preparo do solo ocorreu através de gradagem e sulcamento, com espaçamento médio, entre os indivíduos, de 0,2 x 0,8 m e adubação de 400 kg de 4-14-18 por ha-1, no interior do sulco de semeadura, e 50, 100 e 150 kg de N por ha-1, sobre a superfície do solo, aliado aos procedimentos relacionados ao combate de daninhas, por meio de capina manual e emprego de herbicidas, quando necessário [@eckardt2021].
 
 
-## 2.6 Amostragem de solo
+## Amostragem de solo
 
 As cinco trincheiras em cada área estudada com dimensões com ajuda de um gabarito 70 × 70 × 100 cm (Figura 3) em pontos distintos [@marinhojunior2021], foram abertas manualmente, totalizando no total vinte e cinco trincheiras. 
 
 
-![Figura 3. Coleta de solo em área de vegetação nativa (Cerrado sensu stricto)](../../../2-FIGURAS/trincheira.png)
+![Figura 3. Coleta de solo em área de vegetação nativa (Cerrado sensu stricto)](../figures/trincheira.png)
 
 
 
@@ -107,7 +107,7 @@ e = espessura da camada, em cm.
 
 Após o cálculo do estoque de N em cada camada, foi realizada a correção do estoque de N, levando em consideração as diferenças na massa do solo [@sisti2004]. Sendo assim, o estoque total de N no solo e nas substâncias húmicas na profundidade de 0 a 50 cm, sendo a última considerada a camada de impedimento foi resultante da soma dos valores obtidos em cada camada amostrada.
 
-## 2.7 Análises estatísticas
+## Análises estatísticas
 
 Os parâmetros avaliados passaram pelos testes de normalidade de Shapiro Wilk, em seguida, foram submetidos a uma análise de variância para avaliar as diferenças entre os usos da terra e profundidades. A comparação das médias foi realizada pelo teste de Tukey a 5% de significância e utilizado o software estatístico SISVAR (Ferreira, 2011).
 
@@ -121,7 +121,7 @@ A análise foi conduzida no ambiente R (R Core Team, 2023), utilizando o pacote 
 
 Adicionalmente, foram calculados os escores de importância das variáveis na projeção (Variable Importance in Projection - VIP), conforme o critério de Wold, para identificar quais frações contribuem mais significativamente para a predição dos estoques totais. Variáveis com VIP > 1.0 foram consideradas altamente relevantes, enquanto VIP < 0.8 indicaram contribuição marginal ao modelo.
 
-## 2.8 Modelagem Proposta
+## Modelagem Proposta
 
 O presente estudo teve como objetivo avaliar o funcionamento biogeoquímico do solo em sistemas contrastantes de uso da terra, com ênfase na dinâmica funcional dos elementos nitrogênio (N) e fósforo (P), integrando suas formas lábeis e húmicas aos estoques totais. Para isso, foram adotadas duas abordagens complementares: a modelagem por equações estruturais com mínimos quadrados parciais (PLS-SEM) e um sistema de inferência fuzzy do tipo Mamdani, destinado à construção de um Índice Fuzzy de Sustentação Nutricional Fuzzy (FSNSI). Nesse modelo, a densidade do solo (Ds) foi incorporada como variável penalizadora, assumindo que valores mais elevados de densidade refletem condições físicas menos favoráveis à conservação da estrutura do solo e à atividade biológica. Para tal, os dados de Ds foram normalizados de forma invertida, de modo que maiores densidades recebessem notas mais baixas na escala fuzzy, amplificando o impacto negativo dessa condição sobre o valor final do índice.
 

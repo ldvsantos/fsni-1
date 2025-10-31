@@ -1,20 +1,32 @@
 project:
   type: book
-  output-dir: _book
+  output-dir: docs
 
 book:
-  title: "Avaliação da Funcionalidade do Solo em Sistemas de Manejo Agrícola Usando Lógica Fuzzy"
-  #subtitle: "Uma abordagem reproduzível com Quarto e R"
+  title: "Avaliação da Funcionalidade do Solo"
+  subtitle: "Sistemas de Manejo Agrícola Usando Lógica Fuzzy"
   author: "Diego et al."
   date: today
+  favicon: cover.png
+  cover-image: cover.png
+  downloads: pdf
+  reader-mode: true
+  sidebar:
+    align: left
+    collapse-level: 1
   
   chapters:
     - index.qmd
-    - chapters/01-introduction.qmd
-    - chapters/03-methodology.qmd
-    - chapters/04-results.qmd
-    - chapters/05-discussion.qmd
-    - chapters/06-conclusion.qmd
+    - text: "Introdução"
+      file: chapters/01-introduction.qmd
+    - text: "Metodologia"
+      file: chapters/03-methodology.qmd
+    - text: "Resultados e Discussão"
+      file: chapters/04-results.qmd
+    #- text: "Discussão"
+    #  file: chapters/05-discussion.qmd
+    - text: "Conclusão"
+      file: chapters/06-conclusion.qmd
     - references.qmd
 
 execute:
@@ -22,13 +34,17 @@ execute:
 
 format:
   html:
-    theme: cosmo
+    title-block-style: none
+    theme:
+      light: flatly
+      dark: darkly
     toc: true
     toc-depth: 3
     number-sections: true
     code-fold: false
     code-overflow: wrap
-    highlight-style: github
+    link-external-newwindow: true
+    html-math-method: mathjax
     
   pdf:
     documentclass: article
