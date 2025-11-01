@@ -63,10 +63,36 @@ def gerar_docx(md_file, output_file, bib_file, csl_file, apendices_file=None):
         "--csl", str(csl_file),
     ])
     
-    # Adicionar modelo de formatação se existir
-    modelo = md_file.parent / "modelo_formatacao.docx"
-    if modelo.exists():
-        cmd.extend(["--reference-doc", str(modelo)])
+    # Prefer 'template.docx' in the manuscript folder as reference document.
+    # Fallback to parent folder's template and then to legacy 'modelo_formatacao.docx'.
+    modelo_candidates = [
+        md_file.parent / "template.docx",
+        md_file.parent.parent / "template.docx",
+        md_file.parent / "modelo_formatacao.docx",
+    ]
+    modelo = None
+    for m in modelo_candidates:
+        try:
+            if m.exists():
+                modelo = m
+                break
+        except Exception:
+            # ignore problematic paths and continue
+            continue
+
+    if modelo:
+        try:
+            # sanity check: ensure the template can be opened (avoid Pandoc permission errors)
+            with open(modelo, "rb"):
+                pass
+            print(f"📐 Using reference document: {modelo}")
+            cmd.extend(["--reference-doc", str(modelo)])
+        except PermissionError:
+            print(f"⚠️ Permission denied reading reference document: {modelo}")
+            print("   Close the file if it's open in Word/OneDrive or adjust file permissions, or remove the template.")
+        except Exception as e:
+            print(f"⚠️ Could not access reference document {modelo}: {e}")
+            print("   Continuing without custom reference document.")
     
     cmd.extend(["-o", str(output_file)])
     
