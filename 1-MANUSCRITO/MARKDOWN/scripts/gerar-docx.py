@@ -110,20 +110,16 @@ def gerar_docx(md_file, output_file, bib_file, csl_file, apendices_file=None):
 def main():
     # Definir o diretório base onde estão os arquivos
     script_dir = Path(__file__).parent
-    base_dir = script_dir
+    base_dir = script_dir.parent  # Diretório pai: 1-MANUSCRITO/MARKDOWN
     os.chdir(base_dir)
     
     print("=" * 70)
     print("📚 GERADOR DE ARTIGOS WORD - PORTUGUÊS E INGLÊS")
     print("=" * 70)
     
-    # Arquivos comuns - procurar no script_dir ou parent
-    bib_file = base_dir / "referencias_artigo.bib"
-    if not bib_file.exists():
-        bib_file = base_dir.parent / "referencias_artigo.bib"
+    # Arquivos comuns - agora base_dir já é 1-MANUSCRITO/MARKDOWN
+    bib_file = base_dir / "references.bib"
     csl_file = base_dir / "apa.csl"
-    if not csl_file.exists():
-        csl_file = base_dir.parent / "apa.csl"
     # apendices_pt = base_dir / "apendices.md"  # Comentado: artigo ainda não possui apêndices
     
     # Verificar arquivos necessários
@@ -144,10 +140,6 @@ def main():
     # 1. GERAR ARTIGO EM PORTUGUÊS
     # ========================================================================
     md_pt = base_dir / "artigo.md"
-    if not md_pt.exists():
-        md_pt = base_dir.parent / "artigo.md"
-    if not md_pt.exists():
-        md_pt = base_dir / "scripts" / "artigo.md"
     docx_pt = base_dir / "artigo.docx"
     
     if not md_pt.exists():
@@ -162,12 +154,8 @@ def main():
     # 2. GERAR ARTIGO EM INGLÊS
     # ========================================================================
     md_en = base_dir / "artigo_ENGLISH.md"
-    if not md_en.exists():
-        md_en = base_dir.parent / "artigo_ENGLISH.md"
-    if not md_en.exists():
-        md_en = base_dir / "scripts" / "artigo_ENGLISH.md"
     docx_en = base_dir / "artigo_ENGLISH.docx"
-    apendices_en = base_dir / "apendices_ENGLISH.md" if (base_dir / "apendices_ENGLISH.md").exists() else (base_dir.parent / "apendices_ENGLISH.md" if (base_dir.parent / "apendices_ENGLISH.md").exists() else (base_dir / "scripts" / "apendices_ENGLISH.md" if (base_dir / "scripts" / "apendices_ENGLISH.md").exists() else None))
+    apendices_en = base_dir / "apendices_ENGLISH.md" if (base_dir / "apendices_ENGLISH.md").exists() else None
     
     if not md_en.exists():
         print(f"\n⚠️  Arquivo {md_en} não encontrado, pulando...")

@@ -17,24 +17,26 @@ Figura 2. Áreas estudadas. Fotomontagem das áreas: (a) Cerrado Stricto Sensu (
 
 | (a) | (b) | (c) |
 |:--------------:|:--------------:|:--------------:|
-| ![](../figures/cerrado.jpg){ width=35% } | ![](../figures/eucalipto.jpg){ width=35% } | ![](../figures/mogno.jpg){ width=35% } |
+| ![](../figures/cerrado.jpg){ width=100% } | ![](../figures/eucalipto.jpg){ width=100% } | ![](../figures/mogno.jpg){ width=100% } |
 | (d) | (e) |  |
-| ![](../figures/teca.jpg){ width=35% } | ![](../figures/agricultura.jpg){ width=35% } |  |
-
+| ![](../figures/teca.jpg){ width=100% } | ![](../figures/agricultura.jpg){ width=100% } |  |
 
 Um inventario foi realizado e calculado os parâmetros fitossociológicos: Densidade Relativa - DR, Dominância Relativa - DMR, Frequência Relativa – FR e Índice de Valor de Importância - IVI [@queiroz2017] (Apêndice A).
 
 O plantio de eucalipto (*Eucalyptus* sp.) possui área total de 2,29 ha com cinco anos de idade, localizado nas coordenadas de 11°54’32’’S, 48°12’22’’W (Figura 2b). Em relação a densidade do plantio, foi de aproximadamente 1667 mudas/ha em um espaçamento de 3 x 2 m, em covas que possuem dimensões de 0,40 x 0,40 x 0,40 m, abertas manualmente com auxílio de cavadeiras, seguido de aplicação de adubo NPK, na formulação 5-25-15, com intuito de estimular o desenvolvimento vegetal, para melhor acondicionamento das mudas ao solo [@verai2022].
+
 No início do plantio foi realizado adubação de base com 20 kg de Ca2+, 0,8 kg de Zn2+, 12 kg de S (SO42-), 1,6 kg de Cu2+ e 1,6 kg de B (H3BO3). A limpeza da área, para remoção de vegetação nativa, foi realizada com o auxílio de lâmina frontal acoplada ao trator de esteira, sucedido por aragem e gradagem, permitindo maior interação de oxigênio ao solo, o que viabiliza melhorias nos processos químicos e biológicos [@almeida2024]. No que tange ao processo de alinhamento e esquadrejamento das mudas, optou-se pela utilização do método do Triangulo Reto (3/4/5) com auxílio de baliza e trena [@verai2022].
-Já o plantio de Mogno Africano (*Khaya ivorensis*) possui uma área total de 1,94 ha, com sete anos de idade, localizado nas coordenadas 11°54'29''S, 48°12'10''W (Figura 2c). O plantio foi realizado em covas com dimensões de 0,40 x 0,40 x 0,40 m, e espaçamentos de 3 x 3 m com densidade de 1111 mudas/ha, e durante o plantio foi adicionado em cada cova 0,2 kg de adubo NPK com formulação 00-10-10, e 5 kg de esterco bovino curtido, sendo aplicados durante o primeiro ano de vida a cada três meses, além disto foi realizado o desbaste, quando as copas começaram a se encontrem, deixando o espaçamento final de 6 x 6 metros [@silva2023]. Assim como na área de Eucalipto a limpeza da área, foi realizada com o auxílio de lâmina frontal acoplada ao trator de esteira, sucedido por serviços de aragem e gradagem [@camposmontanari2024].
-O Plantio de Teca (*Tectona grandis*) possui uma área total de 1,12 ha, com dez anos de idade, localizado nas coordenadas 11°54’22’’S e 48°12’17’’W (Figura 2d). A limpeza da área antes do plantio, foi realizada com o auxílio de lâmina frontal acoplada ao trator de esteira, sucedido por serviços de aragem e gradagem [@camposmontanari2024]. Durante o primeiro ano, foram realizadas duas adubações de cobertura, onde a primeira foi executada aos 60 dias e a outra no oitavo mês, com aplicação de 95 g cova-1 de NPK com formulação de 20-05-20.
+
+Já o plantio de Mogno Africano (**Khaya ivorensis**) possui uma área total de 1,94 ha, com sete anos de idade, localizado nas coordenadas 11°54'29''S, 48°12'10''W (Figura 2c). O plantio foi realizado em covas com dimensões de 0,40 x 0,40 x 0,40 m, e espaçamentos de 3 x 3 m com densidade de 1111 mudas/ha, e durante o plantio foi adicionado em cada cova 0,2 kg de adubo NPK com formulação 00-10-10, e 5 kg de esterco bovino curtido, sendo aplicados durante o primeiro ano de vida a cada três meses, além disto foi realizado o desbaste, quando as copas começaram a se encontrem, deixando o espaçamento final de 6 x 6 metros [@silva2023]. Assim como na área de Eucalipto a limpeza da área, foi realizada com o auxílio de lâmina frontal acoplada ao trator de esteira, sucedido por serviços de aragem e gradagem [@camposmontanari2024].
+
+O Plantio de Teca (**Tectona grandis**) possui uma área total de 1,12 ha, com dez anos de idade, localizado nas coordenadas 11°54’22’’S e 48°12’17’’W (Figura 2d). A limpeza da área antes do plantio, foi realizada com o auxílio de lâmina frontal acoplada ao trator de esteira, sucedido por serviços de aragem e gradagem [@camposmontanari2024]. Durante o primeiro ano, foram realizadas duas adubações de cobertura, onde a primeira foi executada aos 60 dias e a outra no oitavo mês, com aplicação de 95 g cova-1 de NPK com formulação de 20-05-20.
 
 O plantio foi realizado manualmente em espaçamento de 3 x 2 m, nas dimensões de 0,40 x 0,40 m, com 1.667 mudas/hectare, a qual, foram instaladas individualmente com seu colo ao nível do solo. Foi realizado também o replantio das mudas que falharam, além da limpeza no primeiro ano, uma vez que, a teca é particularmente sensível à competição de gramíneas, sendo assim, necessário manter o terreno bem carpido; no segundo ano, o sombreamento proporcionado pela teca evitou boa parte do desenvolvimento de ervas daninhas, reduzindo a necessidade de capinas e roçadas e no terceiro ano, não foram mais necessários tratos culturais [@moreira2021].
 
 Além disso, foram realizadas atividades de podas e desbrotas com auxílio de serrotes, com observações constantes quanto à dimensão dos galhos. 
 Por fim a área de agricultura possui 3,06 ha, possui mais de 10 anos, localizada nas coordenadas de 11°54’44’’S e 48°12’02’’W (Figura 2e). A área destinada a agricultura possui mais de 10 anos, sendo rotacionado entre o cultivo de milho e soja. No momento da coleta, a área estava sendo utilizada para plantio de soja que se estende entre os meses de junho e setembro. Foram empregadas atividades de gradagem e nivelamento do solo, com posterior aplicação de 300 kg ha-1 de NPK na formulação 4-28-10, com espaçamento entre os indivíduos de 0,5 m, tratados durante todo o plantio com fungicidas tiofanto-metílico e azoxistrobina, e inseticidas, na dosagem de 100 g para cada 50 kg de sementes, além da remoção de ervas daninhas [@machado2024].
-Já o cultivo do milho, estende-se entre os meses janeiro a março, em virtude das condições favoráveis promovidas pela precipitação. O preparo do solo ocorreu através de gradagem e sulcamento, com espaçamento médio, entre os indivíduos, de 0,2 x 0,8 m e adubação de 400 kg de 4-14-18 por ha-1, no interior do sulco de semeadura, e 50, 100 e 150 kg de N por ha-1, sobre a superfície do solo, aliado aos procedimentos relacionados ao combate de daninhas, por meio de capina manual e emprego de herbicidas, quando necessário [@eckardt2021].
 
+Já o cultivo do milho, estende-se entre os meses janeiro a março, em virtude das condições favoráveis promovidas pela precipitação. O preparo do solo ocorreu através de gradagem e sulcamento, com espaçamento médio, entre os indivíduos, de 0,2 x 0,8 m e adubação de 400 kg de 4-14-18 por ha-1, no interior do sulco de semeadura, e 50, 100 e 150 kg de N por ha-1, sobre a superfície do solo, aliado aos procedimentos relacionados ao combate de daninhas, por meio de capina manual e emprego de herbicidas, quando necessário [@eckardt2021].
 
 ## Amostragem de solo
 
@@ -65,12 +67,14 @@ Para extrair as substâncias húmicas, as amostras de solo passaram por um proce
 #### Determinação dos estoques de fósforo
 
 A partir das concentrações de P obtidas no solo e em cada uma das frações húmicas, foi possível determinar os estoques no solo e frações húmicas, expresso em microgramas por hectare (Mg ha⁻¹), para cada profundidade amostrada, conforme equação a seguir:
-	EstP = TP x Ds x e
+
+$$\text{EstP} = \text{TP} \times \text{Ds} \times e$$
+
 Em que:
-EstP = Estoque de P na camada do solo, em Mg ha-1;
-TP = Teor de P na fração amostrada de solo, em g kg-1;
-Ds = Densidade do solo, em g cm-3;
-e = espessura da camada, em cm.
+- EstP = Estoque de P na camada do solo, em Mg ha⁻¹;
+- TP = Teor de P na fração amostrada de solo, em g kg⁻¹;
+- Ds = Densidade do solo, em g cm⁻³;
+- e = espessura da camada, em cm.
 
 Após o cálculo do estoque de P em cada camada, foi realizada a correção do estoque de P. Por fim, o estoque total de P no solo e nas substâncias húmicas na profundidade de 0 a 50 cm foi resultante da soma dos valores obtidos em cada camada amostrada.
 
@@ -84,19 +88,19 @@ Para extração das substâncias húmicas, as amostras de solo foram submetidas 
 O material sobrenadante, referente às frações AF e AH, foi centrifugado por 10 minutos a 10.000 rpm, sendo depois acidificado pela adição de 50 mL de HCl 6 mol L-1 até atingir o valor de pH entre 1 e 2 e agitado manualmente por dois minutos. Após este procedimento, a solução foi deixada em repouso por 12 horas. Por fim, após separação por desvio do sobrenadante, referente ao extrato II de AF, obteve-se o material precipitado que está relacionada à fração de AH. Posteriormente ao fracionamento das substâncias húmicas, as amostras foram congeladas e liofilizadas para determinação dos teores de nitrogênio em cada fração húmica (AF, AH e Hum), a partir do método de combustão a seco, utilizando um analisador elementar (Modelo PE-2400 Série II Perkin Elmer).
 
 2.3.5 Determinação dos estoques de Nitrogênio
-Após a obter os teores de N pelos métodos citados anteriormente, foi realizada a determinação do estoque N no solo e nas frações húmicas em Mg ha-1, em cada profundidade amostrada, conforme a equação (Equação 2) a seguir:
+Após a obter os teores de N pelos métodos citados anteriormente, foi realizada a determinação do estoque N no solo e nas frações húmicas em Mg ha⁻¹, em cada profundidade amostrada, conforme a equação (Equação 2) a seguir:
 
-Est(N)= TN*Ds*e
+$$\text{Est(N)} = \text{TN} \times \text{Ds} \times e$$
 
-Em que: Est(N) = Estoque de N na camada do solo, em Mg ha-1; TN = Teor de N na fração amostrada de solo, em g kg-1; Ds = Densidade do solo, em g cm-3; e = espessura da camada, em cm.
+Em que: 
+- Est(N) = Estoque de N na camada do solo, em Mg ha⁻¹; 
+- TN = Teor de N na fração amostrada de solo, em g kg⁻¹; 
+- Ds = Densidade do solo, em g cm⁻³; 
+- e = espessura da camada, em cm.
 Após o cálculo do estoque de N em cada camada, foi realizada a correção do estoque de N, levando em consideração as diferenças na massa do solo [@sisti2004]. Sendo assim, o estoque total de N no solo e nas substâncias húmicas na profundidade de 0 a 50 cm, sendo a última considerada a camada de impedimento foi resultante da soma dos valores obtidos em cada camada amostrada.
 
-
-### Determinação dos estoques de Nitrogênio
-
-Após a obter os teores de N pelos métodos citados anteriormente, foi realizada a determinação do estoque N no solo e nas frações húmicas em Mg ha-1, em cada profundidade amostrada, conforme a equação a seguir:
-
 Est(N)= TN*Ds*e
+
 Em que:
 Est(N) = Estoque de N na camada do solo, em Mg ha-1;
 TN = Teor de N na fração amostrada de solo, em g kg-1;
@@ -115,35 +119,40 @@ Para identificar as variáveis preditoras mais relevantes e compreender a relaç
 
 Dois modelos PLSR independentes foram ajustados: um primeiro modelo para predição do nitrogênio total (NT), utilizando como preditoras as variáveis NLabil, NMOL, NTAF, NTAH, NTHum, EstNT, EstNLabil, EstNMOL, EstNAF, EstNAH e EstNTHum; e um segundo modelo para predição do fósforo total (PT), com as preditoras PLabil, PMOL, PTAF, PTAH, PTHum, EstPT, EstPLabil, EstPMOL, EstPAF, EstPAH e EstPTHum. Ambos os modelos foram estimados com duas componentes latentes (LV1 e LV2), utilizando validação cruzada leave-one-out (LOO) para avaliação da capacidade preditiva.
 
-A análise foi conduzida no ambiente R (R Core Team, 2023), utilizando o pacote `pls` (Mevik & Wehrens, 2007). A variância explicada acumulada foi calculada tanto para a matriz de preditores (R²X) quanto para a variável resposta (R²Y). Os loadings das variáveis foram normalizados e representados em biplots de correlação, permitindo visualizar a estrutura de covariância entre as frações de N e P e os estoques totais.
+A análise foi conduzida no ambiente R [@Team2019], utilizando o pacote `pls` [@Mevik2007]. A variância explicada acumulada foi calculada tanto para a matriz de preditores (R²X) quanto para a variável resposta (R²Y). Os loadings das variáveis foram normalizados e representados em biplots de correlação, permitindo visualizar a estrutura de covariância entre as frações de N e P e os estoques totais.
 
 Adicionalmente, foram calculados os escores de importância das variáveis na projeção (Variable Importance in Projection - VIP), conforme o critério de Wold, para identificar quais frações contribuem mais significativamente para a predição dos estoques totais. Variáveis com VIP > 1.0 foram consideradas altamente relevantes, enquanto VIP < 0.8 indicaram contribuição marginal ao modelo.
 
 ## Modelagem Proposta
 
-O presente estudo teve como objetivo avaliar o funcionamento biogeoquímico do solo em sistemas contrastantes de uso da terra, com ênfase na dinâmica funcional dos elementos nitrogênio (N) e fósforo (P), integrando suas formas lábeis e húmicas aos estoques totais. Para isso, foram adotadas duas abordagens complementares: a modelagem por equações estruturais com mínimos quadrados parciais (PLS-SEM) e um sistema de inferência fuzzy do tipo Mamdani, destinado à construção de um Índice Fuzzy de Sustentação Nutricional Fuzzy (FSNSI). Nesse modelo, a densidade do solo (Ds) foi incorporada como variável penalizadora, assumindo que valores mais elevados de densidade refletem condições físicas menos favoráveis à conservação da estrutura do solo e à atividade biológica. Para tal, os dados de Ds foram normalizados de forma invertida, de modo que maiores densidades recebessem notas mais baixas na escala fuzzy, amplificando o impacto negativo dessa condição sobre o valor final do índice.
+O funcionamento biogeoquímico do solo, com ênfase na dinâmica funcional dos elementos nitrogênio (N) e fósforo (P) e na integração de suas formas lábeis e húmicas aos estoques totais, foi avaliado por meio de uma abordagem metodológica dupla. Inicialmente, a Modelagem por Equações Estruturais com Mínimos Quadrados Parciais (PLS-SEM) foi empregada para explicitar as relações causais entre os construtos latentes (frações lábeis e húmicas de N e P) e os estoques totais de nutrientes, fornecendo uma visão estrutural da dinâmica edáfica.
 
-Adicionalmente, as frações granulométricas do solo (areia, silte e argila) foram introduzidas no processo analítico como covariáveis de controle, com o objetivo de mitigar o viés potencial decorrente de diferenças texturais naturais entre os ambientes avaliados. Embora essas variáveis não tenham sido incorporadas diretamente ao sistema fuzzy como entradas decisórias, sua normalização e análise paralela permitiram contextualizar as respostas funcionais observadas, assegurando que os efeitos inferidos para Ds, N total e P total refletissem predominantemente condições associadas ao uso e manejo do solo, e não à sua classe textural de origem.
+Em paralelo, foi desenvolvido o Índice Fuzzy de Sustentação Nutricional (FSNSI), baseado em um sistema de inferência fuzzy do tipo Mamdani, com o objetivo de sintetizar o desempenho funcional do solo em um índice único. As variáveis de entrada decisórias para o FSNSI foram os estoques totais de N e P, e a Densidade do Solo (Ds), esta última incorporada como variável penalizadora do índice. A Ds foi tratada com normalização invertida na escala fuzzy [0-10], assumindo que valores mais elevados refletem condições físicas menos favoráveis e, portanto, amplificam o impacto negativo dessa limitação no valor final do FSNSI. O sistema fuzzy foi estruturado com a normalização conservadora das variáveis de entrada, a definição de funções de pertinência triangulares e regras linguísticas baseadas em conhecimento especializado, e a defuzzificação dos valores por meio do método do centróide.
 
-O índice FSNSI foi estruturado com base em um sistema fuzzy do tipo Mamdani, composto por três componentes formais principais: a normalização conservadora das variáveis de entrada para escala [0.10], com inversão aplicada à densidade do solo dada sua relação inversa com qualidade física; a definição de funções de pertinência triangulares e regras linguísticas baseadas em conhecimento especializado; e a defuzzificação dos valores por meio do método do centróide, resultando em um valor contínuo de desempenho funcional do solo.
-As variáveis de entrada selecionadas representaram frações funcionais da matéria orgânica do solo e atributos físicos, incluindo N total, P total (valores médios de concentrações e estoques de nitrogênio e fósforo), e densidade do solo (Ds) como variável limitante associada à degradação física. Adicionalmente, os teores de areia, silte e argila foram considerados covariáveis de controle. Todas as variáveis foram derivadas de um conjunto mais amplo de atributos edáficos medidos em áreas com diferentes históricos de uso e cobertura da terra.
+Adicionalmente, as frações granulométricas do solo (areia, silte e argila) foram introduzidas no processo analítico como covariáveis de controle. Embora não tenham sido entradas diretas no sistema fuzzy, sua análise paralela permitiu mitigar o viés potencial decorrente de diferenças texturais naturais entre os ambientes avaliados, assegurando que as respostas funcionais observadas fossem predominantemente atribuídas ao uso e manejo do solo, e não à sua classe textural de origem
+
 
 #### Normalização das variáveis
 
 Para garantir a comparabilidade entre variáveis de diferentes escalas e ordens de grandeza, os dados foram normalizados em uma escala comum de 0 a 10. Para padronizar as variáveis em uma escala comum entre 0 e 10, adotaram-se dois modelos de normalização linear conservadora (Equação 1).
-x_norm=10*  (x- x_min)/(x_max- x_min )  ,com x ∈ [ x_min- x_max]
-Em que,
-x: valor original da variável
-xmin é o menor valor observado da variável x,
-xmax é o maior valor observado da variável x e
-xnorm sendo o valor normalizado na escala de 0 a 10
+
+**Equação 1 (Normalização direta):**
+$$x_{\text{norm}} = 10 \times \frac{x - x_{\min}}{x_{\max} - x_{\min}}, \quad \text{com } x \in [x_{\min}, x_{\max}]$$
+
+Em que:
+- $x$: valor original da variável
+- $x_{\min}$: menor valor observado da variável $x$
+- $x_{\max}$: maior valor observado da variável $x$
+- $x_{\text{norm}}$: valor normalizado na escala de 0 a 10
 
 As variáveis com interpretação inversa (como a densidade do solo, cuja elevação está associada a menor qualidade estrutural), foi aplicada uma normalização invertida (Equação 2), atribuindo notas mais altas a valores menores:
 
-x_norm=10*  (x_max- x)/(x_max- x_min )  ,com x ∈ [ x_min- x_max]
-Que,
-Quando x = xmin, então xnorm =10 → melhor valor.
-Quando x = xmax, então xnorm =0 → pior valor.
+**Equação 2 (Normalização invertida):**
+$$x_{\text{norm}} = 10 \times \frac{x_{\max} - x}{x_{\max} - x_{\min}}, \quad \text{com } x \in [x_{\min}, x_{\max}]$$
+
+Onde:
+- Quando $x = x_{\min}$, então $x_{\text{norm}} = 10$ → melhor valor
+- Quando $x = x_{\max}$, então $x_{\text{norm}} = 0$ → pior valor
 
 Em ambos os casos, valores não finitos ou constantes foram tratados com imputações neutras (nota 5), assegurando robustez numérica.
 
@@ -152,11 +161,14 @@ Em ambos os casos, valores não finitos ou constantes foram tratados com imputa�
 O sistema de inferência fuzzy foi implementado no ambiente R por meio do pacote FuzzyR, adotando-se a lógica do tipo Mamdani para construção do Índice de Sustentação Nutricional Fuzzy (FSNSI). Foram utilizados três variáveis de entrada: nitrogênio total normalizado (N_total), fósforo total normalizado (P total) e densidade do solo normalizada e invertida (Ds). A variável de saída FSNSI, foi modelada com três termos linguísticos qualitativos: baixa, média e alta, todos definidos no intervalo contínuo de 0 a 10.
 As funções de pertinência seguem a forma geral de triângulos simétricos ou assimétricos, conforme Equação 3 para termo Baixo, Equação 4 termo Médio e Equação 5 para o termo Alto.
 
-μbaixa (x)=max⁡(min((x-a)/(b-a),(c-x)/(c-b)),0),com(a,b,c)=(0,0,4)
+**Equação 3 (Termo Baixo):**
+$$\mu_{\text{baixa}}(x) = \max\left(\min\left(\frac{x-a}{b-a}, \frac{c-x}{c-b}\right), 0\right), \quad \text{com } (a,b,c) = (0,0,4)$$
 
-μmmédia (x)=max⁡(min((x-a)/(b-a),(c-x)/(c-b)),0),com(a,b,c)=(3,5,7)
+**Equação 4 (Termo Médio):**
+$$\mu_{\text{média}}(x) = \max\left(\min\left(\frac{x-a}{b-a}, \frac{c-x}{c-b}\right), 0\right), \quad \text{com } (a,b,c) = (3,5,7)$$
 
-μmalta (x)=max⁡(min((x-a)/(b-a),(c-x)/(c-b)),0),com(a,b,c)=(6,10,10)
+**Equação 5 (Termo Alto):**
+$$\mu_{\text{alta}}(x) = \max\left(\min\left(\frac{x-a}{b-a}, \frac{c-x}{c-b}\right), 0\right), \quad \text{com } (a,b,c) = (6,10,10)$$
 
 O domínio da função triangular foi ajustado de forma a garantir sobreposição entre os termos, permitindo inferências contínuas e suavizadas.
 
@@ -164,18 +176,19 @@ O domínio da função triangular foi ajustado de forma a garantir sobreposiçã
 
 A base de conhecimento foi composta por sete regras linguísticas do tipo "SE–ENTÃO", baseadas na combinação dos termos linguísticos das variáveis de entrada. A estrutura das regras segue a forma genérica (Equação 6):
 
-R_(i ):SE x_1  ∈ A_1  ∧ x_2  ∈ A_2  ∧ x_3  ∈ A_3⇒y ∈ B_i
+$$R_{(i)}: \text{SE } x_1 \in A_1 \land x_2 \in A_2 \land x_3 \in A_3 \Rightarrow y \in B_i$$
 
-A ativação de cada regra R_(i ) foi calculada conforme a Equação 7:
+A ativação de cada regra $R_{(i)}$ foi calculada conforme a Equação 7:
 
 $$\alpha_i = \min(\mu_{A1}(x_1), \mu_{A2}(x_2), \dots, \mu_{An}(x_n))$$
 
-O valor de saída correspondente μ_Bi (z) foi ponderado por αi  e os conjuntos ativados foram agregados via operador do tipo MAX.
+O valor de saída correspondente $\mu_{B_i}(z)$ foi ponderado por $\alpha_i$ e os conjuntos ativados foram agregados via operador do tipo MAX.
 Para incorporar o papel da densidade do solo como penalidade funcional, os pesos wi atribuídos a cada regra foram ajustados dinamicamente em função da classificação linguística de Ds. Regras com densidade alta (categoria linguística "baixa" na escala invertida) receberam pesos reduzidos (entre 0.4 e 0.6), enquanto regras com densidade baixa (categoria "alta") foram atribuídas com pesos maiores (até 1.5). Esse ajuste visa reforçar a influência da qualidade física do solo na determinação da funcionalidade.
 
-#### sDefuzzificação do índice funcional
+#### Defuzzificação do índice funcional
 
 O valor final do índice FSNSI foi obtido por meio do processo de defuzzificação por centróide, conforme Equação 8:
-FSNSI=  (∫_0^10〖μFSNSI (z)*zdz〗)/(∫_0^10〖μFSNSI (z)*dz〗)
+
+$$\text{FSNSI} = \frac{\int_0^{10} \mu_{\text{FSNSI}}(z) \cdot z \, dz}{\int_0^{10} \mu_{\text{FSNSI}}(z) \, dz}$$
 
 Em que μFSNSI(z) representa a função de pertinência agregada resultante da combinação de todas as regras ativadas para um determinado conjunto de entradas, e (z) é o domínio contínuo da variável de saída. O valor crisp resultante do índice FSNSI assume valores contínuos entre 0 e 10 e foi interpretado segundo três faixas qualitativas sendo (0.0 a 3.3) funcionalidade baixa; (3.4 a 6.6) funcionalidade intermediária e (6.7 a 10.0) funcionalidade alta.

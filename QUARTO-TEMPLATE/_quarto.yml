@@ -16,16 +16,11 @@ book:
   
   chapters:
     - index.qmd
-    - text: "Introdução"
-      file: chapters/01-introduction.qmd
-    - text: "Metodologia"
-      file: chapters/03-methodology.qmd
-    - text: "Resultados e Discussão"
-      file: chapters/04-results.qmd
-    #- text: "Discussão"
-    #  file: chapters/05-discussion.qmd
-    - text: "Conclusão"
-      file: chapters/06-conclusion.qmd
+    - chapters/01-introduction.qmd
+    - chapters/03-methodology.qmd
+    - chapters/04-results.qmd
+    #- chapters/05-discussion.qmd
+    - chapters/06-conclusion.qmd
     - references.qmd
 
 execute:
