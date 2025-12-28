@@ -94,7 +94,7 @@ The research was conducted in the municipality of São Valério in Tocantins, wi
 
 ## 2.2 Characteristics of the study areas
 
-The preserved Cerrado (sensu stricto) area (Figure 2a), considered as a control area, covers 44.82 ha and is over 40 years old, located at coordinates 11°54’57’’S and 48°11’59’’W. The vegetation exhibits a typical physiognomy of dense Cerrado, with trees ranging from 5 to 8 meters in height, since the Cerrado in its restricted sense comprises exclusively savanna formations. Despite this, within the savanna domain, there is considerable structural variation in the vegetation, with physiognomies ranging from sparse to dense Cerrado [@Lacerda2025]. A vegetation survey was conducted to calculate phytosociological parameters: Relative Density (RD), Relative Dominance (RDM), Relative Frequency (RF), and Importance Value Index (IVI) [@Queiroz2017] (Appendix 1).
+The preserved Cerrado (sensu stricto) area (Figure 2a), considered as a control area, covers 44.82 ha and is over 40 years old, located at coordinates 11°54’57’’S and 48°11’59’’W. The vegetation exhibits a typical physiognomy of dense Cerrado, with trees ranging from 5 to 8 meters in height, since the Cerrado in its restricted sense comprises exclusively savanna formations. Despite this, within the savanna domain, there is considerable structural variation in the vegetation, with physiognomies ranging from sparse to dense Cerrado [@Lacerda2025]. A vegetation survey was conducted to calculate phytosociological parameters: Relative Density (RD), Relative Dominance (RDM), Relative Frequency (RF), and Importance Value Index (IVI) [@Queiroz2017].
 
 ![Figure 2 — Studied areas. Photomontage of the areas: (a) Cerrado sensu stricto (preserved native vegetation); (b) eucalyptus (Eucalyptus sp.); (c) african mahogany (Khaya ivorensis); (d) teak (Tectona grandis); (e) agriculture (soybean/corn in rotation).](../../2-FIGURAS/cerrado.jpg){#fig:2a width=30%} ![Eucalyptus](../../2-FIGURAS/eucalipto.jpg){#fig:2b width=30%} ![African Mahogany](../../2-FIGURAS/mogno.jpg){#fig:2c width=30%} ![Teak](../../2-FIGURAS/teca.jpg){#fig:2d width=30%} ![Agriculture](../../2-FIGURAS/agricultura.jpg){#fig:2e width=30%}
 
@@ -112,11 +112,7 @@ Finally, the agricultural area covers 3.06 ha, is more than 10 years old, and is
 
 The plants were treated throughout the planting period with thiophanate-methyl and azoxystrobin fungicides, and insecticides, at a dosage of 100 g per 50 kg of seeds, in addition to weed removal [@Machado2024]. Corn cultivation, on the other hand, extends from January to March, due to the favorable conditions promoted by rainfall. Soil preparation was carried out through harrowing and furrowing, with an average spacing between plants of 0.2 x 0.8 m and fertilization with 400 kg of 4-14-18 per ha⁻¹, inside the sowing furrow, and 50, 100 and 150 kg of N per ha⁻¹, on the soil surface, combined with procedures related to weed control, through manual weeding and the use of herbicides when necessary [@Camargo2024].
 
-## 2.3 Soil sampling
-
-Five trenches in each studied area, with dimensions of 70 × 70 × 100 cm (Figure 3) at different points [@MarinhoJunior2021], were opened manually, totaling twenty-five trenches. Soil samples, both disturbed and undisturbed, were collected for physical and chemical analyses at depths of 0-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-80, and 80-100 cm. The disturbed soil samples were then air-dried and sieved through a 2 mm sieve for subsequent analyses.
-
-![Figure 3 – Soil collection in an area of native vegetation (Cerrado sensu stricto).](../../2-FIGURAS/trincheira.png){#fig:3 width=70%}
+Five trenches in each studied area, with dimensions of 70 × 70 × 100 cm at different points [@MarinhoJunior2021], were opened manually, totaling twenty-five trenches. Soil samples, both disturbed and undisturbed, were collected for physical and chemical analyses at depths of 0-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-80, and 80-100 cm. The disturbed soil samples were then air-dried and sieved through a 2 mm sieve for subsequent analyses.
 
 ## 2.4 Physical and Chemical Analyses
 
@@ -170,13 +166,13 @@ Structural relationships were modeled using Partial Least Squares Regression (PL
 
 ## 3.1 Dynamics of Nitrogen and Phosphorus Fractions
 
-The analysis of nitrogen and phosphorus fractions revealed that the stability of these nutrients in tropical soils is fundamentally regulated by humification processes. As evidenced in the PLSR models (Figures 4 and 5), the humic fractions (Humic N and Humic P) emerged as the primary drivers of total stocks, surpassing the predictive contribution of labile fractions. This pattern corroborates the "mineral-associated organic matter" framework proposed by @Lavallee2020, where the association of organic compounds with silt and clay minerals provides long-term protection against microbial degradation.
+The analysis of nitrogen and phosphorus fractions revealed that the stability of these nutrients in tropical soils is fundamentally regulated by humification processes. As evidenced in the PLSR models (Figures), the humic fractions (Humic N and Humic P) emerged as the primary drivers of total stocks, surpassing the predictive contribution of labile fractions. This pattern corroborates the "mineral-associated organic matter" framework proposed by @Lavallee2020, where the association of organic compounds with silt and clay minerals provides long-term protection against microbial degradation.
 
-![Figure 4 – Structural correlation between total nitrogen (TN) and its humic (TNHum, TNHA and TNFA) and labile (LabileN) fractions in the PLSR model.](../../2-FIGURAS/biplot_plsr_nt.png){#fig:4 width=70%}
+![Figure 3 – Structural correlation between total nitrogen (TN) and its humic (TNHum, TNHA and TNFA) and labile (LabileN) fractions in the PLSR model.](../../2-FIGURAS/biplot_plsr_nt.png){#fig:4 width=70%}
 
 In the studied Oxisols, the predominance of humic fractions suggests that N and P are not merely adsorbed but structurally incorporated into the recalcitrant organic matrix. According to @Gerke2022, this incorporation is crucial in highly weathered soils, where the mineral phase (Fe and Al oxides) competes avidly for phosphate ions. The organic matter thus acts as a "slow-release fertilizer," buffering the system against rapid losses.
 
-![Figure 5 – Structural correlation between total phosphorus (TP) and its humic (TPHum, TPHA and TPFA) and labile (LabileP) fractions in the PLSR model.](../../2-FIGURAS/biplot_plsr_pt.png){#fig:5 width=70%}
+![Figure 4 – Structural correlation between total phosphorus (TP) and its humic (TPHum, TPHA and TPFA) and labile (LabileP) fractions in the PLSR model.](../../2-FIGURAS/biplot_plsr_pt.png){#fig:5 width=70%}
 
 The strong covariance between humic N and humic P (Figures 4 and 5) supports the hypothesis of stoichiometric coupling during SOM formation. @Cao2021 observed that microbial immobilization of N is frequently limited by C quality; here, the results suggest that in systems with high lignified input (such as Eucalyptus and Cerrado), the formation of stable organo-mineral complexes synchronizes the retention of both macronutrients. Conversely, the lower contribution of labile fractions reflects their transient nature, serving as an immediate energy source for soil biota but contributing little to long-term stock resilience [@Paul2016].
 
@@ -184,7 +180,7 @@ The strong covariance between humic N and humic P (Figures 4 and 5) supports the
 
 The structural equation modeling (Figure 6) provided a mechanistic view of these interactions. The high positive path coefficients from humic fractions to total stocks (β > 1.2) confirm that the accumulation of recalcitrant carbon is the "engine" of soil fertility in these environments. Interestingly, the negative coefficients observed for labile fractions (β ≈ -0.3) should not be interpreted as a detrimental effect, but rather as a quantitative indicator of the labile-to-humic turnover.
 
-![Figure 6 – Two-order hierarchical structural model (HCM) integrating the functional fractions of N and P.](../../2-FIGURAS/analise_caminhos_pls.png){#fig:6 width=70%}
+![Figure 5 – Two-order hierarchical structural model (HCM) integrating the functional fractions of N and P.](../../2-FIGURAS/analise_caminhos_pls.png){#fig:6 width=70%}
 
 As postulated by @Lehmann2015, the "continuum model" of soil organic matter implies that labile compounds are continuously processed and stabilized. In our model, a high stock of labile N/P that does not translate into humic N/P represents a system with arrested humification or excessive mineralization—typical of conventionally tilled agriculture. In contrast, the balanced coefficients in the Cerrado and Eucalyptus systems indicate an active flow from labile inputs to stable reserves.
 
@@ -232,7 +228,9 @@ This superior performance of Eucalyptus over the native Cerrado challenges the a
 
 Note: Boxplots with distinct visual patterns for each system. Different letters indicate significant differences according to the Tukey HSD test (p < 0.05). Points represent individual values.
 
-The native Cerrado exhibited a bimodal distribution (50% low, 40% high functionality), reflecting its intense natural vertical stratification. The high range of FSNSI values (1.56–8.57) captures the contrast between the organic-rich, porous surface layers (0–20 cm) and the chemically impoverished, naturally compacted subsurface, a typical characteristic of these Oxisols. Conventional agriculture (Exp(B) = 4.25; 95%CI: 3.68 - 4.82) showed a tendency towards vertical homogenization (CV = 60.6%), a consequence of mechanized tillage that mixes soil layers [@Leal2024]. While functionality is compromised, 22.5% of samples reached the 'high' class, likely due to surface fertilization and residual organic matter accumulation.
+The native Cerrado exhibited a bimodal distribution (50% low, 40% high functionality), reflecting its intense natural vertical stratification. The high range of FSNSI values (1.56–8.57) captures the contrast between the organic-rich, porous surface layers (0–20 cm) and the chemically impoverished, naturally compacted subsurface, a typical characteristic of these Oxisols. 
+
+Conventional agriculture (Exp(B) = 4.25; 95%CI: 3.68 - 4.82) showed a tendency towards vertical homogenization (CV = 60.6%), a consequence of mechanized tillage that mixes soil layers [@Leal2024]. While functionality is compromised, 22.5% of samples reached the 'high' class, likely due to surface fertilization and residual organic matter accumulation.
 
 Table 4 – Pearson correlation coefficients between soil variables and the FSNSI.
 
@@ -253,7 +251,7 @@ The strong positive correlations (r > 0.6) between FSNSI and both labile and hum
 
 # 4. Conclusion
 
-The methodological integration (PLSR, PLS-SEM, and fuzzy inference) allowed for the structural and functional characterization of N and P dynamics in tropical soils, revealing the heterogeneity induced by management. Humic fractions act as key predictors of nutrient availability, functioning as integrators of multiple biogeochemical processes and suggesting a fundamental geochemical coupling in Oxisols. The functional response of the soil is transversely limited by physical factors, such as density, establishing that physical degradation is not compensated by high chemical performance. 
+The methodological integration (PLSR, PLS-SEM, and fuzzy inference) allowed for the structural and functional characterization of N and P dynamics in tropical soils, revealing the heterogeneity induced by management. Humic fractions act as key predictors of nutrient availability, functioning as integrators of multiple biogeochemical processes and suggesting a fundamental geochemical coupling in Oxisols. The functional response of the soil is transversely limited by physical factors, such as density, establishing that physical degradation is not compensated by high chemical performance.
 
 The divergence in performance between systems (eucalyptus outperforming native Cerrado) questions conservationist paradigms, indicating that functionality is determined by the dynamic interaction between organic matter input, management practices, and pedological legacy. High biochemical functionality does not guarantee sustainability in intensive exploitation regimes, as evidenced by the functional reduction in systems with teak. The FSNSI proved to be a multiscale diagnostic tool, but requires local pedoclimatic adaptation and integration with biological indicators for a complete sustainability diagnosis.
 

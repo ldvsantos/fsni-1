@@ -2,7 +2,7 @@
 title: "Índice Fuzzy de Sustentabilidade Nutricional do Solo (FSNSI) para Avaliação de Impactos na Fase de Produção na Avaliação da Sustentabilidade do Ciclo de Vida"
 author: Luiz Diego Vidal Santos
 date: "24 de Dezembro de 2025"
-bibliography: referencias_artigo.bib
+bibliography: [referencias_artigo.bib, references_old.bib]
 csl: apa.csl
 lang: pt-BR
 ---
@@ -17,19 +17,19 @@ e-mail: renisson.neponuceno@ufrpe.br
 **Luiz Diego Vidal Santos**  
 Professor doutor, Departamento de Ciências Humanas e Filosofia  
 Universidade Estadual de Feira de Santana, Feira de Santana, BA, Brasil.  
-Orcid: 0000-0002-9747-1276  
+Orcid: https://orcid.org/0000-0002-9747-1276  
 e-mail: ldvsantos@uefs.br
 
 **Francisco Sandro Rodrigues Holanda**  
 Professor doutor, Departamento de Engenharia Agronômica  
 Universidade Federal de Sergipe, São Cristóvão, PE, Brasil.  
-Orcid: 0000-0001-6812-6679  
+Orcid: https://orcid.org/0000-0001-6812-6679  
 e-mail: fholanda@academico.ufs.br
 
 **Alceu Pedrotti**  
 Professor doutor, Departamento de Engenharia Agronômica  
 Universidade Federal de Sergipe, São Cristóvão, PE, Brasil.  
-Orcid: 0000-0003-3086-8399  
+Orcid: https://orcid.org/0000-0003-3086-8399  
 e-mail: alceupedrotti@gmail.com
 
 **Olavo da Costa Leite**  
@@ -46,11 +46,12 @@ e-mail: ludmillamoraislive@gmail.com
 
 **Mateus Barbosa Santos da Silva**  
 Universidade Estadual de Feira de Santana - UEFS  
-Orcid: 0000-0003-3879-307X
+Orcid: https://orcid.org/0000-0003-3879-307X
 e-mail: mbssilva@uefs.br  
 
 **Jémison Mattos dos Santos**  
-Universidade Estadual de Santa Cruz - UESC  
+Universidade Estadual de Santa Cruz - UESC
+Orcid:  https://orcid.org/0000-0002-0934-4294
 e-mail: jemisons@uesc.br
 
 ## Resumo
@@ -83,27 +84,31 @@ A pesquisa foi conduzida no município de São Valério, no Tocantins, com uma �
 
 ## 2.2 Características das áreas de estudo
 
-A área de Cerrado preservado (sensu stricto) (Figura 2a), considerada como área de controle, abrange 44,82 ha e tem mais de 40 anos, localizada nas coordenadas 11°54’57’’S e 48°11’59’’O. A vegetação exibe uma fisionomia típica de Cerrado denso, com árvores variando de 5 a 8 metros de altura, uma vez que o Cerrado em seu sentido restrito compreende exclusivamente formações savânicas. Apesar disso, dentro do domínio savânico, há considerável variação estrutural na vegetação, com fisionomias variando de Cerrado ralo a denso [@Lacerda2025]. Um levantamento da vegetação foi realizado para calcular parâmetros fitossociológicos: Densidade Relativa (DR), Dominância Relativa (DoR), Frequência Relativa (FR) e Índice de Valor de Importância (IVI) [@Queiroz2017] (Apêndice 1).
+A área de Cerrado preservado (sensu stricto) (Figura 2a), considerada como área de controle, abrange 44,82 ha e tem mais de 40 anos, localizada nas coordenadas 11°54’57’’S e 48°11’59’’O. A vegetação exibe uma fisionomia típica de Cerrado denso, com árvores variando de 5 a 8 metros de altura, uma vez que o Cerrado em seu sentido restrito compreende exclusivamente formações savânicas. Apesar disso, dentro do domínio savânico, há considerável variação estrutural na vegetação, com fisionomias variando de Cerrado ralo a denso [@Lacerda2025]. Um levantamento da vegetação foi realizado para calcular parâmetros fitossociológicos, Densidade Relativa (DR), Dominância Relativa (DoR), Frequência Relativa (FR) e Índice de Valor de Importância (IVI) [@Queiroz2017] [🔴 GAP CRÍTICO: Especificar aqui o histórico de uso anterior do Cerrado com mais de 40 anos, indicando se houve supressão e regeneração natural e como essa informação foi verificada]
 
-![Figura 2,  Áreas estudadas. Fotomontagem das áreas: (a) Cerrado sensu stricto (vegetação nativa preservada); (b) eucalipto (Eucalyptus sp.); (c) mogno africano (Khaya ivorensis); (d) teca (Tectona grandis); (e) agricultura (soja/milho em rotação).](../../2-FIGURAS/cerrado.jpg){#fig:2a width=30%} ![Eucalipto](../../2-FIGURAS/eucalipto.jpg){#fig:2b width=30%} ![Mogno Africano](../../2-FIGURAS/mogno.jpg){#fig:2c width=30%} ![Teca](../../2-FIGURAS/teca.jpg){#fig:2d width=30%} ![Agricultura](../../2-FIGURAS/agricultura.jpg){#fig:2e width=30%}
+![Figura 2, Situações de uso da terra estudadas. Fotomontagem das áreas, (a) Cerrado sensu stricto (vegetação nativa preservada), (b) eucalipto (*Eucalyptus* sp.), (c) mogno africano (*Khaya ivorensis*), (d) teca (*Tectona grandis*), (e) agricultura (soja e milho em rotação).](../../2-FIGURAS/cerrado.jpg){#fig:2a width=30%} ![ ](../../2-FIGURAS/eucalipto.jpg){#fig:2b width=30%} ![ ](../../2-FIGURAS/mogno.jpg){#fig:2c width=30%} ![ ](../../2-FIGURAS/teca.jpg){#fig:2d width=30%} ![ ](../../2-FIGURAS/agricultura.jpg){#fig:2e width=30%}
 
-O plantio de eucalipto (*Eucalyptus* sp.) cobre uma área total de 2,29 hectares e tem cinco anos, localizado nas coordenadas 11°54’32’’S, 48°12’22’’O (Figura 2b). A densidade de plantio foi de aproximadamente 1667 mudas/ha com espaçamento de 3 x 2 m, em covas medindo 0,40 x 0,40 x 0,40 m, cavadas manualmente com pás, seguidas da aplicação de fertilizante NPK, na formulação 5-25-15, a fim de estimular o desenvolvimento das plantas e melhor adaptação das mudas ao solo [@Vera2022]. No início do plantio, foi realizada adubação de base com 20 kg de Ca²⁺, 0,8 kg de Zn²⁺, 12 kg de S (SO₄²⁻), 1,6 kg de Cu²⁺ e 1,6 kg de B (H₃BO₃). A limpeza da área, para remoção da vegetação nativa, foi realizada com lâmina frontal acoplada a trator de esteira, seguida de aração e gradagem, permitindo maior interação do oxigênio com o solo, o que possibilita melhorias nos processos químicos e biológicos [@Boudiar2022]. Quanto ao processo de alinhamento e esquadrejamento das mudas, utilizou-se o método do Triângulo Retângulo (3/4/5) com auxílio de estacas e trena [@Vera2022].
+As situações de uso da terra foram caracterizadas de forma sintética para explicitar idade do povoamento, preparo do solo, procedimento de implantação, densidade de plantio e manejo de fertilização, considerando que o regime de insumos é um determinante de primeira ordem da dinâmica de N e P. As doses e formulações de fertilizantes adotadas seguiram protocolos de implantação e condução reportados para as culturas, buscando reduzir limitações nutricionais iniciais e padronizar o regime de insumos como variável de controle do sistema [@verai2022; @silva2023; @Moreira2021; @Machado2024; @eckardt2021].
 
-O plantio de mogno africano (*K. ivorensis*) cobre uma área total de 1,94 ha, tem sete anos e está localizado nas coordenadas 11°54’29’’S, 48°12’10’’O (Figura 2c). O plantio foi realizado em covas medindo 0,40 x 0,40 x 0,40 m, com espaçamentos de 3 x 3 m e densidade de 1111 mudas/ha. Durante o plantio, foram adicionados a cada cova 0,2 kg de fertilizante NPK com formulação 00-10-10 e 5 kg de esterco bovino curtido. Estes foram aplicados a cada três meses durante o primeiro ano de crescimento. O desbaste também foi realizado quando as copas começaram a se tocar, resultando em um espaçamento final de 6 x 6 metros [@Lucena2024]. Semelhante à área de eucalipto, a limpeza da área foi realizada com auxílio de lâmina frontal acoplada a trator de esteira, seguida de serviços de aração e gradagem [@Lima2023].
+**Tabela 1 – Caracterização das situações de uso da terra avaliadas no sul do Tocantins.**
 
-O plantio de teca (*T. grandis*) cobre uma área total de 1,12 ha e tem dez anos, localizado nas coordenadas 11°54’22’’S e 48°12’17’’O (Figura 2d). O preparo da área antes do plantio foi realizado utilizando lâmina frontal acoplada a trator de esteira, seguido de aração e gradagem [@Lima2023]. Durante o primeiro ano, foram realizadas duas adubações de cobertura, a primeira aos 60 dias e a outra no oitavo mês, com a aplicação de 95 g por cova de plantio de NPK com formulação 20-05-20 [@Vieira2017]. O plantio foi feito manualmente no espaçamento de 3 x 2 m, em dimensões de 0,40 x 0,40 m, com 1.667 mudas/hectare, que foram plantadas individualmente com o colo ao nível do solo. Também foi realizado o replantio de mudas falhadas, bem como capinas no primeiro ano, uma vez que a teca é particularmente sensível à competição de gramíneas, exigindo assim que o terreno seja mantido bem capinado; no segundo ano, o sombreamento proporcionado pela teca impediu grande parte do desenvolvimento de ervas daninhas, reduzindo a necessidade de capina e roçada, e no terceiro ano, não foram necessários mais tratos culturais [@Moreira2021]. Além disso, foram realizadas atividades de poda e desbrota com auxílio de serras, com observações constantes quanto ao tamanho dos galhos.
-
-Por fim, a área agrícola cobre 3,06 ha, tem mais de 10 anos e está localizada nas coordenadas 11°54’44’’S e 48°12’02’’O (Figura 2e). A área dedicada à agricultura está em uso há mais de 10 anos, com rotação de culturas entre milho e soja. No momento da coleta, a área estava sendo utilizada para o cultivo de soja, que se estende entre os meses de junho e setembro. As atividades incluíram gradagem e nivelamento do solo, seguidos da aplicação de 300 kg ha⁻¹ de NPK na formulação 4-28-10, com espaçamento de 0,5 m entre plantas. As plantas foram tratadas durante todo o período de plantio com fungicidas tiofanato-metílico e azoxistrobina, e inseticidas, na dosagem de 100 g por 50 kg de sementes, além da remoção de ervas daninhas [@Machado2024]. O cultivo do milho, por outro lado, estende-se de janeiro a março, devido às condições favoráveis promovidas pelas chuvas. O preparo do solo foi realizado através de gradagem e sulcamento, com espaçamento médio entre plantas de 0,2 x 0,8 m e adubação com 400 kg de 4-14-18 por ha⁻¹, dentro do sulco de semeadura, e 50, 100 e 150 kg de N por ha⁻¹, na superfície do solo, combinado com procedimentos relacionados ao controle de ervas daninhas, através de capina manual e uso de herbicidas quando necessário [@Camargo2024].
+| Sistema | Idade | Procedimento de implantação e densidade | Preparo do solo | Fertilização e manejo |
+| :--- | :--- | :--- | :--- | :--- |
+| Cerrado (sensu stricto) | > 40 anos | Regeneração natural, vegetação nativa preservada | Sem intervenção | Área de referência (testemunha). |
+| Eucalipto (Eucalyptus sp.) | 5 anos | Espaçamento 3 x 2 m, densidade aproximada 1667 mudas ha⁻¹, covas 0,40 x 0,40 x 0,40 m | Limpeza com lâmina frontal, seguida de aração e gradagem | NPK 5-25-15 no plantio, com adubação de base envolvendo Ca²⁺, Zn²⁺, S (SO₄²⁻), Cu²⁺ e B (H₃BO₃), visando acelerar o estabelecimento das mudas e reduzir limitações nutricionais iniciais em ambiente tropical intemperizado [@verai2022]. |
+| Mogno africano (Khaya ivorensis) | 7 anos | Espaçamento 3 x 3 m, densidade 1111 mudas ha⁻¹, covas 0,40 x 0,40 x 0,40 m, desbaste com espaçamento final 6 x 6 m | Limpeza com lâmina frontal, seguida de aração e gradagem | 0,2 kg por cova de NPK 00-10-10 e 5 kg de esterco bovino curtido, com reaplicações trimestrais no primeiro ano para sustentar o crescimento inicial e a formação do sistema radicular em implantação florestal [@silva2023]. |
+| Teca (Tectona grandis) | 10 anos | Espaçamento 3 x 2 m, densidade 1667 mudas ha⁻¹, covas 0,40 x 0,40 m | Limpeza com lâmina frontal, seguida de aração e gradagem | Duas adubações de cobertura no primeiro ano com 95 g por cova de NPK 20-05-20, combinadas com manejo de capinas, roçadas, poda e desbrota, compatíveis com a condução do povoamento e a mitigação de competição inicial por gramíneas [@Moreira2021]. |
+| Agricultura (soja e milho em rotação) | > 10 anos | Soja com espaçamento 0,5 m entre plantas, milho com espaçamento médio 0,2 x 0,8 m | Gradagem e nivelamento, com sulcamento para milho | Soja com 300 kg ha⁻¹ de NPK 4-28-10, associada ao manejo fitossanitário, e milho com 400 kg ha⁻¹ de NPK 4-14-18 no sulco e N em cobertura entre 50 e 150 kg ha⁻¹, refletindo um regime de insumos típico de sistemas anuais sob Cerrado, com adubação mineral modulando a oferta de N e P ao longo do ciclo [@Machado2024; @eckardt2021]. |
 
 ## 2.3 Amostragem do solo
 
-Cinco trincheiras em cada área estudada, com dimensões de 70 × 70 × 100 cm (Figura 3) em diferentes pontos [@MarinhoJunior2021], foram abertas manualmente, totalizando vinte e cinco trincheiras. Amostras de solo, tanto deformadas quanto indeformadas, foram coletadas para análises físicas e químicas nas profundidades de 0-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-80 e 80-100 cm. As amostras de solo deformadas foram então secas ao ar e peneiradas em peneira de 2 mm para análises subsequentes.
+Cinco trincheiras foram abertas manualmente em cada situação de uso da terra, com dimensões de 70 × 70 × 100 cm, distribuídas em diferentes pontos [@MarinhoJunior2021], totalizando vinte e cinco trincheiras. [🔴 GAP CRÍTICO: Inserir aqui a data de amostragem do solo e explicitar se todas as situações de uso da terra foram amostradas na mesma data]
 
-![Figura 3 – Coleta de solo em área de vegetação nativa (Cerrado sensu stricto).](../../2-FIGURAS/trincheira.png){#fig:3 width=70%}
+A amostragem foi estratificada nas profundidades de 0-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-80 e 80-100 cm. Amostras deformadas e indeformadas foram coletadas para análises físicas e químicas, sendo as amostras deformadas secas ao ar e peneiradas em peneira de 2 mm para as etapas subsequentes.
 
 ## 2.4 Análises Físicas e Químicas
 
-A determinação da distribuição do tamanho das partículas do solo foi realizada em amostras deformadas, utilizando o método da pipeta, conforme descrito por [@Teixeira2017] (Tabela 2), e a densidade do solo foi obtida pelo método do cilindro volumétrico [@Teixeira2017] (Apêndice 2).
+A determinação da distribuição do tamanho das partículas do solo foi realizada em amostras deformadas, utilizando o método da pipeta, conforme descrito por [@Teixeira2017] (Tabela 2), e a densidade do solo foi obtida pelo método do cilindro volumétrico [@Teixeira2017] (Apêndice 2). Para determinação da densidade, amostras indeformadas foram coletadas com cilindros de aço inoxidável com 3 cm de diâmetro e 8 cm de altura, inseridos e retirados do solo de modo a evitar deformação do volume amostrado.
 
 As amostras de solo foram inicialmente secas ao ar, peneiradas em malha de 2 mm e homogeneizadas. Uma subamostra foi então moída em almofariz e pistilo de porcelana até a obtenção de um pó fino e uniforme, e passada novamente em peneira de 150 μm (100 mesh). O teor de nitrogênio total (Ntotal) foi determinado pelo método de combustão a seco, utilizando um analisador elementar (Modelo PE-2400 Série II, Perkin Elmer). Para a determinação do fósforo total (Ptotal), as amostras peneiradas em malha de 150 μm foram submetidas à digestão úmida. O teor de Ptotal foi determinado por colorimetria [@MurphyRiley1962].
 
@@ -149,7 +154,7 @@ As relações estruturais foram modeladas utilizando Regressão de Mínimos Quad
 
 ## 3.1 Dinâmica das Frações de Nitrogênio e Fósforo
 
-A análise das frações de nitrogênio e fósforo revelou que a estabilidade desses nutrientes em solos tropicais é fundamentalmente regulada por processos de humificação. Conforme evidenciado nos modelos PLSR (Figuras 4 e 5), as frações húmicas (N Húmico e P Húmico) emergiram como os principais impulsionadores dos estoques totais, superando a contribuição preditiva das frações lábeis. Esse padrão corrobora a estrutura de "matéria orgânica associada a minerais" proposta por @Lavallee2020, onde a associação de compostos orgânicos com minerais de silte e argila fornece proteção de longo prazo contra a degradação microbiana.
+A análise das frações de nitrogênio e fósforo revelou que a estabilidade desses nutrientes em solos tropicais é fundamentalmente regulada por processos de humificação. Conforme evidenciado nos modelos PLSR (Figura 4), as frações húmicas (N Húmico e P Húmico) emergiram como os principais impulsionadores dos estoques totais, superando a contribuição preditiva das frações lábeis. Esse padrão corrobora a estrutura de matéria orgânica associada a minerais proposta por @Lavallee2020, onde a associação de compostos orgânicos com minerais de silte e argila fornece proteção de longo prazo contra a degradação microbiana.
 
 ![Figura 4 – Correlação estrutural entre nitrogênio total (TN) e suas frações húmicas (TNHum, TNHA e TNFA) e lábeis (LabileN) no modelo PLSR.](../../2-FIGURAS/biplot_plsr_nt.png){#fig:4 width=70%}
 
@@ -157,11 +162,11 @@ Nos Latossolos estudados, a predominância de frações húmicas sugere que N e 
 
 ![Figura 5 – Correlação estrutural entre fósforo total (TP) e suas frações húmicas (TPHum, TPHA e TPFA) e lábeis (LabileP) no modelo PLSR.](../../2-FIGURAS/biplot_plsr_pt.png){#fig:5 width=70%}
 
-A forte covariância entre N húmico e P húmico (Figuras 4 e 5) apoia a hipótese de acoplamento estequiométrico durante a formação da MOS. @Cao2021 observou que a imobilização microbiana de N é frequentemente limitada pela qualidade do C; aqui, os resultados sugerem que em sistemas com alto aporte lignificado (como Eucalipto e Cerrado), a formação de complexos organominerais estáveis sincroniza a retenção de ambos os macronutrientes. Por outro lado, a menor contribuição das frações lábeis reflete sua natureza transitória, servindo como fonte imediata de energia para a biota do solo, mas contribuindo pouco para a resiliência do estoque a longo prazo [@Paul2016].
+A forte covariância entre N húmico e P húmico (Figura5) apoia a hipótese de acoplamento estequiométrico durante a formação da MOS. @Cao2021 observou que a imobilização microbiana de N é frequentemente limitada pela qualidade do C; aqui, os resultados sugerem que em sistemas com alto aporte lignificado (como Eucalipto e Cerrado), a formação de complexos organominerais estáveis sincroniza a retenção de ambos os macronutrientes. Por outro lado, a menor contribuição das frações lábeis reflete sua natureza transitória, servindo como fonte imediata de energia para a biota do solo, mas contribuindo pouco para a resiliência do estoque a longo prazo [@Paul2016].
 
 ## 3.2 Mecanismos Estruturais de Estabilização de Nutrientes
 
-A modelagem de equações estruturais (Figura 6) forneceu uma visão mecanística dessas interações. Os altos coeficientes de caminho positivos das frações húmicas para os estoques totais (β > 1,2) confirmam que o acúmulo de carbono recalcitrante é o "motor" da fertilidade do solo nesses ambientes. Curiosamente, os coeficientes negativos observados para as frações lábeis (β ≈ -0,3) não devem ser interpretados como um efeito prejudicial, mas sim como um indicador quantitativo da rotatividade lábil-para-húmico.
+A modelagem de equações estruturais (Figura 6) forneceu uma visão mecanística dessas interações. Os altos coeficientes de caminho positivos das frações húmicas para os estoques totais (β > 1,2) confirmam que o acúmulo de carbono recalcitrante é o motor da fertilidade do solo nesses ambientes. Curiosamente, os coeficientes negativos observados para as frações lábeis (β ≈ -0,3) não devem ser interpretados como um efeito prejudicial, mas sim como um indicador quantitativo da rotatividade lábil-para-húmico.
 
 ![Figura 6 – Modelo estrutural hierárquico de segunda ordem (HCM) integrando as frações funcionais de N e P.](../../2-FIGURAS/analise_caminhos_pls.png){#fig:6 width=70%}
 
@@ -276,3 +281,58 @@ A integração metodológica (PLSR, PLS-SEM e inferência fuzzy) permitiu a cara
 | Mogno | 614,1±3,5 | 79,4±2,7 | 306,5±4,4 | 1,20±0,01 |
 | Eucalipto | 614,2±1,2 | 79,7±3,2 | 306,1±4,2 | 1,25±0,02 |
 | Agricultura | 614,8±2,5 | 79,0±3,1 | 306,2±5,3 | 1,35±0,01 |
+
+## Apêndice 3 – Teores de nitrogênio total no solo e frações húmicas.
+
+| Uso da terra | N-S (g kg⁻¹) | N-AF (g kg⁻¹) | N-AH (g kg⁻¹) | N-HUM (g kg⁻¹) |
+| :--- | :--- | :--- | :--- | :--- |
+|0-10 cm|||||
+| Cerrado | 1.137Da* | 0.102Da | 0.273Ba | 0.557Ca |
+| Teca | 1.405Aa | 0.140Ca | 0.295Aa | 0.674Aa |
+| Mogno | 1.387Ba | 0.180Aa | 0.235Ca | 0.624Ba |
+| Eucalipto | 1.209Ca | 0.145Ba | 0.217Da | 0.556Ca |
+| Agricultura | 0.866Ea | 0.138Ca | 0.077Ea | 0.415Da |
+|10-20 cm|||||
+| Cerrado | 1.068Db | 0.096Db | 0.256Bb | 0.523Db |
+| Teca | 1.329Bb | 0.132Cb | 0.279Ab | 0.638Ab |
+| Mogno | 1.360Ab | 0.176Aa | 0.231Cb | 0.612Bb |
+| Eucalipto | 1.191Cb | 0.142Ba | 0.214Da | 0.547Cb |
+| Agricultura | 0.850Eb | 0.136Cab | 0.076Eab | 0.408Eb |
+|20-30 cm|||||
+| Cerrado | 0.844Dc | 0.076Ec | 0.202Ac | 0.413Bc |
+| Teca | 0.965Ac | 0.096Dc | 0.202Ac | 0.463Ac |
+| Mogno | 0.864Bc | 0.112Bb | 0.146Cc | 0.389Dc |
+| Eucalipto | 0.860Cc | 0.103Cb | 0.154Bb | 0.395Cc |
+| Agricultura | 0.827Ec | 0.132Abc | 0.074Dabc | 0.397Cc |
+|30-40 cm|||||
+| Cerrado | 0.814Bd | 0.073Ec | 0.195Ad | 0.399Bd |
+| Teca | 0.863Ad | 0.086Dd | 0.181Bd | 0.414Ad |
+| Mogno | 0.803Cd | 0.104Bc | 0.136Cd | 0.361Dd |
+| Eucalipto | 0.777Dd | 0.093Cd | 0.139Cc | 0.357Ed |
+| Agricultura | 0.803Cd | 0.128541Acd | 0.072Dbc | 0.385Cd |
+|40-50 cm|||||
+| Cerrado | 0.801Ae | 0.072Dc | 0.192Ad | 0.392Ae |
+| Teca | 0.784Be | 0.078Ce | 0.164Be | 0.376Ce |
+| Mogno | 0.620De | 0.080Cd | 0.105De | 0.279De |
+| Eucalipto | 0.741Ce | 0.088Bd | 0.133Cd | 0.341De |
+| Agricultura | 0.784Be | 0.125Ad | 0.070Ec | 0.376Be |
+|50-60 cm|||||
+| Cerrado | 0.748Bf | 0.067Dd | 0.179Ae | 0.366Bf |
+| Teca | 0.780Af | 0.078Ce | 0.163Be | 0.374Ae |
+| Mogno | 0.609Ef | 0.079Cd | 0.103De | 0.274Ef |
+| Eucalipto | 0.717Df | 0.086Bde | 0.129Ce | 0.329Df |
+| Agricultura | 0.730Cf | 0.116Ae | 0.065Ed | 0.350Cf |
+|60-80 cm|||||
+| Cerrado | 0.732Bg | 0.065Dd | 0.175Ae | 0.359Bg |
+| Teca | 0.775Ag | 0.077Ce | 0.162Be | 0.372Ae |
+| Mogno | 0.603Eg | 0.078Cd | 0.102De | 0.271Ef |
+| Eucalipto | 0.699Cg | 0.083Bef | 0.125Ce | 0.321Dg |
+| Agricultura | 0.691Dg | 0.110Af | 0.062Ede | 0.331Cg |
+|80-100 cm|||||
+| Cerrado | 0.661Ch | 0.059De | 0.158Af | 0.323Bh |
+| Teca | 0.729Ah | 0.072Cf | 0.153Bf | 0.350Af |
+| Mogno | 0.548Eh | 0.071Ce | 0.093Df | 0.246Dg |
+| Eucalipto | 0.668Bh | 0.080Bf | 0.120Cf | 0.307Ch |
+| Agricultura | 0.645Dh | 0.103Ag | 0.058Ee | 0.309Ch |
+
+*Nitrogênio total do solo (N-S), nitrogênio na fração ácidos fúlvicos (N-AF), nitrogênio na fração ácidos húmicos (N-AH) e nitrogênio na fração humina (N-HUM). Médias seguidas pela mesma letra não diferem entre si pelo teste Tukey a 5% de probabilidade. Letras maiúsculas referem-se à comparação dos diferentes usos da terra em uma mesma camada e letras minúsculas referem-se à comparação das médias do mesmo uso da terra em diferentes camadas.
