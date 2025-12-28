@@ -1,0 +1,67 @@
+project:
+  type: book
+  output-dir: ../docs
+
+book:
+  title: "Modelagem Fuzzy-PLS da Dinâmica de Fósforo e Nitrogênio em Usos do Solo no Sul do Tocantins"
+  author: "Diego et al."
+  date: today
+  favicon: cover.png
+  cover-image: cover.png
+  downloads: [pdf, docx]
+  reader-mode: true
+  sidebar:
+    align: left
+    collapse-level: 1
+  
+  chapters:
+    - index.qmd
+    - chapters/01-introduction.qmd
+    - chapters/03-methodology.qmd
+    - chapters/04-results.qmd
+    #- chapters/05-discussion.qmd
+    - chapters/06-conclusion.qmd
+    - references.qmd
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    title-block-style: none
+    theme:
+      light: flatly
+      dark: darkly
+    css: custom.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: false
+    code-overflow: wrap
+    link-external-newwindow: true
+    html-math-method: mathjax
+  
+  pdf:
+    pdf-engine: lualatex
+    documentclass: book
+    number-sections: true
+    toc: true
+    code-overflow: wrap
+    include-in-header:
+      text: |
+        \usepackage{ragged2e}
+        \justifying
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
+  
+  docx:
+    number-sections: true
+    highlight-style: github
+    toc: true
+    reference-doc: reference-justified.docx
+
+bibliography: references.bib
+csl: apa.csl

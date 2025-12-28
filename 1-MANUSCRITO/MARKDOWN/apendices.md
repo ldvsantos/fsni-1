@@ -28,7 +28,7 @@
 *Densidade Relativa - DR, Dominância Relativa - DMR, Frequência Relativa - FR, Índice de Valor de Importância - IVI.
 
 **Área de Eucalipto *(Eucalyptus sp.)*
-**A cultura do eucalipto *(Eucalyptus sp.)* possui área total de 2.29 ha com cinco anos de idade, localizado nas coordenadas de 11°54’32’’S, 48°12’22’’W (Figura 3).
+**A cultura do eucalipto *(Eucalyptus sp.)* possui área total de 2.29 ha com cinco anos de idade, localizado nas coordenadas de 11°54’32’’S, 48°12’22’’W.
 
 ## Apêndice B - Caracterização dos atributos físicos do solo em diferentes usos da Terra e profundidades
 

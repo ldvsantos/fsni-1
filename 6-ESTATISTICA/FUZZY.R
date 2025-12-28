@@ -1,0 +1,279 @@
+# --------------------------------------------------------------------------
+# 0. INSTALAÇÃO E CARREGAMENTO DE PACOTES
+# --------------------------------------------------------------------------
+# install.packages(c("ggpattern","readxl", "dplyr", "ggplot2", "janitor", "seminr", "FuzzyR"))
+
+library(ggpattern)
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(janitor)
+library(seminr)
+library(FuzzyR)
+
+# --------------------------------------------------------------------------
+# 1. PREPARAÇÃO DO AMBIENTE
+# --------------------------------------------------------------------------
+rm(list = ls())
+graphics.off()
+cat("\014")
+
+# --------------------------------------------------------------------------
+# 2. CARREGAR E PREPARAR OS DADOS
+# --------------------------------------------------------------------------
+dados <- read_excel("data_base_22072025.xlsx", sheet = "DADOS") %>% clean_names()
+
+colunas_necessarias <- c(
+  "amb", "prof","rep", "nlabil", "nmol", "ntaf", "ntah", "nthum", "nt",
+  "estnt", "estnaf", "estnah", "estnthum", "estnlabil", "estnmol",
+  "plabil", "pmol", "ptaf", "ptah", "pthum", "pt",
+  "estpt", "estpaf", "estpah", "estpthum", "estplabil", "estpmol",
+  "ds", "areia", "silte", "argila"
+)
+
+dados <- dados[complete.cases(dados[, colunas_necessarias]), ]
+
+# --------------------------------------------------------------------------
+# 3. CONSTRUIR E NORMALIZAR CONSTRUTOS
+# --------------------------------------------------------------------------
+normalizar <- function(x) {
+  if (max(x, na.rm = TRUE) == min(x, na.rm = TRUE)) return(rep(0.5, length(x)))
+  return((x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE)))
+}
+
+normalizar_invertido <- function(x) {
+  x <- -1 * x
+  normalizar(x)
+}
+
+dados_norm <- dados %>%
+  mutate(
+    n_labil  = rowMeans(across(c(nlabil, nmol)), na.rm = TRUE),
+    n_humico = rowMeans(across(c(ntaf, ntah, nthum)), na.rm = TRUE),
+    p_labil  = rowMeans(across(c(plabil, pmol)), na.rm = TRUE),
+    p_humico = rowMeans(across(c(ptaf, ptah, pthum)), na.rm = TRUE),
+    n_total  = rowMeans(across(c(nt, estnt)), na.rm = TRUE),
+    p_total  = rowMeans(across(c(pt, estpt)), na.rm = TRUE)
+  ) %>%
+  mutate(across(c(n_labil, n_humico, p_labil, p_humico, n_total, p_total), normalizar)) %>%
+  mutate(ds = normalizar_invertido(ds)) %>%
+  mutate(across(c(areia, silte, argila), normalizar))
+
+# --------------------------------------------------------------------------
+# 4. MODELO DE EQUAÇÕES ESTRUTURAIS (PLS-SEM)
+# --------------------------------------------------------------------------
+modelo_mensuracao <- constructs(
+  composite("n_labil",  single_item("n_labil")),
+  composite("n_humico", single_item("n_humico")),
+  composite("p_labil",  single_item("p_labil")),
+  composite("p_humico", single_item("p_humico")),
+  composite("n_total",  single_item("n_total")),
+  composite("p_total",  single_item("p_total"))
+)
+
+modelo_estrutural <- relationships(
+  paths(from = c("n_labil", "n_humico"), to = "n_total"),
+  paths(from = c("p_labil", "p_humico"), to = "p_total")
+)
+
+modelo_pls <- estimate_pls(
+  data = dados_norm,
+  measurement_model = modelo_mensuracao,
+  structural_model = modelo_estrutural
+)
+
+print(summary(modelo_pls))
+
+# --------------------------------------------------------------------------
+# 5. SISTEMA FUZZY COM N_total, P_total, Ds (INCLUINDO REGRAS PARA O CERRADO)
+# --------------------------------------------------------------------------
+
+# Normaliza 'ds' diretamente. A lógica de penalização estará nas regras.
+dados_norm <- dados %>%
+  mutate(
+    n_labil  = rowMeans(across(c(nlabil, nmol)), na.rm = TRUE),
+    n_humico = rowMeans(across(c(ntaf, ntah, nthum)), na.rm = TRUE),
+    p_labil  = rowMeans(across(c(plabil, pmol)), na.rm = TRUE),
+    p_humico = rowMeans(across(c(ptaf, ptah, pthum)), na.rm = TRUE),
+    n_total  = rowMeans(across(c(nt, estnt)), na.rm = TRUE),
+    p_total  = rowMeans(across(c(pt, estpt)), na.rm = TRUE)
+  ) %>%
+  mutate(across(c(n_labil, n_humico, p_labil, p_humico, n_total, p_total, ds, areia, silte, argila), normalizar))
+
+
+# Recria o sistema fuzzy do zero
+fis <- newfis("IF_fuzzy", defuzzMethod = "centroid")
+
+fis <- addvar(fis, "input", "N_total", c(0, 1))
+fis <- addvar(fis, "input", "P_total", c(0, 1))
+fis <- addvar(fis, "input", "Ds",      c(0, 1))
+fis <- addvar(fis, "output", "Qualidade", c(0, 10))
+
+params_in_baixa <- c(0, 0, 0.4)
+params_in_media <- c(0.3, 0.5, 0.7)
+params_in_alta  <- c(0.5, 0.8, 1.0)
+
+for (i in 1:3) {
+  fis <- addmf(fis, "input", i, "baixa", "trimf", params_in_baixa)
+  fis <- addmf(fis, "input", i, "media", "trimf", params_in_media)
+  fis <- addmf(fis, "input", i, "alta",  "trimf", params_in_alta)
+}
+
+params_out_baixa <- c(0, 0, 4)
+params_out_media <- c(3, 5, 7)
+params_out_alta <- c(6, 10, 10)
+
+fis <- addmf(fis, "output", 1, "baixa", "trimf", params_out_baixa)
+fis <- addmf(fis, "output", 1, "media", "trimf", params_out_media)
+fis <- addmf(fis, "output", 1, "alta",  "trimf", params_out_alta)
+
+regras_fuzzy <- matrix(c(
+  
+  3, 3, 1, 3, 1.0, 1,   # N alta, P alta, Ds baixa → Qualidade alta
+  3, 3, 2, 3, 1.0, 1,   # N alta, P alta, Ds média → Qualidade alta
+  2, 2, 1, 2, 1.0, 1,   # N média, P média, Ds baixa → Qualidade média
+  2, 2, 2, 2, 1.0, 1,   # N média, P média, Ds média → Qualidade média
+  3, 2, 1, 2, 1.0, 1,   # N alta, P média, Ds baixa → Qualidade média
+  2, 3, 1, 2, 1.0, 1,   # N média, P alta, Ds baixa → Qualidade média
+  1, 1, 1, 1, 1.0, 1,   # N baixa, P baixa, Ds baixa → Qualidade baixa
+  1, 1, 2, 1, 1.0, 1,   # N baixa, P baixa, Ds média → Qualidade baixa
+  1, 1, 3, 1, 1.0, 1,   # N baixa, P baixa, Ds alta → Qualidade baixa
+  
+  # Penalização explícita por Ds alta (mesmo com bons níveis de N e P)
+  3, 3, 3, 1, 1.5, 1,   # N alta, P alta, Ds alta → Qualidade baixa
+  2, 2, 3, 1, 1.5, 1,   # N média, P média, Ds alta → Qualidade baixa
+  3, 2, 3, 1, 1.5, 1,   # N alta, P média, Ds alta → Qualidade baixa
+  2, 3, 3, 1, 1.5, 1,   # N média, P alta, Ds alta → Qualidade baixa
+  2, 2, 1, 3, 1.0, 1,   # N médio, P médio, Ds baixa → Qualidade alta
+  
+  
+  # N média, P alta, Ds baixa → Qualidade alta
+  2, 3, 1, 3, 1.0, 1,
+  
+  # N alta, P média, Ds baixa → Qualidade alta
+  3, 2, 1, 3, 1.0, 1
+), ncol = 6, byrow = TRUE)
+
+fis <- addrule(fis, regras_fuzzy)
+
+entrada_fuzzy <- dados_norm %>%
+  select(n_total, p_total, ds) %>%
+  as.matrix()
+
+dados_norm$if_valor_fuzzy <- apply(entrada_fuzzy, 1, function(l) {
+  evalfis(matrix(l, nrow = 1), fis)
+})
+
+# Classificação (opcional, mas útil para verificação)
+dados_norm$classificacao_linguistica <- cut(dados_norm$if_valor_fuzzy,
+                                            breaks = c(0, 3.33, 6.66, 10),
+                                            labels = c("baixa", "media", "alta"),
+                                            include.lowest = TRUE)
+
+# Avaliação fuzzy
+dados_norm$if_valor_fuzzy <- apply(entrada_fuzzy, 1, function(l) {
+  evalfis(matrix(l, nrow = 1), fis)
+})
+
+# Correção para valorizar Cerrado com boa estrutura do solo
+
+
+### Define função para calcular bônus específico por uso da terra
+calc_bonus_ds <- function(amb, ds) {
+  faixa <- list(
+    `1` = c(1.30, 1.50),  # Ideal Cerrado (g/cm³)
+    `2` = c(1.10, 1.40),  # Ideal Agricultura convencional (g/cm³)
+    `3` = c(1.30, 1.55),  # Ideal Mogno (g/cm³)
+    `4` = c(1.30, 1.55),  # Ideal Eucalipto (g/cm³)
+    `5` = c(1.25, 1.50)   # Ideal Teca (g/cm³)
+  )
+  
+  lim <- faixa[[as.character(amb)]]
+  
+  if (is.null(lim) || is.na(ds)) return(0)
+  
+  if (ds >= lim[1] && ds <= lim[2]) {
+    return((lim[2] - ds) / (lim[2] - lim[1]) * 0.5)  # bônus linear até 0.5
+  } else {
+    return(0)
+  }
+}
+
+# Aplica aos dados
+dados_norm$bonus_ds <- mapply(calc_bonus_ds, dados_norm$amb, dados_norm$ds)
+
+# Soma ao índice fuzzy com controle de teto
+dados_norm <- dados_norm %>%
+  mutate(
+    if_valor_fuzzy = if_valor_fuzzy + bonus_ds,
+    if_valor_fuzzy = pmin(if_valor_fuzzy, 10)
+  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# --------------------------------------------------------------------------
+# 7. VISUALIZAÇÃO DOS RESULTADOS (COM LEGENDA)
+# --------------------------------------------------------------------------
+# Certifique-se de que a coluna 'amb' está como fator com os rótulos corretos
+dados_norm$amb <- factor(dados_norm$amb,
+                         levels = 1:5,
+                         labels = c("Cerrado", "Conventional\nAgriculture", "Mahogany", "Eucalyptus", "Teak"))
+
+ggplot(dados_norm, aes(x = amb, y = if_valor_fuzzy)) +
+  geom_boxplot_pattern(
+    aes(pattern = amb, fill = amb),
+    width = 0.5,               # ← MAIS ESTREITA (padrão é ~0.5)
+    pattern_density = 0.4,
+    pattern_angle = 45,
+    pattern_spacing = 0.05,
+    pattern_key_scale_factor = 0.6,
+    outlier.shape = NA,
+    alpha = 0.6
+  ) +
+  geom_jitter(aes(color = amb), width = 0.2, alpha = 0.6, size = 2) +
+  
+  scale_pattern_manual(values = c(
+    "Cerrado" = "stripe",
+    "Conventional\nAgriculture" = "crosshatch",
+    "Mahogany" = "circle",
+    "Eucalyptus" = "pch",
+    "Teak" = "magick"
+  )) +
+  scale_fill_brewer(palette = "Set1") +
+  scale_color_brewer(palette = "Set1") +
+  scale_y_continuous(limits = c(0, 10), expand = expansion(mult = c(0.05, 0.05))) +
+  
+  labs(
+    title = "Fuzzy Soil Nutrient Sustainability Index",
+    x = "Uso da Terra",
+    y = "FSNSI (0–10)"
+  ) +
+  guides(
+    fill = "none",  # Oculta legenda redundante
+    pattern = guide_legend(
+      title = "Graph legend",
+      override.aes = list(
+        fill = RColorBrewer::brewer.pal(5, "Set1")  # Corrige as cores dos padrões na legenda
+      )
+    ),
+    color = guide_legend(title = "Graph legend")
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "right"
+  )
+
+
+

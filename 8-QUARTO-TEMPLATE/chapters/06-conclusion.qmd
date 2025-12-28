@@ -1,0 +1,16 @@
+﻿# Conclusão
+
+A integração metodológica (PLSR, PLS-SEM e inferência fuzzy) permitiu a caracterização estrutural e funcional da dinâmica de N e P em solos tropicais, revelando a heterogeneidade induzida pelo manejo.
+
+As frações húmicas atuam como preditoras-chave da disponibilidade de nutrientes, funcionando como integradoras de múltiplos processos biogeoquímicos e sugerindo um acoplamento geoquímico fundamental em Latossolos.
+
+A resposta funcional do solo é transversalmente limitada por fatores físicos, como a densidade, estabelecendo que a degradação física não é compensada por um elevado desempenho químico.
+
+A divergência de desempenho entre sistemas (e.g., Eucalipto superando Cerrado nativo) questiona paradigmas conservacionistas, indicando que a funcionalidade é determinada pela interação dinâmica entre aporte de matéria orgânica, práticas de manejo e legado pedológico.
+
+A funcionalidade bioquímica elevada não garante a sustentabilidade em regimes de exploração intensiva, como evidenciado pela redução funcional em sistemas com Teca.
+
+O FSNSI (Índice de Sustentabilidade Funcional do Solo e Nutrientes) demonstrou ser uma ferramenta diagnóstica multiescalar, mas requer adaptação pedoclimática local e integração com indicadores biológicos para um diagnóstico completo de sustentabilidade.
+
+Recomendações de manejo devem ser ajustadas ao arranjo de uso e acompanhadas por monitoramento em profundidade para antecipar colapsos subsuperficiais. Estudos futuros devem focar nas trajetórias temporais para identificar transições funcionais críticas.
+

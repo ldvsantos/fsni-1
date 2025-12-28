@@ -1,72 +1,41 @@
-Ref: Submission ID fc44f6d1-409c-41f9-91ed-4978861fe3b1
+Ref (Submission ID fc44f6d1-409c-41f9-91ed-4978861fe3b1)
 
 **Response to Reviewers**
 
 Dear Editor Bing Chen and Reviewers,
 
-We would like to thank you for the opportunity to revise our manuscript. We have carefully considered all comments and suggestions provided by Reviewer 1. We acknowledge that the previous version was excessively long, contained redundancies, and lacked statistical rigor in some areas.
+We thank you for the opportunity to revise our manuscript. We carefully considered all comments and suggestions provided by Reviewer 1, and we acknowledge that the previous version was excessively long, contained redundancies, and did not present the statistical framework with the necessary rigor for heterogeneous soil datasets.
 
-In this revised version, we have performed a major overhaul of the manuscript to address these issues. Specifically, we have:
-1.  **Enhanced Statistical Rigor**: We replaced standard ANOVA with **Multivariate Generalized Linear Models (GLM)** using a Gamma distribution and bootstrap resampling (n=1000). This approach correctly handles the non-normality and heteroscedasticity of the soil data, providing more robust estimates (Wald statistics, Exp(B), 95% CI).
-2.  **Clarified the Fuzzy Methodology**: We added a dedicated subsection (2.5) detailing the mathematical structure of the Fuzzy Soil Nutritional Sustainability Index (FSNSI), including membership functions, inference rules, and defuzzification equations, to demonstrate its robustness as a diagnostic tool.
-3.  **Condensed and Focused the Text**: We significantly reduced the "Results and Discussion" section, removing speculative text and focusing on the agronomic interpretation of the statistical models.
-4.  **Ensured Methodological Consistency**: We verified that every statistical test mentioned in the Results (including Pearson correlation, PCA, HCA, PLS-SEM) is explicitly described in the Methods section.
+In the revised version, the manuscript was substantially reorganized to emphasize mechanistic soil biogeochemical interpretation while preserving reproducible computational structure. The statistical framework was strengthened by adopting Generalized Linear Models using a Gamma distribution with bootstrap resampling (n = 1000), which is coherent with non normal and heteroscedastic soil responses and supports robust inference via Wald statistics, Exp(B), and 95% confidence intervals. The fuzzy methodology was formalized in a dedicated subsection that details membership functions, the inference rule base, and defuzzification equations, clarifying the mathematical mapping from soil state variables to the FSNSI. Concomitantly, the Results and Discussion were condensed to remove redundant and speculative statements, and every analysis referenced in the Results is now explicitly described in the Methods.
 
-Below is a point-by-point response to the reviewer's comments.
+### Reviewer 1
 
----
+Regarding Comment 1, we agree with the concern and revised the manuscript to prioritize soil biogeochemical processes rather than presenting the work as a purely informatics exercise. The revised narrative connects modeling outputs from PLS SEM and fuzzy inference to mechanisms such as the turnover between labile pools and humic reservoirs and to physical constraints associated with soil structure.
 
-### **Reviewer 1**
+Regarding Comment 2, the title was revised to better reflect both the N and P dynamics across land uses and the proposed decision support indicator. The current title is presented in the revised manuscript.
 
-**Comment 1:** The MS shows many inconsistencies and neglect aspects. It seems to be more an informatic study instead of an environmental research. Particularly, because it includes too much data handling, but the raw data are absent. Moreover, the MS wording is redundant, in consequence is difficult to read and understand.
-**Response:** We agree. We have rewritten the manuscript to focus on **soil biogeochemical processes** rather than just the modeling aspect.
-*   **Action:** We removed redundant wording and condensed the text. We explicitly connected the modeling results (PLS-SEM, Fuzzy) to agronomic mechanisms (e.g., labile-to-humic turnover, physical protection).
-*   **Action:** To address the "informatic study" concern, we provided the mathematical formulation of the Fuzzy Index in the Methods (Section 2.5) to show it is based on solid soil attributes (N, P, Density), not just data manipulation.
+Regarding Comment 3, the Abstract was edited to reduce undefined acronyms and to highlight the central results.
 
-**Comment 2:** The MS title is confusing and does not reflex the MS objective... what about the P and N dynamic in the different land use of the tropical soils?
-**Response:** The title has been changed to: **"Fuzzy Soil Nutritional Sustainability Index (FSNSI) for Assessing Production-Phase Impacts in Life Cycle Sustainability Assessment"**. This reflects the dual focus on N/P dynamics and the sustainability assessment tool.
+Regarding Comment 4, the Introduction was streamlined by reducing general background and sharpening the motivation around N P coupling and its co stabilization in tropical, highly weathered soils. The choice of land uses was clarified as representative of regional land occupation dynamics in the Cerrado biome.
 
-**Comment 3:** Abstract: please don’t use acronyms (so many) without definition.
-**Response:** We have revised the Abstract to remove undefined acronyms and focus on the main findings.
+Regarding Comment 5, the detailed description of the study areas was replaced by Table 1, which synthesizes stand age, planting procedure and density, soil preparation, and fertilization. Importantly, the fertilization regimes are now contextualized and justified using technical references associated with each production system, because fertilization is a first order driver of N and P availability and partitioning.
 
-**Comment 4:** Introduction: Lines 72-99 (soil processes well known), Lines 100-124 (models too general), Lines 135-138 (land uses not justified).
-**Response:** The Introduction has been streamlined. We summarized well-known soil processes and focused on the specific gap regarding the N-P coupling in tropical soils. We justified the choice of land uses (Eucalyptus, Mahogany, Teak, Agriculture) as representative of the regional land occupation dynamics in the Cerrado biome.
+Regarding Comment 6, Figure 3, which presented the soil profile and sampling illustration, was removed as requested. Figure 2 was retained because it provides essential information for site characterization and reproducibility, particularly the visual identification of the land use situations that ground the causal comparisons developed in the statistical and fuzzy frameworks. To avoid redundancy, the figure content was restricted to study area depiction and does not duplicate analytical results.
 
-**Comment 5:** Methods: Lines 170 (subtitle ambiguous), Lines 185-221 (text difficult to read). Please, change by a table.
-**Response:** We have replaced the detailed textual description of the study areas with **Table 1**, which summarizes stand age, spacing, soil preparation, and fertilization for all land uses. This significantly reduced the length and improved clarity.
+Regarding Comment 7, the text was clarified to state that labile N and P refer to operationally defined fractions determined by the Hedley procedure for P and by the Shang and Tiessen procedure for N, and that these fractions are distinct from humic fractionation and from the light organic matter pool.
 
-**Comment 6:** Fig 2 is not necessary: eliminate. Figure 3: again, it is not necessary: eliminate.
-**Response:** **Figure 2** (map/photos) and **Figure 3** (soil profile/sampling) have been removed from the manuscript as requested.
+Regarding Comment 8, the Statistical Analysis subsection was substantially condensed, and the methodological choice was made explicit by prioritizing GLM with Gamma distribution to better accommodate the empirical distributional properties of the dataset.
 
-**Comment 7:** Lines 278-283: ...labile P and N must be quantified from soil samples before humic acids fractioning. Or, does the labile fraction refer to the LOM?
-**Response:** We clarified in the text that "Labile N/P" refers to the specific fractions determined by the Hedley (P) and Shang & Tiessen (N) methods, distinct from the humic fractionation.
+Regarding Comment 9, the Results and Discussion were fully rewritten and reorganized into a concise structure that first addresses the dynamics of N and P fractions, then interprets structural mechanisms via PLS SEM paths, and finally integrates the evidence into the fuzzy index FSNSI. Redundant interpretation and unsupported speculation were removed.
 
-**Comment 8:** The statistical analysis subsection is too long (4.5 pages), and repetitive: please, summarize.
-**Response:** We have drastically summarized the Statistical Analysis section (now Section 2.6).
-*   **Action:** We condensed the description of multivariate tests.
-*   **Action:** We upgraded the methodology from ANOVA to **GLM with Gamma distribution** to better fit the data properties, as described in the revised text.
+Regarding Comment 10, the captions were revised to define the estimated variables and to ensure that figure legends are in English.
 
-**Comment 9:** Results and discussion: This section is hard to read... unnecessarily long (26 pages), summarize.
-**Response:** This was the main focus of our revision. We have **completely rewritten the Results and Discussion section**. It is now organized into three concise subsections:
-1.  **Dynamics of N and P Fractions**: Focusing on the role of humic fractions.
-2.  **Structural Mechanisms**: Focusing on the causal paths (PLS-SEM).
-3.  **Fuzzy Integration**: Focusing on the sustainability index (FSNSI).
-We removed repetitive arguments and speculative interpretations not supported by data.
+Regarding Comment 11, the text now clarifies model fit reporting and discusses where Cerrado specific behavior was highlighted, in alignment with the multi group analysis framing.
 
-**Comment 10:** Figs 4 and 5: the “est” variables need explanation. Moreover, the legend (Ambiente) must be translated to English.
-**Response:** We have updated the figure captions to explain abbreviations and ensured all legends are in English in the final manuscript version.
+Regarding Comment 12, the Methods now explicitly describe the GLM approach used to compare FSNSI between land uses, including the post hoc strategy and distributional assumptions.
 
-**Comment 11:** Table 2: why is the R2 shown only for Cerrado?
-**Response:** In the revised text, we discuss the model fit for the global model and highlight specific differences where relevant in the Multi-Group Analysis (PLS-MGA) section.
-
-**Comment 12:** Lines 656-658: the FSNSI statistical comparison (ANOVA?) has not been mentioned in the methods.
-**Response:** We have corrected this inconsistency.
-*   **Action:** The Methods section (2.6) now explicitly describes the **GLM approach** used to compare the FSNSI between land uses, including the specific post-hoc tests (Bonferroni) and distribution assumptions.
-
----
-
-We believe these changes have resulted in a much stronger, scientifically rigorous, and focused manuscript. We hope it now meets the standards for publication.
+We believe these changes result in a stronger, more rigorous, and clearer manuscript, and we hope the revised version meets the standards for publication.
 
 Sincerely,
 
-The Authors.
+The Authors

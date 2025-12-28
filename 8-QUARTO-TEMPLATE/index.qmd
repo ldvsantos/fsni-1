@@ -1,0 +1,15 @@
+# Resumo {.unnumbered .unlisted}
+
+<br>
+
+A conversão de ecossistemas naturais em sistemas agrícolas altera a dinâmica de fósforo (P) e nitrogênio (N) no solo, impactando a sustentabilidade de ambientes tropicais. Este estudo avaliou a dinâmica funcional de N e P em frações lábeis e húmicas sob quatro usos da terra no sul do Tocantins (Cerrado nativo, Eucalipto, Pastagem e Agricultura com milho). O objetivo foi integrar evidências preditivas (PLSR), estruturais (PLS-SEM) e sínteses fuzzy (FSNSI) para o diagnóstico da funcionalidade edáfica. Amostras de 0–50 cm foram analisadas para frações lábeis e húmicas de N e P, além de estoques totais e densidade do solo. A Regressão por Mínimos Quadrados Parciais (PLSR) identificou as frações húmicas como preditoras dominantes (VIP > 1,0) da disponibilidade de nutrientes. A Modelagem por Equações Estruturais (PLS-SEM), com ajuste elevado, demonstrou que as frações húmicas exercem um efeito positivo forte sobre os estoques totais de N e P (β = 1,286), enquanto as frações lábeis apresentaram coeficientes negativos moderados (β = −0,313). A simetria dos coeficientes entre N e P sugere um acoplamento biogeoquímico fundamental em Latossolos. O Sistema de Inferência Fuzzy (FSNSI) diferenciou os usos, com o Eucalipto apresentando a maior funcionalidade (FSNSI = 6,07), superando o Cerrado nativo. A densidade do solo foi confirmada como fator limitante transversal, correlacionando-se negativamente com o FSNSI. Conclui-se que o enriquecimento das frações húmicas, associado a um melhor aporte de serapilheira e estrutura física, é o principal suporte para os estoques de N e P e a funcionalidade edáfica. A integração metodológica proposta (PLSR, PLS-SEM e FSNSI) constitui uma abordagem robusta e multiescalar para o diagnóstico da sustentabilidade nutricional do solo e a orientação de intervenções conservacionistas em ambientes tropicais.
+
+
+**Palavras-chave:** Nitrogênio do solo; Frações húmicas; Mudança de uso da terra; Cerrado; Latossolo; PLS-SEM; PLSR.
+
+<br>
+
+
+---
+
+**Última atualização**: `r Sys.Date()`
