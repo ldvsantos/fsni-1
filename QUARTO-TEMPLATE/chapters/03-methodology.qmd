@@ -183,7 +183,7 @@ A ativação de cada regra $R_{(i)}$ foi calculada conforme a Equação 7:
 $$\alpha_i = \min(\mu_{A1}(x_1), \mu_{A2}(x_2), \dots, \mu_{An}(x_n))$$
 
 O valor de saída correspondente $\mu_{B_i}(z)$ foi ponderado por $\alpha_i$ e os conjuntos ativados foram agregados via operador do tipo MAX.
-Para incorporar o papel da densidade do solo como penalidade funcional, os pesos wi atribuídos a cada regra foram ajustados dinamicamente em função da classificação linguística de Ds. Regras com densidade alta (categoria linguística "baixa" na escala invertida) receberam pesos reduzidos (entre 0.4 e 0.6), enquanto regras com densidade baixa (categoria "alta") foram atribuídas com pesos maiores (até 1.5). Esse ajuste visa reforçar a influência da qualidade física do solo na determinação da funcionalidade.
+Para incorporar o papel da densidade do solo como penalidade funcional, os pesos wi atribuídos a cada regra foram ajustados dinamicamente em função da classificação linguística de Ds. Regras com densidade alta (categoria linguística baixa na escala invertida) receberam pesos reduzidos (entre 0.4 e 0.6), enquanto regras com densidade baixa (categoria alta) foram atribuídas com pesos maiores (até 1.5). Esse ajuste visa reforçar a influência da qualidade física do solo na determinação da funcionalidade.
 
 #### Defuzzificação do índice funcional
 
