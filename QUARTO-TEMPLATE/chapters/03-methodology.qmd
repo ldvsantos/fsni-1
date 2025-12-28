@@ -174,7 +174,7 @@ O domínio da função triangular foi ajustado de forma a garantir sobreposiçã
 
 #### Base de regras fuzzy
 
-A base de conhecimento foi composta por sete regras linguísticas do tipo "SE–ENTÃO", baseadas na combinação dos termos linguísticos das variáveis de entrada. A estrutura das regras segue a forma genérica (Equação 6):
+A base de conhecimento foi composta por sete regras linguísticas do tipo SE–ENTÃO, baseadas na combinação dos termos linguísticos das variáveis de entrada. A estrutura das regras segue a forma genérica (Equação 6):
 
 $$R_{(i)}: \text{SE } x_1 \in A_1 \land x_2 \in A_2 \land x_3 \in A_3 \Rightarrow y \in B_i$$
 
