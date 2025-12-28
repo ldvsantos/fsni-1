@@ -283,8 +283,7 @@ Not applicable.
 The dataset used in this study is available in the project repository at https://doi.org/10.5281/zenodo.18077256.
 
 ## Authors' contributions
-
-[Add author contributions statement here.]
+RNAF: Renisson Neponuceno de Araújo Filho; LDVS: Luiz Diego Vidal Santos; FSRH: Francisco Sandro Rodrigues Holanda; AP: Alceu Pedrotti; OCL: Olavo da Costa Leite; LMP: Ludmilla Morais Pereira; MBSS: Mateus Barbosa Santos da Silva; JMS: Jémison Mattos dos Santos. Conceptualization: RNAF, LDVS, FSRH, AP. Methodology: RNAF, LDVS, FSRH, AP. Formal analysis: LDVS, JMS. Investigation: RNAF, OCL, LMP. Data curation: LDVS, MBSS, JMS. Visualization: LDVS, MBSS. Writing – original draft: LDVS. Writing – review & editing: RNAF, LDVS, FSRH, AP, OCL, LMP, MBSS, JMS. Supervision: RNAF, FSRH, AP. Project administration: RNAF. Funding acquisition: None. All authors read and approved the final manuscript.
 
 ## Acknowledgements
 

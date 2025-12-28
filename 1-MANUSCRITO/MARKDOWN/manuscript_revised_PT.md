@@ -291,7 +291,7 @@ O conjunto de dados utilizado nas análises está disponível no repositório do
 
 ## Contribuição dos autores
 
-[Inserir aqui a declaração de contribuição dos autores.]
+Conceptualização: RNAF, LDVS, FSRH, AP. Metodologia: RNAF, LDVS, FSRH, AP. Análise formal: LDVS, JMS. Investigação: RNAF, OCL, LMP. Curadoria de dados: LDVS, MBSS, JMS. Visualização: LDVS, MBSS. Redação original: LDVS. Redação – revisão e edição: RNAF, LDVS, FSRH, AP, OCL, LMP, MBSS, JMS. Supervisão: RNAF, FSRH, AP. Administração do projeto: RNAF. Aquisição de financiamento: Nenhuma. Todos os autores leram e aprovaram a versão final do manuscrito.
 
 ## Agradecimentos
 
