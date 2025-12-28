@@ -20,7 +20,7 @@ Regarding Comment 4, the Introduction was streamlined by reducing general backgr
 
 Regarding Comment 5, the detailed description of the study areas was replaced by Table 1, which synthesizes stand age, planting procedure and density, soil preparation, and fertilization. Importantly, the fertilization regimes are now contextualized and justified using technical references associated with each production system, because fertilization is a first order driver of N and P availability and partitioning.
 
-Regarding Comment 6, Figure 3, which presented the soil profile and sampling illustration, was removed as requested. Figure 2 was retained because it provides essential information for site characterization and reproducibility, particularly the visual identification of the land use situations that ground the causal comparisons developed in the statistical and fuzzy frameworks. To avoid redundancy, the figure content was restricted to study area depiction and does not duplicate analytical results.
+Regarding Comment 6, the original Figure 3, which presented the soil profile and sampling illustration, was removed as requested. Figure 2 was retained because it provides essential information for site characterization and reproducibility, particularly the visual identification of the land use situations that ground the causal comparisons developed in the statistical and fuzzy frameworks. The remaining figures were renumbered accordingly.
 
 Regarding Comment 7, the text was clarified to state that labile N and P refer to operationally defined fractions determined by the Hedley procedure for P and by the Shang and Tiessen procedure for N, and that these fractions are distinct from humic fractionation and from the light organic matter pool.
 
