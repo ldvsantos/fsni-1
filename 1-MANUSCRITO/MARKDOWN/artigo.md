@@ -23,7 +23,7 @@ A conversão de ecossistemas nativos, como o Cerrado, para sistemas agropecuári
 
 Embora a importância individual de N e P seja bem documentada, a compreensão do acoplamento biogeoquímico entre suas formas lábeis e estáveis sob diferentes usos da terra permanece limitada. A interação entre esses elementos na MOS sugere que a perturbação em um ciclo afeta a estabilidade do outro, exigindo uma análise integrada [@helfenstein2020]. Abordagens tradicionais frequentemente falham em capturar a complexidade dessas interações não lineares. Nesse contexto, a Modelagem por Equações Estruturais (PLS-SEM) surge como uma ferramenta robusta para quantificar relações causais entre compartimentos do solo, enquanto a Lógica Fuzzy permite sintetizar múltiplos indicadores em índices de sustentabilidade interpretáveis, lidando com a incerteza inerente aos dados ambientais [@hair2021; @mendonca2024].
 
-Este estudo justifica-se pela necessidade de avaliar o impacto da expansão agrícola e silvicultural no Cerrado — um hotspot de biodiversidade — sobre a funcionalidade nutricional do solo. A escolha dos sistemas de uso (Eucalipto, Mogno, Teca e Agricultura) reflete as principais tendências de ocupação da terra na região, permitindo uma comparação direta com o ecossistema nativo.
+Este estudo justifica-se pela necessidade de avaliar o impacto da expansão agrícola e silvicultural no Cerrado (um hotspot de biodiversidade) sobre a funcionalidade nutricional do solo. A escolha dos sistemas de uso (Eucalipto, Mogno, Teca e Agricultura) reflete as principais tendências de ocupação da terra na região, permitindo uma comparação direta com o ecossistema nativo.
 
 O objetivo deste trabalho foi diagnosticar a dinâmica funcional de N e P em frações húmicas e lábeis de um Latossolo sob diferentes usos, integrando modelagem preditiva (PLSR), estrutural (PLS-SEM) e um Índice de Sustentabilidade Nutricional Fuzzy (FSNSI). Busca-se, especificamente, identificar quais frações controlam os estoques totais e como o manejo do solo altera o acoplamento entre N e P, fornecendo subsídios para práticas de manejo mais sustentáveis.
 
@@ -175,8 +175,8 @@ As correlações (Tabela 7) confirmaram que N e P totais são os principais dete
 
 A integração de PLSR, PLS-SEM e Lógica Fuzzy demonstrou que a sustentabilidade nutricional em Latossolos tropicais é governada pela estabilização de N e P em frações húmicas. O modelo estrutural confirmou que o acúmulo de estoques totais depende primariamente da humificação (β ≈ 1.28), enquanto as frações lábeis desempenham papel secundário ou transitório.
 
-O Índice FSNSI revelou que sistemas florestais bem manejados, como o Eucalipto, podem superar a funcionalidade química do Cerrado nativo, desde que haja manutenção de resíduos e ausência de perturbação do solo. Contudo, a degradação física (compactação) atua como um "veto" funcional, limitando o desempenho de sistemas como a Teca, mesmo na presença de fertilidade química.
+O Índice FSNSI revelou que sistemas florestais bem manejados, como o Eucalipto, podem superar a funcionalidade química do Cerrado nativo, desde que haja manutenção de resíduos e ausência de perturbação do solo. Contudo, a degradação física (compactação) atua como um veto funcional, limitando o desempenho de sistemas como a Teca, mesmo na presença de fertilidade química.
 
-Recomenda-se o uso do FSNSI como ferramenta de monitoramento para identificar "fome oculta" de qualidade do solo, permitindo intervenções precisas antes do colapso produtivo. Futuros estudos devem incorporar indicadores biológicos para refinar a sensibilidade do índice.
+Recomenda-se o uso do FSNSI como ferramenta de monitoramento para identificar fome oculta de qualidade do solo, permitindo intervenções precisas antes do colapso produtivo. Futuros estudos devem incorporar indicadores biológicos para refinar a sensibilidade do índice.
 
 <div id="refs"></div>
