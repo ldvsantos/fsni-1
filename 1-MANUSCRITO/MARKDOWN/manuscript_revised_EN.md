@@ -256,9 +256,39 @@ Nutritional functionality in Cerrado Oxisols appears to be sustained primarily b
 
 The proposed FSNSI provides an operational way to synthesize chemical capital and physical constraint into a single functionality metric, enabling comparisons among land-use systems and supporting monitoring and management prioritization. In our dataset, Eucalyptus showed the highest functional performance, whereas teak highlighted that biochemical accumulation may coexist with cycling and physical bottlenecks, emphasizing the need to interpret functionality jointly with soil physical integrity. Because inference is based on a single sampling campaign, further multi-season validation and complementary biological indicators are recommended to strengthen robustness across pedoclimatic contexts.
 
-# Data availability
+# Declarations
+
+## Funding
+
+[Add funding information here. If no funding was received, state: "The authors received no specific funding for this work."]
+
+## Competing interests
+
+The authors declare that they have no competing interests.
+
+## Ethics approval
+
+Not applicable.
+
+## Consent to participate
+
+Not applicable.
+
+## Consent for publication
+
+Not applicable.
+
+## Data availability
 
 The dataset used in this study is available in the project repository at https://doi.org/10.5281/zenodo.18077256.
+
+## Authors' contributions
+
+[Add author contributions statement here.]
+
+## Acknowledgements
+
+[Add acknowledgements here.]
 
 # References
 

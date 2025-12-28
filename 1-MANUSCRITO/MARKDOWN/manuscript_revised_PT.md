@@ -263,9 +263,39 @@ A funcionalidade nutricional em Oxissolos do Cerrado parece ser sustentada, prin
 
 O FSNSI oferece uma forma operacional de sintetizar capital químico e restrição física em uma única métrica de funcionalidade, permitindo comparar sistemas de uso do solo e apoiar monitoramento e priorização de manejo. No conjunto de dados avaliado, o eucalipto apresentou o melhor desempenho funcional, enquanto o teca evidenciou que a acumulação bioquímica pode coexistir com gargalos de ciclagem e limitações físicas, reforçando a necessidade de interpretar funcionalidade em conjunto com a integridade física do solo. Como a inferência se baseia em uma única campanha amostral, recomenda-se validação multissazonal e uso de indicadores biológicos complementares para ampliar a robustez do índice em diferentes contextos pedoclimáticos.
 
-# 5. Disponibilidade de dados
+# 5. Declarações
+
+## Financiamento
+
+[Inserir aqui a declaração de financiamento. Se não houve financiamento, usar: "Os autores não receberam financiamento específico para este trabalho."]
+
+## Conflito de interesses
+
+Os autores declaram não haver conflito de interesses.
+
+## Aprovação ética
+
+Não aplicável.
+
+## Consentimento para participar
+
+Não aplicável.
+
+## Consentimento para publicação
+
+Não aplicável.
+
+## Disponibilidade de dados
 
 O conjunto de dados utilizado nas análises está disponível no repositório do projeto em https://doi.org/10.5281/zenodo.18077256.
+
+## Contribuição dos autores
+
+[Inserir aqui a declaração de contribuição dos autores.]
+
+## Agradecimentos
+
+[Inserir aqui os agradecimentos.]
 
 # Referências
 
