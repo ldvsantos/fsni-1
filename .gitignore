@@ -25,11 +25,20 @@ __pycache__/
 *.Rout
 output*.txt
 
+# R (arquivos de sessão/usuário - não versionar)
+**/.Rhistory
+**/.RData
+**/.Rproj.user/
+**/Rplots.pdf
+
 # Dados temporários
 .DS_Store
 Thumbs.db
 
 # Documentos de análise (temporários)
 analise_*.md
+
+# DOCX gerados automaticamente (não versionar)
+1-MANUSCRITO/MARKDOWN/output_docx/
 
 /.luarc.json
