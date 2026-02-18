@@ -26,7 +26,7 @@ dados <- dados %>%
          PLabil, PMOL, PTAF, PTAH, PTHum, PT, EstPT) %>%
   filter(!is.na(Amb)) %>%
   mutate(Amb = factor(Amb, levels = 1:5,
-                      labels = c("Cerrado", "Agricultura", "Mogno", "Eucalipto", "Teca")))
+       labels = c("Cerrado", "Agriculture", "African mahogany", "Eucalyptus", "Teak")))
 
 # 2. Modelo de mensuração reduzido
 modelo_medicao <- constructs(
@@ -126,10 +126,10 @@ digraph G {
   edge [fontname = Helvetica, fontsize=10]
 
   // Nós de primeira ordem
-  NL [label = 'N_labil', fillcolor = '#fdfcd9']
-  NH [label = 'N_humico', fillcolor = '#fdfcd9']
-  PL [label = 'P_labil', fillcolor = '#e0f7fa']
-  PH [label = 'P_humico', fillcolor = '#e0f7fa']
+  NL [label = 'N_labile', fillcolor = '#fdfcd9']
+  NH [label = 'N_humic', fillcolor = '#fdfcd9']
+  PL [label = 'P_labile', fillcolor = '#e0f7fa']
+  PH [label = 'P_humic', fillcolor = '#e0f7fa']
 
   // Nós de segunda ordem
   NT [label = 'N_total', shape=ellipse, fillcolor = '#bbdefb']
@@ -141,25 +141,25 @@ digraph G {
   PH -> PT [label='1.286', color='firebrick', penwidth=2]
   PL -> PT [label='-0.313', color='firebrick', penwidth=2, style='dashed']
 
-  // GRUPO: Agricultura
+  // GROUP: Agriculture
   NH -> NT [label='1.180', color='black', penwidth=1]
   NL -> NT [label='-0.237', color='black', penwidth=1, style='dashed']
   PH -> PT [label='1.180', color='black', penwidth=1]
   PL -> PT [label='-0.237', color='black', penwidth=1, style='dashed']
 
-  // GRUPO: Mogno
+  // GROUP: African mahogany
   NH -> NT [label='1.271', color='darkgreen', penwidth=2]
   NL -> NT [label='-0.277', color='darkgreen', penwidth=2, style='dashed']
   PH -> PT [label='1.271', color='darkgreen', penwidth=2]
   PL -> PT [label='-0.277', color='darkgreen', penwidth=2, style='dashed']
 
-  // GRUPO: Eucalipto
+  // GROUP: Eucalyptus
   NH -> NT [label='1.275', color='blue', penwidth=2]
   NL -> NT [label='-0.283', color='blue', penwidth=2, style='dashed']
   PH -> PT [label='1.275', color='blue', penwidth=2]
   PL -> PT [label='-0.283', color='blue', penwidth=2, style='dashed']
 
-  // GRUPO: Teca
+  // GROUP: Teak
   NH -> NT [label='1.372', color='orange3', penwidth=2]
   NL -> NT [label='-0.445', color='orange3', penwidth=2, style='dashed']
   PH -> PT [label='1.372', color='orange3', penwidth=2]
@@ -167,10 +167,10 @@ digraph G {
   
   // Legendas (inseridas como caixas não conectadas)
   LEG1 [label='Cerrado', shape=rect, fillcolor='firebrick', fontcolor='white', style=filled]
-  LEG2 [label='Agricultura', shape=rect, fillcolor='black', fontcolor='white', style=filled]
-  LEG3 [label='Mogno', shape=rect, fillcolor='darkgreen', fontcolor='white', style=filled]
-  LEG4 [label='Eucalipto', shape=rect, fillcolor='blue', fontcolor='white', style=filled]
-  LEG5 [label='Teca', shape=rect, fillcolor='orange3', fontcolor='white', style=filled]
+  LEG2 [label='Agriculture', shape=rect, fillcolor='black', fontcolor='white', style=filled]
+  LEG3 [label='African mahogany', shape=rect, fillcolor='darkgreen', fontcolor='white', style=filled]
+  LEG4 [label='Eucalyptus', shape=rect, fillcolor='blue', fontcolor='white', style=filled]
+  LEG5 [label='Teak', shape=rect, fillcolor='orange3', fontcolor='white', style=filled]
 
   }
 ")

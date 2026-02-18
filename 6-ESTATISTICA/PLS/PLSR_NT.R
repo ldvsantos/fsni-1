@@ -24,7 +24,7 @@ variaveis_N <- c("NLabil", "NMOL", "NTAF", "NTAH", "NTHum",
 X <- dados %>% select(all_of(variaveis_N))
 Y_NT <- dados$NT
 grupo <- factor(dados$Amb, levels = 1:5,
-                labels = c("Cerrado", "Mogno", "Eucalipto", "Teca", "Agricultura"))
+                labels = c("Cerrado", "African mahogany", "Eucalyptus", "Teak", "Agriculture"))
 # Rodar o modelo PLSR
 modelo <- plsr(Y_NT ~ ., data = X, ncomp = 2, validation = "LOO")
 
@@ -64,11 +64,11 @@ biplot_nt <- ggplot() +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +
   labs(
-    title = "Biplot PLSR para NT",
+    title = "PLSR biplot for total nitrogen",
     x = label_x,
     y = label_y,
-    color = "Ambiente",
-    shape = "Ambiente"
+    color = "Land use",
+    shape = "Land use"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -184,8 +184,8 @@ ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
   geom_point(color = "blue", size = 2.5) +
   geom_hline(yintercept = 0.8, linetype = "dashed", color = "black") +
   labs(
-    title = "Importância das Variáveis segundo VIP (Critério de Wold)",
-    x = "Variáveis preditoras",
+    title = "Variable importance according to VIP (Wold criterion)",
+    x = "Predictor variables",
     y = "VIP Score"
   ) +
   theme_minimal(base_size = 14) +
@@ -215,7 +215,7 @@ y_pred <- predict(modelo, ncomp = 2)
 df_pred <- data.frame(
   Observado = Y_NT,
   Predito = y_pred[, , 1],
-  Ambiente = grupo
+  LandUse = grupo
 )
 
 # Criar linha de tendência
@@ -227,14 +227,14 @@ linha_trend$Predito <- predict(modelo_lm, newdata = linha_trend)
 
 # Gráfico com preenchimento e borda preta
 grafico_pred_nt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
-  geom_point(aes(fill = Ambiente), shape = 21, color = "black", size = 3, stroke = 1) +  # shape 21 = círculo com borda
+  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 3, stroke = 1) +
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
   labs(
-    title = "Valores observados vs. preditos para NT (PLSR)",
-    x = "NT observado",
-    y = "NT predito",
-    fill = "Ambiente"
+    title = "Observed versus predicted total nitrogen (PLSR)",
+    x = "Observed NT",
+    y = "Predicted NT",
+    fill = "Land use"
   ) +
   theme_minimal(base_size = 14) +
   theme(

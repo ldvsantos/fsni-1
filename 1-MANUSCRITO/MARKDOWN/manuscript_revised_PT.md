@@ -2,7 +2,7 @@
 title: "Sustentabilidade nutricional do solo em Latossolos do Cerrado com índice fuzzy (FSNSI)"
 author: Luiz Diego Vidal Santos
 date: "24 de Dezembro de 2025"
-bibliography: [referencias_artigo.bib, references_old.bib]
+bibliography: referencias_artigo.bib
 csl: apa.csl
 lang: pt-BR
 ---

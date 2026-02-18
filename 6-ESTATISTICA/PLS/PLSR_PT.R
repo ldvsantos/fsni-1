@@ -22,7 +22,7 @@ variaveis_P <- c(
 X <- dados %>% select(all_of(variaveis_P))
 Y_PT <- dados$PT
 grupo <- factor(dados$Amb, levels = 1:5,
-                labels = c("Cerrado", "Mogno", "Eucalipto", "Teca", "Agricultura"))
+                labels = c("Cerrado", "African mahogany", "Eucalyptus", "Teak", "Agriculture"))
 
 # Rodar PLSR
 modelo <- plsr(Y_PT ~ ., data = X, ncomp = 2, validation = "LOO")
@@ -78,11 +78,11 @@ biplot_pt <- ggplot() +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +
   labs(
-    title = "Biplot PLSR para PT",
+    title = "PLSR biplot for total phosphorus",
     x = label_x, 
     y = label_y, 
-    color = "Ambiente", 
-    shape = "Ambiente"
+    color = "Land use", 
+    shape = "Land use"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -149,8 +149,8 @@ grafico_vip_pt <- ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) 
   geom_point(color = "blue", size = 2.5) +
   geom_hline(yintercept = 0.8, linetype = "dashed", color = "black") +
   labs(
-    title = "Importância das Variáveis segundo VIP (Critério de Wold)",
-    x = "Variáveis preditoras",
+    title = "Variable importance according to VIP (Wold criterion)",
+    x = "Predictor variables",
     y = "VIP Score"
   ) +
   theme_minimal(base_size = 14) +
@@ -187,7 +187,7 @@ y_pred <- predict(modelo, ncomp = 2)
 df_pred <- data.frame(
   Observado = Y_PT,
   Predito = y_pred[, , 1],
-  Ambiente = grupo
+  LandUse = grupo
 )
 
 # Criar linha de tendência
@@ -199,14 +199,14 @@ linha_trend$Predito <- predict(modelo_lm, newdata = linha_trend)
 
 # Gráfico final
 grafico_pred_pt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
-  geom_point(aes(fill = Ambiente), shape = 21, color = "black", size = 3, stroke = 1) +
+  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 3, stroke = 1) +
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
   labs(
-    title = "Valores observados vs. preditos para PT (PLSR)",
-    x = "PT observado",
-    y = "PT predito",
-    fill = "Ambiente"
+    title = "Observed versus predicted total phosphorus (PLSR)",
+    x = "Observed PT",
+    y = "Predicted PT",
+    fill = "Land use"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -224,15 +224,15 @@ ggsave("../../2-FIGURAS/predicoes_pt.png", plot = grafico_pred_pt, width = 10, h
 # FIGURA 5 – Resíduos vs. Y predito
 # ==========================
 residuos <- Y_PT - y_pred[, , 1]
-df_resid <- data.frame(Predito = y_pred[, , 1], Resíduo = residuos)
+df_resid <- data.frame(Predito = y_pred[, , 1], Residual = residuos)
 
-grafico_resid_pt <- ggplot(df_resid, aes(x = Predito, y = Resíduo)) +
+grafico_resid_pt <- ggplot(df_resid, aes(x = Predito, y = Residual)) +
   geom_point(alpha = 0.7) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "gray50") +
   labs(
-    title = "Resíduos vs. valores preditos (PLSR)",
-    x = "PT predito",
-    y = "Resíduo"
+    title = "Residuals versus predicted values for total phosphorus (PLSR)",
+    x = "Predicted PT",
+    y = "Residual"
   ) +
   theme_minimal(base_size = 14)
 
