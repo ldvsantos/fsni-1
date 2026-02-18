@@ -1,5 +1,5 @@
 ---
-title: "Soil nutritional sustainability in Cerrado Oxisols using a fuzzy index (FSNSI)"
+title: "Impact of Land Use Change on Soil Nitrogen Stocks and Humic Fractions in Latosol from Brazilian Cerrado"
 author: Luiz Diego Vidal Santos
 date: "December 28, 2025"
 bibliography: [referencias_artigo.bib, references_old.bib]
@@ -11,9 +11,17 @@ lang: en-US
 
 ## Abstract
 
-The conversion of natural ecosystems into agricultural and silvicultural systems reshapes organomineral stabilization kinetics and, consequently, nitrogen and phosphorus stocks in Cerrado Oxisols. This study proposes the Fuzzy Soil Nutritional Sustainability Index (FSNSI) as a decision-support tool that integrates chemical capital, expressed as N and P stocks, and physical constraint, expressed as soil bulk density, into a scalable metric for the production phase in life-cycle sustainability assessment. Compositional partitioning indicated the dominance of humic fractions relative to the total, with a median humic contribution of 76.0% for N, and a low contribution of labile fractions, with a median of 12.18%, supporting a retention regime controlled by recalcitrant reservoirs. Native vegetation showed the highest humic contribution, with a median of 82.0%, and the lowest residual fraction (4.96%), whereas agriculture showed a reduced humic contribution (median 73.0%) and an increased residual fraction (17.15%), suggesting a greater allocation of mass into compartments not recovered by the operational extractions. Forest plantations showed a median total nitrogen stock per layer of 1.362, approximately 21.2% higher than native Cerrado, while maintaining a humic-dominated stabilization regime. The FSNSI discriminated land uses (Gamma GLM with bootstrap resampling, n = 1000), with higher functionality in Eucalyptus (Exp(B) = 6.07), followed by native Cerrado (Exp(B) = 4.42), indicating that functional performance may be optimized when continuous organic inputs occur without recurrent mechanical disturbance. We conclude that the co-stabilization of N and P in humic fractions, modulated by the physical integrity of the soil, is the central mechanism sustaining nutritional functionality in highly weathered tropical environments, and that FSNSI provides an integrated metric to guide interventions, prioritization, and routine environmental monitoring and assessment in land-management programs.
+The conversion of natural ecosystems into agricultural and silvicultural systems reshapes organomineral stabilization kinetics and, consequently, nitrogen and phosphorus stocks in Cerrado Oxisols. This study proposes the Fuzzy Soil Nutritional Sustainability Index (FSNSI) as a decision-support tool that integrates chemical capital, expressed as N and P stocks, and physical constraint, expressed as soil bulk density, into a scalable metric for the production phase in life-cycle sustainability assessment. Compositional partitioning indicated the dominance of humic fractions relative to the total, with a median humic contribution of 76.0% for N, and a low contribution of labile fractions, with a median of 12.18%, supporting a retention regime controlled by recalcitrant reservoirs. Native vegetation showed the highest humic contribution, with a median of 82.0%, and the lowest residual fraction (4.96%), whereas agriculture showed a reduced humic contribution (median 73.0%) and an increased residual fraction (17.15%), suggesting a greater allocation of mass into compartments not recovered by the operational extractions. Forest plantations showed a median total nitrogen stock per layer of 1.362, approximately 21.2% higher than native Cerrado, while maintaining a humic-dominated stabilization regime. The FSNSI discriminated land uses (p < 0.001), with adjusted means ranking in decreasing order as Eucalyptus (6.07), Mahogany (4.54), Cerrado (4.42), Agriculture (4.25), and Teak (2.77), indicating that functional performance is highest when continuous organic inputs occur without recurrent mechanical disturbance and lowest where biochemical impedance restricts nutrient cycling. We conclude that the co-stabilization of N and P in humic fractions, modulated by the physical integrity of the soil, is the central mechanism sustaining nutritional functionality in highly weathered tropical environments, and that FSNSI provides an integrated metric to guide interventions, prioritization, and routine environmental monitoring and assessment in land-management programs.
 
 **Keywords:** Soil nitrogen; Soil quality indicator; Environmental monitoring and assessment; Humic fractions; Land-use change; Oxisol.
+
+**Highlights**
+
+- Conversion of Cerrado to silviculture and agriculture altered N humic fractionation
+- Humic fractions retained 76% of total N across all land-use systems
+- Forest plantations increased total N stocks by 21% relative to native Cerrado
+- FSNSI ranked Eucalyptus highest and Teak lowest among five land uses
+- Co-stabilization of N and P in humic pools drives soil nutritional functionality
 
 # 1. Introduction
 
@@ -59,6 +67,8 @@ To improve clarity and reproducibility, the main management characteristics of e
 | Teak (*T. grandis*) | 1.12 ha | 10 years | Clearing; plowing and harrowing | 1,667 seedlings ha⁻¹ (3 × 2 m) | NPK 20-05-20 top dressings in year 1 [@Vieira2017; @Lima2023] |
 | Agriculture (soybean/corn rotation) | 3.06 ha | > 10 years | Tillage and seedbed operations (harrowing, leveling, furrowing) | Crop-dependent spacing | NPK 4-28-10 (soybean phase) and 4-14-18 + N rates (corn phase) [@Machado2024; @Camargo2024] |
 
+All managed areas were converted from native Cerrado vegetation at different times, resulting in stand ages that range from 5 years (Eucalyptus) to over 10 years (agriculture), as detailed in Table 1. Because synchronous conversion was not feasible within the farm's operational history, the sampling design follows a space-for-time substitution approach in which each land-use situation represents a distinct post-conversion trajectory sampled at a single point in time. None of the three plantation species (*Eucalyptus* sp., *Khaya ivorensis*, *Tectona grandis*) is a nitrogen-fixing legume, so biological N fixation does not confound the observed differences in nitrogen stocks among silvicultural systems. Stand-age heterogeneity is acknowledged as a design constraint and is considered in the interpretation of results.
+
 ## 2.3 Soil sampling
 
 Five trenches were opened in each land-use situation, with dimensions of 70 × 70 × 100 cm at different points [@MarinhoJunior2021], totaling 25 trenches and representing five replicates per land-use treatment. Disturbed and undisturbed soil samples were collected for physical and chemical analyses at depths of 0-10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-80, and 80-100 cm. Disturbed samples were air-dried and sieved through a 2 mm mesh for subsequent analyses. For inferential analyses, the data structure was treated as observations stratified by land use and depth, with replicate trenches as the sampling support within each land-use class.
@@ -99,11 +109,11 @@ FSNSI ranges from 0 to 10 and was interpreted as: Low Sustainability (0.0-3.3), 
 
 ## 2.6 Data analysis
 
-Data were analyzed using multivariate generalized linear models (GLM) with bootstrap resampling (n = 1000) to evaluate land-use and soil-depth effects on N and P fractions, stocks, and FSNSI. The GLM framework was adopted instead of traditional ANOVA due to non-normality and heteroscedasticity (Shapiro-Wilk, p < 0.01). A Gamma distribution was selected based on lower AIC and BIC compared with normal and log-normal distributions [@Akaike1974; @McCullaghNelder2019]. Model adequacy was confirmed by residual analysis (Deviance/df < 1) and absence of overdispersion [@CameronTrivedi1990].
+Data were analyzed using multivariate generalized linear models (GLM) with bootstrap resampling (n = 1000) to evaluate land-use and soil-depth effects on N and P fractions, stocks, and FSNSI. The GLM framework was adopted instead of traditional ANOVA due to non-normality and heteroscedasticity (Shapiro-Wilk, p < 0.01). A Gamma distribution was selected based on lower AIC and BIC compared with normal and log-normal distributions [@Akaike1974; @McCullaghNelder2019]. Model adequacy was confirmed by residual analysis (Deviance/df < 1) and absence of overdispersion [@CameronTrivedi1990]. Following current recommendations on reporting effect sizes alongside significance levels, land-use effects on FSNSI were quantified as exponentiated coefficients (Exp(B)) with bootstrap 95% confidence intervals, which express effect magnitude on the original response scale and are more informative for practical interpretation than significance tests alone, because a significant test only indicates departure from the null whereas Exp(B) quantifies the predicted mean under each treatment condition.
 
 Multivariate significance was assessed using Pillai, Wilks, Hotelling, and Roy statistics. Pairwise comparisons used Bonferroni correction. Exploratory analyses included principal component analysis (PCA), hierarchical clustering analysis (HCA, Ward.D2), and Pearson correlation to assess linear associations among variables.
 
-Structural relations were modeled using partial least squares regression (PLSR) and PLS-SEM to identify key predictors (VIP > 1.0). Analyses were conducted in R [@RCoreTeam2024] using FactoMineR, factoextra, ggplot2, seminr (PLS-SEM), and boot (bootstrap resampling).
+Structural relations were modeled using partial least squares regression (PLSR) and PLS-SEM to identify key predictors (VIP > 1.0). The structural model was specified as a second-order hierarchical component model (HCM), and land-use contrasts were evaluated by PLS multi-group analysis (PLS-MGA). Analyses were conducted in R [@RCoreTeam2024] using FactoMineR, factoextra, ggplot2, seminr (PLS-SEM and PLS-MGA), and boot (bootstrap resampling).
 
 In the PLSR workflow, predictors were centered and scaled prior to model fitting, and latent components were estimated with leave-one-out cross-validation to control overfitting under correlated predictors. Two PLSR models were fit, one for the nitrogen system and one for the phosphorus system. In the nitrogen model, the dependent variable was total nitrogen stock (EstNT), with independent variables representing operational fractions and their stocks (NLabil, NMOL, NTAF, NTAH, NTHum, EstNLabil, EstNMOL, EstNAF, EstNAH, and EstNTHum). In the phosphorus model, the dependent variable was total phosphorus stock (EstPT), with analogous independent variables (PLabil, PMOL, PTAF, PTAH, PTHum, EstPLabil, EstPMOL, EstPAF, EstPAH, and EstPTHum).
 
@@ -119,9 +129,10 @@ Labile fractions contributed a median of 12.18% of total nitrogen (IQR: 11.47% t
 
 In Figure 3, the TN–humic alignment is consistent with the 76.0% median humic share of total N and the observed compositional hierarchy, where most N is allocated to fractions with higher structural complexity. Mechanistically, this dominance implies that N retention is governed by progressive incorporation into low-biodegradability organic networks and by interactions with mineral surfaces that impose physicochemical barriers to enzymatic access, reinforcing a dynamic of immobilization and continuous restabilization. Because humification transfers mass from a high-turnover compartment to a persistent compartment, the labile fraction tends to act as a short-term reservoir rather than a determinant of long-term stocks, consistent with its lower proportional contribution and higher sensitivity to disturbance and microclimate [@Carvalho2023].
 
-In the nitrogen PLSR model, EstNT was treated as the dependent variable and the fraction variables as predictors, with two latent components retained after cross-validation. The first component captured the dominant covariance structure between total stock and humic pools, and the second component improved separation of labile and mineral-associated contributions, consistent with the variance partitioning reported in section 2.6.
+In the nitrogen PLSR model, EstNT was treated as the dependent variable and the fraction variables as predictors, with two latent components retained after cross-validation. The first component captured the dominant covariance structure between total stock and humic pools, and the second component improved separation of labile and mineral-associated contributions, consistent with the variance partitioning estimated for the two-component PLSR structure.
 
-![Figure 3. Structural correlation in the nitrogen PLSR model, where EstNT is the dependent variable and predictors are NLabil, NMOL, NTAF, NTAH, NTHum, EstNLabil, EstNMOL, EstNAF, EstNAH, and EstNTHum. Abbreviations are standardized as NLabil for labile nitrogen and NMOL for light organic matter nitrogen.](../../2-FIGURAS/biplot_plsr_nt.png){#fig:3 width=70%}
+![Figure 3. Structural correlation in the nitrogen PLSR model, where total nitrogen stock is represented as TN_stock and predictors are shown with standardized abbreviations in the biplot.](../../2-FIGURAS/biplot_plsr_nt.png){#fig:3 width=70%}
+
 
 In highly weathered Oxisols, phosphorus cycling is constrained by specific adsorption to Fe and Al oxides (ligand exchange), which increases chemical impedance to biological turnover. Organic matter modulates P availability by competing for reactive sites and favoring incorporation into persistent organomineral pools, consistent with @Gerke2022. In the phosphorus PLSR model, EstPT was treated as the dependent variable and phosphorus fractions were used as predictors with two latent components retained after cross-validation.
 
@@ -135,7 +146,7 @@ When viewed through the lens of aggregates and organometallic associations, the 
 
 Preserved Cerrado showed the highest humic contribution (median 82.0%) and the lowest residual fraction (4.96%), whereas agriculture showed the lowest humic contribution (median 73.0%) and the highest residual fraction (17.15%). When comparisons are summarized into three macro-systems (native vegetation, forest plantations, and agriculture), this ordering reduces interpretative ambiguity. Forest plantations showed an intermediate condition (median 76.0% humic contribution; residual 11.47%), suggesting that the transition from native Cerrado to arboreal systems maintained a substantial part of the stabilization architecture while redistributing mass among compartments, consistent with organomineral protection mechanisms and contrasting pathways between particulate and mineral-associated organic matter [@Paul2016; @Ferreira2021].
 
-In terms of total stocks per layer, plantations showed a median EstNT of 1.362, approximately 21.2% higher than Cerrado (median 1.124), while agriculture showed a median of 1.171, about 4.1% above Cerrado. Among plantations, Teak, Eucalyptus, and Mahogany showed median EstNT values of 1.383, 1.335, and 1.295, corresponding to increases of 23.0%, 18.8%, and 15.2% relative to Cerrado. This contrast suggests that stock gains depend on how each management system modulates organic input quality, residence time, and protection within organomineral domains, rather than on input magnitude alone.
+Total nitrogen stocks per layer ranked in decreasing order as Teak (median EstNT = 1.383), Eucalyptus (1.335), Mahogany (1.295), Agriculture (1.171), and Cerrado (1.124), corresponding to increases of 23.0%, 18.8%, 15.2%, and 4.1% relative to the native baseline. The higher stock observed in agriculture likely reflects sustained mineral-N additions through fertilization cycles (Table 1), which supplement organically derived N and complicate direct comparison with unfertilized native vegetation. None of the three plantation species is a nitrogen-fixing legume, so the stock gains in silvicultural systems cannot be attributed to biological N fixation and are more plausibly explained by continuous litter input, root turnover, and reduced post-establishment disturbance. Total N stock dynamics should not be equated with bulk SOM trends, because N accumulation reflects the combined outcome of organic-N incorporation, mineral-N retention, and fraction-specific stabilization, processes that may diverge from carbon-driven SOM trajectories [@Gerke2022]. This contrast suggests that stock gains depend primarily on how each management system modulates organic input quality, residence time, and protection within organomineral domains, rather than on input magnitude alone.
 
 The relatively low dispersion of partitioning percentages, especially when compared with the variation in stocks, should be interpreted as a compositional property of a system in which fractions represent a decomposition of the total and are therefore subject to sum constraints and analytical recovery efficiency, not as evidence of absent dynamics [@Aitchison1986]. In process-engineering terms, this indicates that dominant control lies in the transfer flux among compartments and in the balance between stabilization and loss, rather than in large fluctuations in percentage distribution, reinforcing the role of fraction dynamics and structural stability as regulators of long-term stock resilience [@Jensen2020].
 
@@ -145,35 +156,25 @@ In the structural model, humic-to-total path coefficients were > 1.2 and labile-
 
 ![Figure 5. Second-order hierarchical structural model (HCM) integrating functional fractions of N and P.](../../2-FIGURAS/analise_caminhos_pls.png){#fig:5 width=70%}
 
-As proposed by @Lehmann2015, the continuum model of SOM implies that labile compounds are continuously processed and stabilized. In this framework, a high stock of labile N or P that does not translate into humic N or P indicates interrupted humification or excessive mineralization, typical of conventionally tilled agriculture (Table 2). Conversely, balanced coefficients in Cerrado and Eucalyptus systems indicate an active flux of labile inputs into stable reserves.
+As proposed by @Lehmann2015, the continuum model of SOM implies that labile compounds are continuously processed and stabilized. In this framework, a high stock of labile N or P that does not translate into humic N or P indicates interrupted humification or excessive mineralization, typical of conventionally tilled agriculture. Conversely, balanced coefficients in Cerrado and Eucalyptus systems indicate an active flux of labile inputs into stable reserves.
 
-The symmetry between N and P pathways in the structural model reinforces the concept of biogeochemical co-stabilization. @MarinhoJunior2021 reported that, in Brazilian Cerrado soils, disruption of this coupling (e.g., excessive P fertilization without organic inputs) can reduce SOM quality. Our results extend this interpretation by indicating that this coupling can be maintained under silvicultural transitions, provided that the soil physical structure is preserved.
+The symmetry between N and P pathways in the structural model reinforces the concept of biogeochemical co-stabilization. @MarinhoJunior2021 reported that, in Brazilian Cerrado soils, disruption of this coupling (e.g., excessive P fertilization without organic inputs) can reduce SOM quality. Our results extend this interpretation by indicating that this coupling can be maintained under silvicultural transitions, provided that the soil physical structure is preserved. The global PLS-SEM fit corroborated the structural adequacy of the model, with R² = 0.959 for both N total and P total endogenous constructs, SRMR below 0.06, composite reliability exceeding 0.97, and average variance extracted (AVE) above 0.95, collectively indicating that the latent constructs capture more than 95% of indicator variance under satisfactory discriminant validity.
 
-**Table 2. Quality metrics of the global PLS-SEM model.**
+## 3.3 Functional heterogeneity among land uses
 
-| Metric | Observed value | Interpretation |
-| --- | --- | --- |
-| R² (N_total) | 0.959 (Cerrado) | 95.9% of variance explained |
-| R² (P_total) | 0.959 (Cerrado) | 95.9% of variance explained |
-| SRMR | < 0.06 | Good model fit |
-| Reliability (α) | > 0.97 | Internal consistency > 0.97 |
-| Communality (AVE) | > 0.95 | High average variance extracted |
-
-## 3.3 Functional heterogeneity aong land uses
-
-Multi-group analysis showed humic coefficients ranging from β = 1.180 (agriculture) to β = 1.372 (teak), indicating that management alters stabilization pathways (Table 3). Native Cerrado showed high humic coefficients (β = 1.286), representing a functional baseline in which nutrient cycling is tightly coupled and efficient.
+Multi-group analysis showed humic coefficients ranging from β = 1.180 (agriculture) to β = 1.372 (teak), indicating that management alters stabilization pathways (Table 2). Native Cerrado showed high humic coefficients (β = 1.286), representing a functional baseline in which nutrient cycling is tightly coupled and efficient.
 
 Agriculture showed a reduction in humic efficiency (β = 1.180), consistent with @Silva2024, who reported that Cerrado conversion to agriculture accelerates particulate organic matter oxidation. Physical aggregate disruption by tillage exposes previously protected organic matter to microbial attack, thereby decoupling N and P cycles.
 
-**Table 3. Path coefficients stratified by land use.**
+**Table 2. Path coefficients stratified by land use.**
 
 | Land use | Humic N → Total N | Labile N → Total N | Humic P → Total P | Labile P → Total P |
 | --- | --- | --- | --- | --- |
-| Cerrado | 1.286 | -0.313 | 1.286 | -0.313 |
-| Agriculture | 1.180 | -0.237 | 1.180 | -0.237 |
-| African mahogany | 1.271 | -0.277 | 1.271 | -0.277 |
-| Eucalyptus | 1.275 | -0.283 | 1.275 | -0.283 |
 | Teak | 1.372 | -0.445 | 1.372 | -0.445 |
+| Cerrado | 1.286 | -0.313 | 1.286 | -0.313 |
+| Eucalyptus | 1.275 | -0.283 | 1.275 | -0.283 |
+| African mahogany | 1.271 | -0.277 | 1.271 | -0.277 |
+| Agriculture | 1.180 | -0.237 | 1.180 | -0.237 |
 
 *Note. Standardized values indicate the magnitude of structural relations in each environment.*
 
@@ -181,9 +182,11 @@ Among silvicultural systems, Eucalyptus (β = 1.275) and African mahogany (β = 
 
 Teak showed a distinct anomaly, with the highest humic coefficient (β = 1.372) paired with the most negative labile coefficient (β = -0.445). While this may appear favorable in a purely structural reading, the pattern is consistent with a cycling bottleneck associated with low litter decomposability. Teak litter is known for high lignin content and secondary metabolites such as tectoquinone, which can reduce decomposition rates and delay nutrient return to labile pools [@AraujoFilho2025]. Combined with the higher bulk density observed in Teak stands (Appendix 2), the result is consistent with increased physical and biochemical impedance, shifting the system toward accumulation in recalcitrant forms and reducing short-term renewal, a condition associated with functional stagnation in compacted soils [@Locatelli2023].
 
+Because plantation ages differ (Eucalyptus 5 yr, Mahogany 7 yr, Teak 10 yr; Table 1), the observed coefficients capture post-conversion trajectories at different maturity stages under a space-for-time design rather than a synchronous experiment. This asynchrony constrains direct age-controlled comparison but reflects the real diversity of silvicultural transitions at the landscape scale, and the results should be interpreted as indicative of management-type effects rather than strict chronosequence trends.
+
 ## 3.4 Fuzzy integration of edaphic functionality and the FSNSI
 
-The fitted GLM indicated a statistically significant land-use effect on FSNSI (p < 0.001) and good model fit (Deviance/df = 0.082; Pearson/df = 0.075). Adjusted marginal estimates indicated higher functionality in the Eucalyptus system, whose mean differed significantly from native Cerrado (p < 0.05). Eucalyptus showed the highest average FSNSI (Exp(B) = 6.07; 95% CI: 5.45-6.69), followed by Cerrado (Exp(B) = 4.42; 95% CI: 3.80-5.04).
+The fitted GLM indicated a statistically significant land-use effect on FSNSI (p < 0.001) and good model fit (Deviance/df = 0.082; Pearson/df = 0.075). Adjusted marginal estimates indicated higher functionality in the Eucalyptus system, whose mean differed significantly from native Cerrado (p < 0.05). Adjusted marginal means ranked in decreasing order as Eucalyptus (Exp(B) = 6.07; 95% CI: 5.45-6.69), Mahogany (Exp(B) = 4.54), Cerrado (Exp(B) = 4.42; 95% CI: 3.80-5.04), Agriculture (Exp(B) = 4.25; 95% CI: 3.68-4.82), and Teak (Exp(B) = 2.77), confirming that functionality was highest under continuous organic inputs without post-establishment soil disturbance and lowest where biochemical impedance restricted cycling.
 
 Eucalyptus exceeded Cerrado (Exp(B) = 6.07 versus 4.42), but this pattern is conditional on the sampling window and on how the index weights chemical capital (N and P) and physical constraint (bulk density). The result is consistent with higher inputs and limited post-establishment disturbance [@Iversen2022], and evidence indicates that well-managed plantations may surpass native baselines for specific soil functions under optimized inputs [@Tang2023].
 
@@ -195,13 +198,13 @@ Across land uses, FSNSI ranged from 1.56 to 8.57 and shifts in medians and withi
 
 Native Cerrado showed a bimodal distribution (50% low and 40% high functionality), reflecting strong natural vertical stratification. The wide FSNSI range (1.56-8.57) captures the contrast between organic-rich, porous surface layers (0-20 cm) and a chemically impoverished, naturally compacted subsoil typical of these Oxisols. Conventional agriculture (Exp(B) = 4.25; 95% CI: 3.68-4.82) showed a tendency toward vertical homogenization (CV = 60.6%), consistent with mechanized tillage mixing layers and reducing structural gradients [@Leal2024]. Although functionality is compromised, 22.5% of samples reached the 'high' class, plausibly due to surface fertilization and residual SOM accumulation [@Camargo2024].
 
-Correlations between FSNSI and nutrient pools were strong (r = 0.616–0.789; p < 0.001), supporting the internal coherence of the index, which responds simultaneously to persistent chemical capital and fast-renewal capital under penalization for physical impedance via bulk density (Table 4). This integrative property reduces the interpretative entropy typical of univariate readings and shifts the assessment from fertility to functionality, where stabilization, cycling, and physical constraints coexist as coupled components of system performance. The positive association with total pools indicates that the indicator captures long-term nutrient storage, while the negative association with bulk density indicates that structural compaction constrains edaphic performance by reducing effective pore space for gas and water transfer.
+Correlations between FSNSI and nutrient pools were strong (r = 0.616–0.789; p < 0.001), supporting the internal coherence of the index, which responds simultaneously to persistent chemical capital and fast-renewal capital under penalization for physical impedance via bulk density (Table 3). This integrative property reduces the interpretative entropy typical of univariate readings and shifts the assessment from fertility to functionality, where stabilization, cycling, and physical constraints coexist as coupled components of system performance. The positive association with total pools indicates that the indicator captures long-term nutrient storage, while the negative association with bulk density indicates that structural compaction constrains edaphic performance by reducing effective pore space for gas and water transfer.
 
 ## 3.5 How FSNSI improves interpretation of N and P functional dynamics
 
 The FSNSI framework improves interpretation because it converts multivariate and partially collinear soil information into a single response variable that preserves mechanistic meaning across land uses. Instead of evaluating isolated concentrations or stocks, the index integrates persistent nutrient capital, represented by total and humic-associated pools, with short-turnover pools and with physical impedance represented by bulk density. This joint representation allows direct comparison of functional states among management systems while maintaining sensitivity to the balance between stabilization and renewal. In practical terms, the model identifies whether higher stocks are associated with effective co-stabilization in humic compartments or with transient accumulation under structural restriction, which is essential for distinguishing resilient from vulnerable nutrient regimes. By combining PLS-based structural evidence with fuzzy aggregation, FSNSI therefore extends descriptive comparisons into an operational decision metric for monitoring, prioritization, and management targeting.
 
-**Table 4. Pearson correlation coefficients between soil variables and FSNSI.**
+**Table 3. Pearson correlation coefficients between soil variables and FSNSI.**
 
 | Variable | Correlation (r) | p-value |
 | --- | --- | --- |
@@ -277,6 +280,8 @@ The dataset used in this study is available in the project repository at https:/
 | *Magonia pubescens* | 9.82 | 9.73 | 9.82 | 29.38 |
 
 ## Appendix 2. Physical soil attributes
+
+All experimental sites are located within the same 53.23 ha area on a single Red-Yellow Oxisol mapping unit developed from the same parent material. Particle-size distribution is a conservative pedological property controlled by parent material and pedogenesis rather than by post-conversion management, which explains the minimal textural variation across land uses. Bulk density, by contrast, integrates management-induced compaction and biological loosening and is therefore the physically responsive variable differentiating the systems.
 
 ### Depth: 0-10 cm
 

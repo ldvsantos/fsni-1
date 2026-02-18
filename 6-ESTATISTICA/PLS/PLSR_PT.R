@@ -27,8 +27,8 @@ grupo <- factor(dados$Amb, levels = 1:5,
 # Rodar PLSR
 modelo <- plsr(Y_PT ~ ., data = X, ncomp = 2, validation = "LOO")
 expl_x <- explvar(modelo)[1:2] * 100
-label_x <- paste0("LV1 (", round(expl_x[1], 1), "% X)")
-label_y <- paste0("LV2 (", round(expl_x[2], 1), "% X)")
+label_x <- paste0("LV1 (", round(expl_x[1], 1), "%)")
+label_y <- paste0("LV2 (", round(expl_x[2], 1), "%)")
 
 
 
@@ -49,6 +49,20 @@ loadings_scaled <- sweep(loadings_raw, 1, sqrt(rowSums(loadings_raw^2)), FUN = "
 loadings_df <- as.data.frame(loadings_scaled)
 colnames(loadings_df) <- c("LV1", "LV2")
 loadings_df$var <- rownames(loadings_df)
+label_map_p <- c(
+  "PLabil" = "P_labile",
+  "PMOL" = "P_LOM",
+  "PTAF" = "P_HAF",
+  "PTAH" = "P_HAH",
+  "PTHum" = "P_humic",
+  "EstPT" = "TP_stock",
+  "EstPLabil" = "P_labile_stock",
+  "EstPMOL" = "P_LOM_stock",
+  "EstPAF" = "P_HAF_stock",
+  "EstPAH" = "P_HAH_stock",
+  "EstPTHum" = "P_humic_stock"
+)
+loadings_df$label <- dplyr::recode(loadings_df$var, !!!label_map_p, .default = loadings_df$var)
 
 # Escalar os loadings para caber no raio de 1.2
 escala_setas <- 0.5
@@ -73,7 +87,7 @@ biplot_pt <- ggplot() +
                aes(x = 0, y = 0, xend = LV1, yend = LV2),
                arrow = arrow(length = unit(0.2, "cm")), color = "black") +
   geom_text_repel(data = loadings_df,
-                  aes(x = LV1, y = LV2, label = var), size = 3.5) +
+                  aes(x = LV1, y = LV2, label = label), size = 3.5) +
   coord_fixed(xlim = c(-0.5, 0.5), ylim = c(-0.5, 0.5)) +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +

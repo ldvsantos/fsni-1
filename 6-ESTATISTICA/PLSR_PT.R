@@ -11,7 +11,7 @@ rm(list = ls())
 gc()
 
 # Carregar dados
-dados <- read_excel("banco_dados.xlsx", sheet = "dados") %>% na.omit()
+dados <- read_excel("banco_dados.xlsx", sheet = "DADOS") %>% na.omit()
 names(dados) <- trimws(names(dados))  # Corrigir espaços nos nomes
 
 # Variáveis preditoras relacionadas ao fósforo (P)
@@ -27,8 +27,8 @@ grupo <- factor(dados$Amb, levels = 1:5,
 # Rodar PLSR
 modelo <- plsr(Y_PT ~ ., data = X, ncomp = 2, validation = "LOO")
 expl_x <- explvar(modelo)[1:2] * 100
-label_x <- paste0("LV1 (", round(expl_x[1], 1), "% X)")
-label_y <- paste0("LV2 (", round(expl_x[2], 1), "% X)")
+label_x <- paste0("LV1 (", round(expl_x[1], 1), "%)")
+label_y <- paste0("LV2 (", round(expl_x[2], 1), "%)")
 
 
 
@@ -49,6 +49,20 @@ loadings_scaled <- sweep(loadings_raw, 1, sqrt(rowSums(loadings_raw^2)), FUN = "
 loadings_df <- as.data.frame(loadings_scaled)
 colnames(loadings_df) <- c("LV1", "LV2")
 loadings_df$var <- rownames(loadings_df)
+label_map_p <- c(
+  "PLabil" = "P_labile",
+  "PMOL" = "P_LOM",
+  "PTAF" = "P_HAF",
+  "PTAH" = "P_HAH",
+  "PTHum" = "P_humic",
+  "EstPT" = "TP_stock",
+  "EstPLabil" = "P_labile_stock",
+  "EstPMOL" = "P_LOM_stock",
+  "EstPAF" = "P_HAF_stock",
+  "EstPAH" = "P_HAH_stock",
+  "EstPTHum" = "P_humic_stock"
+)
+loadings_df$label <- dplyr::recode(loadings_df$var, !!!label_map_p, .default = loadings_df$var)
 
 # Escalar os loadings para caber no raio de 1.2
 escala_setas <- 0.5
@@ -68,17 +82,17 @@ ggplot() +
   geom_hline(yintercept = 0, color = "gray50") +
   geom_vline(xintercept = 0, color = "gray50") +
   geom_point(data = scores_df, aes(x = LV1, y = LV2, shape = Amb, color = Amb),
-             size = 3, alpha = 0.9) +
+             size = 4, alpha = 0.9) +
   geom_segment(data = loadings_df,
                aes(x = 0, y = 0, xend = LV1, yend = LV2),
-               arrow = arrow(length = unit(0.2, "cm")), color = "black") +
+               arrow = arrow(length = unit(0.25, "cm")), color = "black") +
   geom_text_repel(data = loadings_df,
-                  aes(x = LV1, y = LV2, label = var), size = 3.5) +
+                  aes(x = LV1, y = LV2, label = label), size = 5) +
   coord_fixed(xlim = c(-0.5, 0.5), ylim = c(-0.5, 0.5)) +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +
   labs(x = label_x, y = label_y, color = "Land use", shape = "Land use") +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(panel.grid = element_blank(), legend.position = "right")
 
 
@@ -131,14 +145,14 @@ tabela_vip <- data.frame(
 # Gráfico de VIP
 ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
   geom_segment(aes(xend = Variável, y = 0, yend = VIP), color = "blue", size = 0.7) +
-  geom_point(color = "blue", size = 2.5) +
+  geom_point(color = "blue", size = 3.5) +
   geom_hline(yintercept = 0.8, linetype = "dashed", color = "black") +
   labs(
     title = "Variable importance according to VIP (Wold criterion)",
     x = "Predictor variables",
     y = "VIP Score"
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         plot.title = element_text(face = "bold", hjust = 0.5))
 
@@ -175,8 +189,8 @@ linha_trend <- data.frame(
 linha_trend$Predito <- predict(modelo_lm, newdata = linha_trend)
 
 # Gráfico final
-ggplot(df_pred, aes(x = Observado, y = Predito)) +
-  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 3, stroke = 1) +
+p_pred_pt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
+  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 4, stroke = 1) +
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
   labs(
@@ -185,11 +199,13 @@ ggplot(df_pred, aes(x = Observado, y = Predito)) +
     y = "Predicted PT",
     fill = "Land use"
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(
     legend.position = "right",
     plot.title = element_text(face = "bold", hjust = 0.5)
   )
+print(p_pred_pt)
+ggsave("../2-FIGURAS/predicoes_pt.png", p_pred_pt, width = 8, height = 7, dpi = 300)
 
        
 # ==========================
@@ -206,5 +222,5 @@ ggplot(df_resid, aes(x = Predito, y = Residual)) +
     x = "Predicted PT",
     y = "Residual"
   ) +
-  theme_minimal(base_size = 14)
+  theme_minimal(base_size = 16)
 

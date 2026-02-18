@@ -39,6 +39,20 @@ loadings_scaled <- sweep(loadings_raw, 1, sqrt(rowSums(loadings_raw^2)), FUN = "
 loadings_df <- as.data.frame(loadings_scaled)
 colnames(loadings_df) <- c("LV1", "LV2")
 loadings_df$var <- rownames(loadings_df)
+label_map_n <- c(
+  "NLabil" = "N_labile",
+  "NMOL" = "N_LOM",
+  "NTAF" = "N_HAF",
+  "NTAH" = "N_HAH",
+  "NTHum" = "N_humic",
+  "EstNT" = "TN_stock",
+  "EstNLabil" = "N_labile_stock",
+  "EstNMOL" = "N_LOM_stock",
+  "EstNAF" = "N_HAF_stock",
+  "EstNAH" = "N_HAH_stock",
+  "EstNTHum" = "N_humic_stock"
+)
+loadings_df$label <- dplyr::recode(loadings_df$var, !!!label_map_n, .default = loadings_df$var)
 
 # Círculo de correlação unitário
 circle <- data.frame(
@@ -48,8 +62,8 @@ circle <- data.frame(
 
 # Variância explicada de X pelas duas primeiras componentes (em %)
 expl_x <- explvar(modelo)[1:2]
-label_x <- paste0("LV1 (", round(expl_x[1], 1), "% X)")
-label_y <- paste0("LV2 (", round(expl_x[2], 1), "% X)")
+label_x <- paste0("LV1 (", round(expl_x[1], 1), "%)")
+label_y <- paste0("LV2 (", round(expl_x[2], 1), "%)")
 
 # Gráfico final
 biplot_nt <- ggplot() +
@@ -59,7 +73,7 @@ biplot_nt <- ggplot() +
   geom_point(data = scores_df, aes(x = LV1, y = LV2, shape = Amb, color = Amb), size = 3, alpha = 0.9) +
   geom_segment(data = loadings_df, aes(x = 0, y = 0, xend = LV1, yend = LV2),
                arrow = arrow(length = unit(0.2, "cm")), color = "black") +
-  geom_text_repel(data = loadings_df, aes(x = LV1, y = LV2, label = var), size = 3.5) +
+  geom_text_repel(data = loadings_df, aes(x = LV1, y = LV2, label = label), size = 3.5) +
   coord_fixed(xlim = c(-1.05, 1.05), ylim = c(-1.05, 1.05)) +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +

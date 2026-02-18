@@ -175,7 +175,7 @@ fig1 <- ggplot(df_pertinencia, aes(x = x, y = y, color = Termo, linetype = Termo
     color = "Termo linguístico",
     linetype = "Termo linguístico"
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(
     panel.grid.minor = element_blank(),
     legend.position = "bottom",
@@ -228,7 +228,7 @@ fig2 <- ggplot(df_saida, aes(x = x, y = y, color = Termo, linetype = Termo)) +
     color = "Qualidade funcional",
     linetype = "Qualidade funcional"
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(
     panel.grid.minor = element_blank(),
     legend.position = "bottom"
@@ -297,7 +297,7 @@ fig3 <- ggplot(dados_norm, aes(x = amb, y = if_valor_fuzzy)) +
     ),
     color = guide_legend(title = "Graph legend")
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     legend.position = "right"
@@ -340,7 +340,7 @@ fig4 <- ggplot(resumo_fsnsi, aes(x = amb, y = media, fill = amb)) +
     y = "FSNSI médio (± EP)",
     fill = "Uso da Terra"
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     legend.position = "none",
@@ -370,7 +370,7 @@ dados_norm$prof <- factor(dados_norm$prof,
 
 fig5 <- ggplot(dados_norm, aes(x = prof, y = if_valor_fuzzy, fill = amb)) +
   geom_boxplot(alpha = 0.7, outlier.shape = NA) +
-  geom_jitter(aes(color = amb), width = 0.2, alpha = 0.5, size = 1) +
+  geom_jitter(aes(color = amb), width = 0.2, alpha = 0.5, size = 2) +
   scale_fill_brewer(palette = "Set1") +
   scale_color_brewer(palette = "Set1") +
   scale_y_continuous(limits = c(0, 10), breaks = seq(0, 10, 2)) +
@@ -380,12 +380,12 @@ fig5 <- ggplot(dados_norm, aes(x = prof, y = if_valor_fuzzy, fill = amb)) +
     y = "FSNSI (0-10)",
     fill = "Uso da Terra"
   ) +
-  theme_minimal(base_size = 12) +
+  theme_minimal(base_size = 16) +
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 12),
     legend.position = "none",
     panel.grid.minor = element_blank(),
-    strip.text = element_text(face = "bold")
+    strip.text = element_text(face = "bold", size = 13)
   )
 
 ggsave(

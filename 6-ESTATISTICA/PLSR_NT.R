@@ -12,7 +12,7 @@ cat("\014")  # limpa o console
 if (dev.cur() != 1) dev.off()
 
 # Carregar dados
-dados <- read_excel("banco_dados.xlsx", sheet = "dados") %>% na.omit()
+dados <- read_excel("banco_dados.xlsx", sheet = "DADOS") %>% na.omit()
 
 # Remover espaços ocultos nos nomes das colunas
 names(dados) <- trimws(names(dados))
@@ -39,6 +39,20 @@ loadings_scaled <- sweep(loadings_raw, 1, sqrt(rowSums(loadings_raw^2)), FUN = "
 loadings_df <- as.data.frame(loadings_scaled)
 colnames(loadings_df) <- c("LV1", "LV2")
 loadings_df$var <- rownames(loadings_df)
+label_map_n <- c(
+  "NLabil" = "N_labile",
+  "NMOL" = "N_LOM",
+  "NTAF" = "N_HAF",
+  "NTAH" = "N_HAH",
+  "NTHum" = "N_humic",
+  "EstNT" = "TN_stock",
+  "EstNLabil" = "N_labile_stock",
+  "EstNMOL" = "N_LOM_stock",
+  "EstNAF" = "N_HAF_stock",
+  "EstNAH" = "N_HAH_stock",
+  "EstNTHum" = "N_humic_stock"
+)
+loadings_df$label <- dplyr::recode(loadings_df$var, !!!label_map_n, .default = loadings_df$var)
 
 # Círculo de correlação unitário
 circle <- data.frame(
@@ -48,18 +62,18 @@ circle <- data.frame(
 
 # Variância explicada de X pelas duas primeiras componentes (em %)
 expl_x <- explvar(modelo)[1:2]
-label_x <- paste0("LV1 (", round(expl_x[1], 1), "% X)")
-label_y <- paste0("LV2 (", round(expl_x[2], 1), "% X)")
+label_x <- paste0("LV1 (", round(expl_x[1], 1), "%)")
+label_y <- paste0("LV2 (", round(expl_x[2], 1), "%)")
 
 # Gráfico final
-ggplot() +
+p_biplot_nt <- ggplot() +
   geom_path(data = circle, aes(x = x, y = y), linetype = "dotted", color = "gray40") +
   geom_hline(yintercept = 0, color = "gray50") +
   geom_vline(xintercept = 0, color = "gray50") +
-  geom_point(data = scores_df, aes(x = LV1, y = LV2, shape = Amb, color = Amb), size = 3, alpha = 0.9) +
+  geom_point(data = scores_df, aes(x = LV1, y = LV2, shape = Amb, color = Amb), size = 4, alpha = 0.9) +
   geom_segment(data = loadings_df, aes(x = 0, y = 0, xend = LV1, yend = LV2),
-               arrow = arrow(length = unit(0.2, "cm")), color = "black") +
-  geom_text_repel(data = loadings_df, aes(x = LV1, y = LV2, label = var), size = 3.5) +
+               arrow = arrow(length = unit(0.25, "cm")), color = "black") +
+  geom_text_repel(data = loadings_df, aes(x = LV1, y = LV2, label = label), size = 5) +
   coord_fixed(xlim = c(-1.05, 1.05), ylim = c(-1.05, 1.05)) +
   scale_color_brewer(palette = "Dark2") +
   scale_shape_manual(values = 1:5) +
@@ -69,12 +83,13 @@ ggplot() +
     color = "Land use",
     shape = "Land use"
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(
     panel.grid = element_blank(),
     legend.position = "right"
   )
-
+print(p_biplot_nt)
+ggsave("../2-FIGURAS/biplot_plsr_nt.png", p_biplot_nt, width = 8, height = 8, dpi = 300)
 
 
 # TABELA 1 – Estatísticas descritivas
@@ -164,29 +179,6 @@ vip_pls <- function(object) {
 # Calcular VIP
 vip_scores <- vip_pls(modelo)
 
-
-
-
-
-
-
-# Gráfico tipo Wold VIP plot
-ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
-  geom_segment(aes(xend = Variável, y = 0, yend = VIP), color = "blue", size = 0.7) +
-  geom_point(color = "blue", size = 2.5) +
-  geom_hline(yintercept = 0.8, linetype = "dashed", color = "black") +
-  labs(
-    title = "Variable importance according to VIP (Wold criterion)",
-    x = "Predictor variables",
-    y = "VIP Score"
-  ) +
-  theme_minimal(base_size = 14) +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    plot.title = element_text(face = "bold", hjust = 0.5)
-  )
-
-
 # Tabela de VIPs
 tabela_vip <- data.frame(
   Variável = names(vip_scores),
@@ -197,6 +189,22 @@ tabela_vip <- data.frame(
 # Visualizar
 print("TABELA 4 – Importância das variáveis (VIP):")
 print(tabela_vip)
+
+# Gráfico tipo Wold VIP plot
+ggplot(tabela_vip, aes(x = reorder(Variável, VIP), y = VIP)) +
+  geom_segment(aes(xend = Variável, y = 0, yend = VIP), color = "blue", size = 0.7) +
+  geom_point(color = "blue", size = 3.5) +
+  geom_hline(yintercept = 0.8, linetype = "dashed", color = "black") +
+  labs(
+    title = "Variable importance according to VIP (Wold criterion)",
+    x = "Predictor variables",
+    y = "VIP Score"
+  ) +
+  theme_minimal(base_size = 16) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(face = "bold", hjust = 0.5)
+  )
 
 
 #VIP > 1 → variável considerada importante para o modelo
@@ -233,7 +241,7 @@ linha_trend$Predito <- predict(modelo_lm, newdata = linha_trend)
 
 # Gráfico com preenchimento e borda preta
 ggplot(df_pred, aes(x = Observado, y = Predito)) +
-  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 3, stroke = 1) +
+  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 4, stroke = 1) +
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
   labs(
@@ -242,7 +250,7 @@ ggplot(df_pred, aes(x = Observado, y = Predito)) +
     y = "Predicted NT",
     fill = "Land use"
   ) +
-  theme_minimal(base_size = 14) +
+  theme_minimal(base_size = 16) +
   theme(
     legend.position = "right",
     plot.title = element_text(face = "bold", hjust = 0.5)
