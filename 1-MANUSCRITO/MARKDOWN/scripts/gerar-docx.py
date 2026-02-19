@@ -161,7 +161,7 @@ def main():
     print("=" * 70)
     
     # Arquivos comuns
-    csl_file = base_dir / "apa.csl"
+    csl_file = base_dir / "springer-basic-author-date.csl"
     bib_candidates = [base_dir / "referencias_artigo.bib", base_dir / "references_old.bib"]
     bib_files = [p for p in bib_candidates if p.exists()]
 
@@ -233,13 +233,14 @@ def main():
     # ========================================================================
     md_en = base_dir / "manuscript_revised_EN.md"
     docx_en = out_dir / "manuscript_EN.docx"
+    apendices_en = base_dir / "apendices_EN.md" if (base_dir / "apendices_EN.md").exists() else None
     
     if not md_en.exists():
         print(f"\n⚠️  Arquivo {md_en} não encontrado, pulando...")
     else:
         total += 1
         preflight_sections(md_en)
-        result = gerar_docx(md_en, docx_en, bib_files, csl_file, apendices_file=None, reference_doc=manuscript_reference_doc)
+        result = gerar_docx(md_en, docx_en, bib_files, csl_file, apendices_file=apendices_en, reference_doc=manuscript_reference_doc)
         if result == 0:
             sucessos += 1
 
@@ -255,6 +256,19 @@ def main():
             sucessos += 1
     else:
         print("\nℹ️  title_page.md não encontrado. Se a revista exigir Title Page separada, crie esse arquivo e rode novamente.")
+
+    # ========================================================================
+    # 2C. APÊNDICES EN (arquivo separado)
+    # ========================================================================
+    apendices_en_md = base_dir / "apendices_EN.md"
+    apendices_en_docx = out_dir / "apendices_EN.docx"
+    if apendices_en_md.exists():
+        total += 1
+        result = gerar_docx(apendices_en_md, apendices_en_docx, bib_files=None, csl_file=None, apendices_file=None, reference_doc=manuscript_reference_doc)
+        if result == 0:
+            sucessos += 1
+    else:
+        print("\nℹ️  apendices_EN.md não encontrado, pulando geração de apêndices EN separado.")
 
     # ========================================================================
     # 3. GERAR COVER LETTER

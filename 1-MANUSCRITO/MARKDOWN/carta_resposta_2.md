@@ -46,7 +46,7 @@ Sections 2.2 (study area) and 2.6 (data analysis) were condensed relative to the
 
 **R2-G4. "The result section needs to be written separately."**
 
-We acknowledge the preference; however, Forest Ecology and Management accepts combined Results and Discussion, and we believe the integrative format better serves the mechanistic narrative required to interpret the structural model (PLS-SEM) and the fuzzy index jointly with the primary data. This choice was deliberate and consistently maintained.
+We acknowledge the preference; however, Environmental Monitoring and Assessment (Springer) accepts combined Results and Discussion, and we believe the integrative format better serves the mechanistic narrative required to interpret the structural model (PLS-SEM) and the fuzzy index jointly with the primary data. This choice was deliberate and consistently maintained.
 
 **R2-G5. "The figure quality is not satisfactory, and fonts are too small to read."**
 
@@ -160,7 +160,7 @@ We reviewed Singh et al. (2018) and adopted a more structured approach to multi-
 
 **R2-S27. "You need to learn how to cite papers at different end of the sentence" (L429).**
 
-Citation formatting was corrected throughout. The manuscript uses Pandoc with APA CSL, which produces "Author and Author (Year)" in narrative citations and "(Author & Author, Year)" in parenthetical citations, following journal requirements.
+Citation formatting was corrected throughout. All in-text citations now use "and" instead of the ampersand symbol (&), following the journal style requirements.
 
 **R2-S28. "The result and discussion section is too long. At least 1/3 part should be shortened."**
 
@@ -168,7 +168,7 @@ The R&D section was condensed by removing the PLS-SEM quality-metrics table (for
 
 **R2-S29. "Conclusion section is fragmented and written in a monotonous manner. It should be concise."**
 
-The Conclusion was rewritten as two concise paragraphs. The first summarizes the main findings (co-stabilization mechanism, land-use contrasts), and the second addresses FSNSI utility, limitations (single sampling campaign), and recommendations for future validation.
+The Conclusion was rewritten as a single concise paragraph that directly addresses the central hypothesis and the study objective. It confirms the dominant role of humic retention modulated by bulk density, highlights the discriminatory capacity of FSNSI across land-use systems, and emphasizes the stoichiometric coupling between N and P as the mechanistic foundation of nutritional functionality in tropical environments.
 
 ---
 
