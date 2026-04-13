@@ -190,7 +190,7 @@ linha_trend$Predito <- predict(modelo_lm, newdata = linha_trend)
 
 # Gráfico final
 p_pred_pt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
-  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 4, stroke = 1) +
+  geom_point(aes(fill = LandUse), shape = 21, color = "black", size = 5, stroke = 1.2) +
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
   labs(
@@ -199,13 +199,17 @@ p_pred_pt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
     y = "Predicted total P stock",
     fill = "Land use"
   ) +
-  theme_minimal(base_size = 16) +
+  theme_minimal(base_size = 18) +
   theme(
     legend.position = "right",
-    plot.title = element_text(face = "bold", hjust = 0.5)
+    plot.title = element_text(face = "bold", hjust = 0.5, size = 18),
+    axis.title = element_text(size = 16),
+    axis.text = element_text(size = 14),
+    legend.title = element_text(size = 14),
+    legend.text = element_text(size = 13)
   )
 print(p_pred_pt)
-ggsave("../2-FIGURAS/predicoes_pt.png", p_pred_pt, width = 8, height = 7, dpi = 300)
+ggsave("../2-FIGURAS/predicoes_pt.png", p_pred_pt, width = 10, height = 8, dpi = 300)
 
        
 # ==========================
