@@ -271,6 +271,19 @@ def main():
         print("\nℹ️  apendices_EN.md não encontrado, pulando geração de apêndices EN separado.")
 
     # ========================================================================
+    # 2D. CARTA RESPOSTA 2
+    # ========================================================================
+    carta_md = base_dir / "carta_resposta_2.md"
+    carta_docx = out_dir / "carta_resposta_2.docx"
+    if carta_md.exists():
+        total += 1
+        result = gerar_docx(carta_md, carta_docx, bib_files=None, csl_file=None, apendices_file=None, reference_doc=manuscript_reference_doc)
+        if result == 0:
+            sucessos += 1
+    else:
+        print("\nℹ️  carta_resposta_2.md não encontrado, pulando geração da carta resposta.")
+
+    # ========================================================================
     # 3. GERAR COVER LETTER
     # ========================================================================
     cover_md = base_dir / "cover_letter.md"

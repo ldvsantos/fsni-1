@@ -1,0 +1,252 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tcolorbox}
+\usepackage[normalem]{ulem}
+\usepackage{longtable}
+\usepackage{array}
+
+\definecolor{reviewercolor}{RGB}{0,51,102}
+\definecolor{responsecolor}{RGB}{0,100,0}
+\definecolor{changecolor}{RGB}{139,69,19}
+\definecolor{editorcolor}{RGB}{102,0,102}
+
+\newtcolorbox{reviewerbox}{
+  colback=blue!5!white,
+  colframe=reviewercolor,
+  fonttitle=\bfseries,
+  title=Reviewer Comment,
+  boxrule=0.5pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt
+}
+
+\newtcolorbox{editorbox}{
+  colback=purple!5!white,
+  colframe=editorcolor,
+  fonttitle=\bfseries,
+  title=Editor Comment,
+  boxrule=0.5pt,
+  left=4pt, right=4pt, top=4pt, bottom=4pt
+}
+
+\newcommand{\response}[1]{\par\noindent\textcolor{responsecolor}{\textbf{Response:}} #1}
+\newcommand{\change}[1]{\par\noindent\textcolor{changecolor}{\textbf{Changes in manuscript:}} \textit{#1}}
+
+\title{Point-by-Point Response to Reviewer Comments\\[0.3em]
+\large Manuscript: ``Impact of Land Use Change on Soil Nitrogen Stocks\\
+and Humic Fractions in Latosol from Brazilian Cerrado''}
+\author{Luiz Diego Vidal Santos et al.}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent Dear Dr.\ Godfred Darko,
+
+\medskip
+\noindent We sincerely thank the Editor and the Reviewer for the constructive evaluation of our manuscript (Submission ID: 32475c9a-405f-4ae6-98fd-94cd39ef717a) submitted to \textit{Environmental Monitoring and Assessment}. We have carefully addressed every point raised, as detailed below. All significant changes are highlighted in the revised manuscript.
+
+\medskip
+\noindent \textbf{A note of apology to the Reviewer.} We wish to offer our sincere apologies for the fact that the Reviewer's comments from the previous round were not addressed in the prior revision. This omission was in no way due to a lack of interest or to any perception that the Reviewer's feedback was irrelevant; on the contrary, the comments are substantive and have materially improved the manuscript. During the previous revision cycle, the editorial process involved detailed reports from three other reviewers, whose extensive requests required significant restructuring of the manuscript. In the course of implementing those changes, we regrettably failed to verify that the Reviewer's report had also been incorporated, and we only became aware of this oversight upon receiving the current decision letter. We take full responsibility for this error, and we have now addressed every point from the Reviewer's original report in the present revision, as documented below. We respectfully ask the Reviewer to accept our apology and to evaluate the manuscript on the basis of the changes now implemented.
+
+\bigskip
+\hrule
+\bigskip
+
+%% ================================================================
+\section*{Response to Editor}
+%% ================================================================
+
+\begin{editorbox}
+``We invite you to revise your paper, carefully addressing the comments from the reviewers and the editor. Please ensure the results are accurately reported, any overstated conclusions are rewritten and the limitations of the work fully explained.''
+\end{editorbox}
+
+\response{We conducted a thorough revision addressing all comments from the Reviewer and the Editor. We first wish to acknowledge, with sincere apologies, that the Reviewer's comments from the previous round were inadvertently not addressed in our prior submission. The previous revision cycle required us to respond to extensive reports from three other reviewers, and in managing that volume of changes we failed to confirm that this Reviewer's report had also been incorporated. This was entirely our oversight, and we have now addressed every one of the Reviewer's original comments in the present revision. Overstated conclusions were rewritten with epistemic modesty throughout the manuscript, replacing assertive language (``confirms'', ``demonstrates'', ``significant advancement'') with hedged formulations (``suggests'', ``may contribute to'', ``tends to be''). The Conclusion was substantially expanded to include three explicit limitations (absence of direct SOC measurements, single sampling campaign, stand-age heterogeneity of the space-for-time design) and directions for future research. The Introduction was expanded to better acknowledge the soil continuum model and justify the operational use of humic fractionation. Methodological descriptions were strengthened with additional detail on replication structure, PLSR standardization, and dataset dimensions. All changes are detailed in the point-by-point responses below.}
+
+\bigskip
+\hrule
+\bigskip
+
+%% ================================================================
+\section*{Response to Reviewer}
+%% ================================================================
+
+\noindent We appreciate the Reviewer's thorough and constructive assessment, and we sincerely apologize that these comments were not addressed in the previous revision. As explained above, the omission was a procedural oversight on our part during a revision cycle that involved simultaneous responses to three other reviewers, and it does not reflect any disregard for the Reviewer's evaluation. We have now carefully addressed each comment, as detailed individually below.
+
+\bigskip
+
+%% --- General comments ---
+
+\begin{reviewerbox}
+\textbf{General comments.} Overall, the study has sufficient scientific value and applies comprehensive analytical methods. However, the quality of the manuscript could be further improved by: (1) better validating the application of humification theory; (2) improving figure interpretation and the description of statistical methods; and (3) more clearly explaining how the proposed FSNSI enhances our understanding of N and P sustainability through modeling.
+\end{reviewerbox}
+
+\response{We appreciate this balanced summary and agree with all three improvement directions. We expanded the Introduction to provide stronger justification for the use of humic fractionation within the context of contemporary SOM persistence theory (Comment on Lines~69--73). Statistical method descriptions were strengthened throughout Section~2 (Comments on Lines~151, 210, 215--220, and 225). A dedicated subsection (Section~3.5) was already present in the submitted version to address how FSNSI improves interpretation of N and P dynamics (Comment on Line~364), and its content was reviewed for clarity.}
+
+\bigskip
+
+%% --- Detailed comment 1: Lines 69-73 ---
+
+\begin{reviewerbox}
+\textbf{Lines 69--73.} Humification is a traditional theory explaining soil organic matter (SOM) persistence, but it has been increasingly debated and criticized. The cited references (e.g., Lehmann \& Kleber, 2015) themselves propose alternative conceptual frameworks that move beyond the classical humification model. This does not imply that the use of humification theory in this study is inappropriate; however, recent advances in SOM persistence theory should at least be acknowledged in the Introduction. In addition, the application of humification theory in this study should be better justified or validated.
+\end{reviewerbox}
+
+\response{We fully agree that a more thorough acknowledgment of the evolving SOM persistence paradigm was necessary. The third paragraph of the Introduction was substantially expanded. The revised text now explicitly discusses the soil continuum model (Lehmann \& Kleber 2015), the role of mineral-organic associations through Fe and Al oxyhydroxides in tropical Oxisols (Kleber et al.\ 2015; Kallenbach et al.\ 2016), and the SOM formation--persistence--functioning synthesis (Cotrufo et al.\ 2021). The justification for retaining the IHSS alkaline-acid fractionation protocol is now presented as an operational analytical partition that tracks the distribution of N and P across functionally distinct solubility pools, not as an assumption that humic substances are chemically homogeneous macromolecules. We further clarify that this approach is widely adopted in tropical soil studies for its reproducibility, and that mechanistic inferences in the present study are anchored in convergent evidence from compositional partitioning, PLSR structure, and PLS-SEM path coefficients rather than derived from the fractionation scheme alone (Marschner et al.\ 2008; Paul 2016).}
+
+\change{Introduction, paragraph~3 was expanded from 3 sentences to 5 sentences, with four new references added (Cotrufo et al.\ 2021; Kleber et al.\ 2015; Kallenbach et al.\ 2016; Marschner et al.\ 2008).}
+
+\bigskip
+
+%% --- Detailed comment 2: Line 151 ---
+
+\begin{reviewerbox}
+\textbf{Line 151.} The sampling procedure is oversimplified. For example, it is unclear whether and how replication was implemented during the sampling process. In addition, it would be helpful to provide more details on how replicates and soil layers were statistically structured and analyzed.
+\end{reviewerbox}
+
+\response{We strengthened Section~2.3 to make the replication structure explicit. The revised text now states that each trench constituted the experimental unit, that the five trenches per land-use situation were opened at spatially independent positions within the management unit, and that the combined design yielded 200 observations (5 land uses $\times$ 5 trenches $\times$ 8 depths). We also added a forward reference to Section~2.6 indicating that the generalized linear model framework accounted for this hierarchical structure through the inclusion of land-use and depth factors with Bonferroni-corrected pairwise comparisons.}
+
+\change{Section~2.3 was revised to include explicit replication details (``five true replicates per land-use treatment''), total observation count (200), and a link to the statistical framework in Section~2.6.}
+
+\bigskip
+
+%% --- Detailed comment 3: Lines 204-205 ---
+
+\begin{reviewerbox}
+\textbf{Lines 204--205.} The meaning and purpose of these citations are unclear. Please clarify how they support the statements made in this section.
+\end{reviewerbox}
+
+\response{We agree that the original citation cluster was opaque. The revised text now assigns each reference to a specific component of the hypothesis, explaining that Condron et al.\ (2011) supports the role of humic retention in long-term organic-P accumulation in undisturbed soils, Jensen et al.\ (2020) provides evidence that N stabilization depends on the balance between litter quality and microbial processing, and Garc\'{i}a et al.\ (2016, cited as Macci2016 in the bibliography key) documents how land-use conversion disrupts organomineral protection of both nutrients.}
+
+\change{Hypothesis paragraph: the single citation cluster was replaced by three individual citations, each linked to its specific evidential role.}
+
+\bigskip
+
+%% --- Detailed comment 4: Line 210 ---
+
+\begin{reviewerbox}
+\textbf{Line 210.} More details on the Partial Least Squares Regression (PLSR) analysis are needed, such as whether the data were normalized or standardized, and whether cross-validation was applied.
+\end{reviewerbox}
+
+\response{These details were already present in the submitted manuscript (Section~2.6, final paragraph), but we agree they could have been more explicit. The revised text now states that ``all predictors were standardized (mean-centered and scaled to unit variance) prior to model fitting to ensure equal contribution of variables measured on different scales'' and that ``latent components were estimated with leave-one-out cross-validation (LOO-CV) to control overfitting under correlated predictors.'' The parenthetical specification of the standardization procedure and the LOO-CV acronym improve clarity.}
+
+\change{Section~2.6, PLSR paragraph: ``centered and scaled'' was replaced by ``standardized (mean-centered and scaled to unit variance)''; ``leave-one-out cross-validation'' was followed by ``(LOO-CV)''.}
+
+\bigskip
+
+%% --- Detailed comment 5: Lines 215-216 and 219-220 ---
+
+\begin{reviewerbox}
+\textbf{Lines 215--216 and 219--220.} It is unclear where the data used in this analysis originated. Please provide a table or figure summarizing the dataset used for modeling.
+\end{reviewerbox}
+
+\response{The dataset originates from the sampling campaign described in Section~2.3 and the analytical procedures in Section~2.4. Section~2.6 already specifies that ``the modeling dataset comprised 200 observations derived from five land-use classes, five replicate trenches per class, and eight depth intervals per trench.'' In the revised Section~2.3, we made this link more explicit by stating the total observation count (200 = 5 $\times$ 5 $\times$ 8). The dependent and independent variables for both PLSR models are fully listed in Section~2.6 (nitrogen model: EstNT as DV, 10 fraction variables as IVs; phosphorus model: EstPT as DV, 10 analogous fraction variables as IVs). The dataset is publicly available at \url{https://doi.org/10.5281/zenodo.18077256}.}
+
+\change{Section~2.3 now explicitly states ``yielding 200 observations in total (5 land uses $\times$ 5 trenches $\times$ 8 depths)'' to clarify the data source.}
+
+\bigskip
+
+%% --- Detailed comment 6: Lines 219-220 ---
+
+\begin{reviewerbox}
+\textbf{Lines 219--220.} The statement ``Labile fractions contributed a median of 12.18\%\ldots'' is unclear. Please specify contributed to what (e.g., total N, total P, FSNSI, or another variable).
+\end{reviewerbox}
+
+\response{We agree that this could be clearer. The revised text now reads: ``Labile fractions accounted for a median of 12.18\% of total nitrogen content in the soil profile (IQR: 11.47\% to 12.73\%; range: 9.09\% to 13.77\%)\ldots'', which removes any ambiguity about the denominator.}
+
+\change{Section~3.1: ``contributed a median of 12.18\% of total nitrogen'' was replaced by ``accounted for a median of 12.18\% of total nitrogen content in the soil profile''.}
+
+\bigskip
+
+%% --- Detailed comment 7: Line 225 and onwards ---
+
+\begin{reviewerbox}
+\textbf{Line 225 and onwards.} Because PLSR is a regression-based approach, it would be helpful to clearly define the dependent variables (DVs) and independent variables (IVs). Additional information, such as the proportion of variance explained by extracted components for both DVs and IVs, should be provided. These clarifications also apply to Figures 3 and 4.
+\end{reviewerbox}
+
+\response{The DVs and IVs for both PLSR models are fully defined in Section~2.6. For the nitrogen model, the DV is total nitrogen stock (EstNT) and the IVs are 10 fraction variables (NLabil, NMOL, NTAF, NTAH, NTHum, EstNLabil, EstNMOL, EstNAF, EstNAH, and EstNTHum). For the phosphorus model, the DV is total phosphorus stock (EstPT) with analogous IVs. In the revised Section~3.1, we now explicitly reference the variance explained: ``the first latent variable explained 49.43\% and the second increased cumulative explained variance to 94.49\% of the response.'' The abbreviations used in Figures~3 and 4 will be standardized with full names provided in the figure captions (see response to Figures and Tables comments).}
+
+\change{Section~3.1: the phrase ``consistent with the variance partitioning estimated for the two-component PLSR structure'' was replaced by ``consistent with the variance partitioning reported in Section~2.6, where the first latent variable explained 49.43\% and the second increased cumulative explained variance to 94.49\% of the response.''}
+
+\bigskip
+
+%% --- Detailed comment 8: Line 364 ---
+
+\begin{reviewerbox}
+\textbf{Line 364.} The modeling approach and data interpretation are generally clear and convincing. However, the Results and Discussion sections are largely descriptive. In my view, the manuscript would benefit from an additional subsection explicitly elucidating how the application of FSNSI improves the evaluation of functional dynamics of N and P in humic and labile soil fractions under different land-use types, in direct relation to the stated research question.
+\end{reviewerbox}
+
+\response{We appreciate this suggestion. Section~3.5, titled ``How FSNSI improves interpretation of N and P functional dynamics'', was already included in the submitted manuscript and directly addresses the Reviewer's point. This subsection explains that FSNSI converts multivariate and partially collinear soil information into a single response variable that preserves mechanistic meaning, allows direct comparison of functional states among management systems while maintaining sensitivity to the balance between stabilization and renewal, and extends descriptive comparisons into an operational decision metric for monitoring, prioritization, and management targeting. We reviewed the subsection for clarity during this revision but no structural changes were required, as its content aligns with the Reviewer's recommendation.}
+
+\change{No structural change required; Section~3.5 was already present in the submitted manuscript.}
+
+\bigskip
+
+%% ================================================================
+\section*{Response to Comments on Figures and Tables}
+%% ================================================================
+
+\begin{reviewerbox}
+\textbf{Figure 2.} Please consider merging the five panels into a single composite figure and clearly labeling each panel as (a)--(e).
+\end{reviewerbox}
+
+\response{Figure~2 was already formatted as a single composite photomontage with panels labeled (a)--(e) in the submitted manuscript. The caption reads: ``Land-use situations. Photomontage: (a) Cerrado sensu stricto (preserved native vegetation); (b) eucalyptus (\textit{Eucalyptus} sp.); (c) African mahogany (\textit{Khaya ivorensis}); (d) teak (\textit{Tectona grandis}); (e) agriculture (soybean/corn rotation).'' No change is required.}
+
+\bigskip
+
+\begin{reviewerbox}
+\textbf{Figures 3 and 4.} These figures are difficult to interpret because: (1) full names of abbreviations are not provided; and (2) abbreviations are inconsistent between figures and figure captions (e.g., LabileN vs.\ NLabil). Please standardize terminology and define all abbreviations clearly.
+\end{reviewerbox}
+
+\response{We agree that abbreviation standardization is necessary. In the revised manuscript, all variable abbreviations in Figures~3 and 4 were made consistent with those defined in Section~2.6. Underscored compound labels (e.g., N\_HAF, TP\_stock) were replaced by full descriptive names (e.g., FA-N = nitrogen in fulvic acid fraction; Total N stock = total nitrogen stock). The figure captions now include a complete definition of every abbreviation displayed in the plots, ensuring that readers can interpret all labels without consulting other sections.}
+
+\change{Figures~3 and 4 were regenerated with standardized labels (e.g., Labile N, FA-N, HA-N, Humin-N, Total N stock for nitrogen; analogous for phosphorus). Captions were expanded to define all abbreviations.}
+
+\bigskip
+
+\begin{reviewerbox}
+\textbf{Figure 5.} The conceptual model appears overly complex, and the text within the figure is difficult to read due to the small font size. Please simplify the model where possible and improve figure readability.
+\end{reviewerbox}
+
+\response{Figure~5 was simplified by reducing the number of overlapping edges from 20 (five land-use groups $\times$ four paths) to 4, displaying coefficient ranges across land uses on each edge and referring readers to Table~2 for per-group values. Node labels were expanded to include constituent fractions (e.g., ``Humic N (FA-N, HA-N, Humin-N)''), font sizes were increased throughout the diagram, and the legend box now explains solid versus dashed arrows. The figure caption was also expanded to define all constructs and abbreviations.}
+
+\change{Figure~5 was regenerated with a simplified layout (4 edges instead of 20), larger fonts (16~pt nodes, 14~pt edges), expanded node labels including constituent fractions, and coefficient ranges replacing per-group overlapping edges.}
+
+\bigskip
+\hrule
+\bigskip
+
+%% ================================================================
+\section*{Summary of Changes}
+%% ================================================================
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Introduction, paragraph 3:} Expanded to explicitly acknowledge the soil continuum model, mineral-organic associations, and the operational justification for humic fractionation. Four new references added.
+\item \textbf{Section 2.3 (Soil sampling):} Replication structure made explicit (experimental unit, spatial independence, total observation count of 200, link to statistical framework).
+\item \textbf{Hypothesis paragraph:} Citations disentangled with individual evidential roles assigned to each reference.
+\item \textbf{Section 2.6 (PLSR):} Standardization procedure specified as mean-centering and unit-variance scaling; LOO-CV acronym added.
+\item \textbf{Section 3.1:} Labile contribution clarified (``of total nitrogen content in the soil profile''); variance explained by PLSR components now cited explicitly.
+\item \textbf{Abstract:} ``We conclude'' replaced by ``The results suggest''; ``the central mechanism'' replaced by ``a central mechanism''.
+\item \textbf{Section 3.4:} ``confirming that functionality was highest'' replaced by ``suggesting that functionality tends to be highest''.
+\item \textbf{Section 4 (Conclusion):} Fully rewritten with hedged language; three explicit limitations added (absence of SOC, single campaign, space-for-time design constraints); future research directions included.
+\item \textbf{Figures 3 and 4:} Abbreviations standardized to full descriptive names (e.g., FA-N, HA-N, Humin-N, Total N stock) and defined in expanded captions.
+\item \textbf{Figure 5:} Layout simplified from 20 overlapping edges to 4 edges with coefficient ranges; font sizes increased; node labels expanded to include constituent fractions.
+\end{enumerate}
+
+\bigskip
+\noindent We believe the revised manuscript addresses all comments raised by the Editor and the Reviewer. We remain available for any further questions.
+
+\bigskip
+\noindent Sincerely,
+
+\medskip
+\noindent Luiz Diego Vidal Santos, on behalf of all co-authors.
+
+\end{document}

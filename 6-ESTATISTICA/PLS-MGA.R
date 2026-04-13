@@ -18,7 +18,7 @@ library(readxl)
 library(dplyr)
 
 # 1. Carregar dados
-dados <- read_excel("banco_dados.xlsx", sheet = "dados")
+dados <- read_excel("banco_dados.xlsx", sheet = "DADOS")
 
 # Preparar dados
 dados <- dados %>%
@@ -114,66 +114,60 @@ browsable(do.call(tagList, plots))
 
 
 #================================================================================#
-
-
+# FIGURE 5 – Simplified HCM structural diagram (Cerrado reference)
+# Per-group coefficients are reported in Table 2.
+# Previous version had 20 overlapping edges (5 groups × 4 paths), making
+# the figure unreadable. Reviewer 4 requested simplification and larger fonts.
+#================================================================================#
 
 library(DiagrammeR)
 
-grViz("
+fig5_diagram <- grViz("
 digraph G {
-  graph [layout = dot, rankdir = LR]
-  node [shape = box, style = filled, fontname = Helvetica, fixedsize = false]
-  edge [fontname = Helvetica, fontsize=10]
+  graph [layout = dot, rankdir = LR, nodesep = 1.0, ranksep = 1.5]
+  node [style = filled, fontname = 'Helvetica', fontsize = 16, fixedsize = false,
+        width = 1.8, height = 0.7]
+  edge [fontname = 'Helvetica', fontsize = 14, penwidth = 2]
 
-  // Nós de primeira ordem
-  NL [label = 'N_labile', fillcolor = '#fdfcd9']
-  NH [label = 'N_humic', fillcolor = '#fdfcd9']
-  PL [label = 'P_labile', fillcolor = '#e0f7fa']
-  PH [label = 'P_humic', fillcolor = '#e0f7fa']
+  // First-order constructs — Nitrogen
+  NH [label = 'Humic N\\n(FA-N, HA-N, Humin-N)', shape = box, fillcolor = '#fdfcd9']
+  NL [label = 'Labile N\\n(Labile N, LOM-N)', shape = box, fillcolor = '#fdfcd9']
 
-  // Nós de segunda ordem
-  NT [label = 'N_total', shape=ellipse, fillcolor = '#bbdefb']
-  PT [label = 'P_total', shape=ellipse, fillcolor = '#bbdefb']
+  // First-order constructs — Phosphorus
+  PH [label = 'Humic P\\n(FA-P, HA-P, Humin-P)', shape = box, fillcolor = '#e0f7fa']
+  PL [label = 'Labile P\\n(Labile P, LOM-P)', shape = box, fillcolor = '#e0f7fa']
 
-  // GRUPO: Cerrado
-  NH -> NT [label='1.286', color='firebrick', penwidth=2]
-  NL -> NT [label='-0.313', color='firebrick', penwidth=2, style='dashed']
-  PH -> PT [label='1.286', color='firebrick', penwidth=2]
-  PL -> PT [label='-0.313', color='firebrick', penwidth=2, style='dashed']
+  // Second-order endogenous constructs
+  NT [label = 'Total N\\n(R\\u00b2 = 0.959)', shape = ellipse, fillcolor = '#bbdefb']
+  PT [label = 'Total P\\n(R\\u00b2 = 0.959)', shape = ellipse, fillcolor = '#bbdefb']
 
-  // GROUP: Agriculture
-  NH -> NT [label='1.180', color='black', penwidth=1]
-  NL -> NT [label='-0.237', color='black', penwidth=1, style='dashed']
-  PH -> PT [label='1.180', color='black', penwidth=1]
-  PL -> PT [label='-0.237', color='black', penwidth=1, style='dashed']
+  // Structural paths — coefficients shown as range across land uses (Table 2)
+  NH -> NT [label = '  \\u03b2 = 1.180 \\u2013 1.372  ', color = '#333333']
+  NL -> NT [label = '  \\u03b2 = \\u22120.237 \\u2013 \\u22120.445  ', color = '#333333', style = dashed]
+  PH -> PT [label = '  \\u03b2 = 1.180 \\u2013 1.372  ', color = '#333333']
+  PL -> PT [label = '  \\u03b2 = \\u22120.237 \\u2013 \\u22120.445  ', color = '#333333', style = dashed]
 
-  // GROUP: African mahogany
-  NH -> NT [label='1.271', color='darkgreen', penwidth=2]
-  NL -> NT [label='-0.277', color='darkgreen', penwidth=2, style='dashed']
-  PH -> PT [label='1.271', color='darkgreen', penwidth=2]
-  PL -> PT [label='-0.277', color='darkgreen', penwidth=2, style='dashed']
+  // Rank alignment
+  { rank = same; NH; NL; PH; PL }
+  { rank = same; NT; PT }
 
-  // GROUP: Eucalyptus
-  NH -> NT [label='1.275', color='blue', penwidth=2]
-  NL -> NT [label='-0.283', color='blue', penwidth=2, style='dashed']
-  PH -> PT [label='1.275', color='blue', penwidth=2]
-  PL -> PT [label='-0.283', color='blue', penwidth=2, style='dashed']
-
-  // GROUP: Teak
-  NH -> NT [label='1.372', color='orange3', penwidth=2]
-  NL -> NT [label='-0.445', color='orange3', penwidth=2, style='dashed']
-  PH -> PT [label='1.372', color='orange3', penwidth=2]
-  PL -> PT [label='-0.445', color='orange3', penwidth=2, style='dashed']
-  
-  // Legendas (inseridas como caixas não conectadas)
-  LEG1 [label='Cerrado', shape=rect, fillcolor='firebrick', fontcolor='white', style=filled]
-  LEG2 [label='Agriculture', shape=rect, fillcolor='black', fontcolor='white', style=filled]
-  LEG3 [label='African mahogany', shape=rect, fillcolor='darkgreen', fontcolor='white', style=filled]
-  LEG4 [label='Eucalyptus', shape=rect, fillcolor='blue', fontcolor='white', style=filled]
-  LEG5 [label='Teak', shape=rect, fillcolor='orange3', fontcolor='white', style=filled]
-
+  // Note
+  NOTE [label = 'Solid = positive path\\nDashed = negative path\\nCoefficient ranges across five land uses (Table 2)',
+        shape = note, fillcolor = '#f5f5f5', fontsize = 12]
   }
 ")
+
+print(fig5_diagram)
+
+# Export to PNG
+tryCatch({
+  svg_text <- export_svg(fig5_diagram)
+  rsvg_png(charToRaw(svg_text), "../2-FIGURAS/analise_caminhos_pls.png",
+           width = 2400)
+  cat("Figure 5 saved to ../2-FIGURAS/analise_caminhos_pls.png\n")
+}, error = function(e) {
+  cat("Auto-export failed. Save manually from RStudio Viewer.\n", e$message, "\n")
+})
 
 
 

@@ -40,17 +40,17 @@ loadings_df <- as.data.frame(loadings_scaled)
 colnames(loadings_df) <- c("LV1", "LV2")
 loadings_df$var <- rownames(loadings_df)
 label_map_n <- c(
-  "NLabil" = "N_labile",
-  "NMOL" = "N_LOM",
-  "NTAF" = "N_HAF",
-  "NTAH" = "N_HAH",
-  "NTHum" = "N_humic",
-  "EstNT" = "TN_stock",
-  "EstNLabil" = "N_labile_stock",
-  "EstNMOL" = "N_LOM_stock",
-  "EstNAF" = "N_HAF_stock",
-  "EstNAH" = "N_HAH_stock",
-  "EstNTHum" = "N_humic_stock"
+  "NLabil" = "Labile N",
+  "NMOL" = "LOM-N",
+  "NTAF" = "FA-N",
+  "NTAH" = "HA-N",
+  "NTHum" = "Humin-N",
+  "EstNT" = "Total N stock",
+  "EstNLabil" = "Labile N stock",
+  "EstNMOL" = "LOM-N stock",
+  "EstNAF" = "FA-N stock",
+  "EstNAH" = "HA-N stock",
+  "EstNTHum" = "Humin-N stock"
 )
 loadings_df$label <- dplyr::recode(loadings_df$var, !!!label_map_n, .default = loadings_df$var)
 

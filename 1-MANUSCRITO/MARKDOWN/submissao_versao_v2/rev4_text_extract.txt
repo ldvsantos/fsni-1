@@ -1,0 +1,211 @@
+﻿[0] Impact of land use change on nitrogen stocks in humic fractions
+[2] Rafael Costa Schaidhauer de Almeida
+MSc Researcher, Graduate Program in Forest and Environmental Sciences
+Federal University of Tocantins, Gurupi, TO, Brazil
+ORCID:┬á0000-0003-3764-9279
+Email:┬árafaelfloresta86@gmail.com
+[3] Ludmilla Morais Pereira
+MSc Researcher, Graduate Program in Forest and Environmental Sciences
+Federal University of Tocantins, Gurupi, TO, Brazil
+ORCID:┬á0000-0001-9684-3288
+Email:┬áludmillamoraislive@gmail.com
+[4] Luis Felipe Gomes de Sousa
+MSc Candidate, Graduate Program in Forest and Environmental Sciences
+Federal University of Tocantins, Gurupi, TO, Brazil
+Email:┬ásousa.luis@mail.uft.edu.br
+[5] Olavo da Costa Leite
+PhD Professor, Graduate Program in Forest and Environmental Sciences
+Federal University of Tocantins, Gurupi, TO, Brazil
+ORCID:┬á0000-0002-8959-0064
+Email:┬áolavol@hotmail.com
+[6] Robson Carlos Pereira de Melo
+MSc Researcher, Graduate Program in Environmental Engineering
+Federal Rural University of Pernambuco, Recife, PE, Brazil
+ORCID:┬á0000-0003-4594-5748
+Email:┬árobsonrcpm@gmail.com
+[7] Milton Marques Fernandes
+PhD Professor, Department of Forest Sciences
+Federal University of Sergipe, S├úo Crist├│v├úo, SE, Brazil
+ORCID:┬á0000-0002-9394-0020
+Email:┬ámiltonmf@gmail.com
+[8] Alex Souza Moraes
+PhD Professor, Department of Chemistry
+Federal Rural University of Pernambuco, Recife, PE, Brazil
+ORCID:┬á0000-0002-4324-8271
+Email:┬áalex.moraes@ufrpe.br
+[9] Luiz Diego Vidal Santos*
+PhD Professor, Department of Human Sciences and Philosophy
+State University of Feira de Santana, Feira de Santana, BA, Brazil
+ORCID:┬á0000-0002-9747-1276
+Corresponding author Email:┬áldvsantos@uefs.br
+[10] Francisco Sandro Rodrigues Holanda
+PhD Professor, Department of Agronomic Engineering
+Federal University of Sergipe, S├úo Crist├│v├úo, SE, Brazil
+ORCID:┬á0000-0001-6812-6679
+Email:┬áfholanda@academico.ufs.br
+[11] Alceu Pedrotti
+PhD Professor, Department of Agronomic Engineering
+Federal University of Sergipe, S├úo Crist├│v├úo, SE, Brazil
+ORCID:┬á0000-0003-3086-8399
+Email:┬áalceupedrotti@gmail.com
+[12] Renisson Neponuceno de Ara├║jo Filho
+PhD Professor, Department of Rural Technology
+Federal Rural University of Pernambuco, Recife, PE, Brazil
+ORCID:┬á0000-0002-9747-1276
+Email:┬árenisson.neponuceno@ufrpe.br
+[13] ABSTRACT ÔÇô The replacement of native vegetation promotes changes in quality the soil organic matter (SOM) and nitrogen (N), one of its main constituents. This study aimed to evaluate the N levels and stocks in humic substances (HS) under different uses (Cerrado sensu stricto, eucalyptus, agriculture
+[14] Keywords: Soil organic matter. Soil management. Plintosol. Humification.
+[30] INTRODUCTION
+[31] Agricultural intensification has imposed increasing pressures on tropical ecosystems, leading to structural and functional soil degradation, particularly under intensive tillage and low organic residue inputs (Pittarello et al., 2021; Sharma et al., 2020). A major consequence is the alteration of so
+[32] Evidence indicates that land use and management exert distinct effects on humic fractions. Cultivated soils often show reductions in HA and Hum contents, associated with soil disturbance and accelerated SOM oxidation (Yang et al., 2022; Rosset et al., 2024). In contrast, forest and agroforestry syst
+[33] Nitrogen (N) is a particularly relevant element within HS. Although total N is commonly used as an indicator of soil fertility, its high variability limits the detection of short-term changes (Bingham & Cotrufo, 2016). Assessing N in FA, HA, and Hum provides a more accurate perspective of nutrient c
+[34] Agroforestry systems are particularly relevant in this context. The integration of trees with crops or pastures enhances the input of organic residues, improves nutrient recycling, and provides greater physical protection to soils. Recent studies have shown that agrosilvopastoral systems increase C 
+[35] Based on this background, the central hypothesis of this study is that different land uses promote contrasting changes in the contents and stocks of N in humic substances, with greater enrichment expected in forest and agroforestry systems compared with conventional uses. The objective was to quanti
+[37] MATERIAL AND METHODS
+[39] Stuudy area
+[41] The study was carried out at the experimental farm of the Federal University of Tocantins, in the municipality of Gurupi, located in the south of the state of Tocantins, Brazil, at the central geographic coordinates 11┬║ 46ÔÇÖ 25ÔÇØ S and 49┬║ 02ÔÇÖ 54ÔÇØ W (Figure 1).
+[42] Figure 1. Location of experimental areas in southern Tocantins state, Brazil.
+[45] The climate of the region, according to the Thornthwaite and Mather method, is humid subhumid, with moderate water deficiency in winter (C2wA ÔÇÿaÔÇÖ), with an average annual temperature of 27┬║C and average annual precipitation of 1,500 mm (SEPLAN, 2017). The soil of the areas were classified as Plintho
+[47] Table 1. Characteristics of the study areas.
+[49] Soil sampling
+[50] For the soil sampling, six 70 x 70 cm trenches measuring 50 cm deep and measuring 70 x 70 cm were dug in each study area. The soil samples were collected at depths of 0-10, 10-20, 20-30, 30-40 and 40-50 cm.
+[52] Soil physical characterization
+[53] The distribution of soil particle sizes at depths was performed on disturbed samples using the pipette method (Teixeira et al., 2017), and undeformed samples were subjected to soil density analysis. The averages of the areas at the depths are presented in Table 2.
+[55] Table 2 ÔÇô Physical attributes of soil in different uses and different depths in the Cerrado biome.
+[56] *Standard deviation (SD)
+[58] Determination of total nitrogen in humic substances
+[59] To perform the chemical analyses, the deformed soil samples were subjected to chemical fractionation, based on the differential solubility in alkaline and acidic solutions (Swift, 1996), obtaining the fractions corresponding to fulvic acids (FA), humic acids (HA) and humin (Hum). Subsequently, the s
+[60] Based on the N contents obtained previously, the total N stock and each humic fraction in Mg ha-1 were determined at each sampling depth using Equation 1.
+[62] EstN=TN * Ds * and (1)
+[63] Where:
+[64] EstN = N stock in the soil layer, in Mg ha-1;
+[65] TN = N content in the sampled soil fraction, in g kg-1;
+[66] Ds = Soil density, in g cm-3;
+[67] e = layer thickness, in cm.
+[69] The total N stock in each humic fraction at a depth of 0 to 0.50 m was the result of the sum of the values ÔÇïÔÇïobtained in each sampled layer.
+[70] The parameters evaluated were initially subjected to the Shapiro-Wilk normality test and verification of homogeneity of variances using the Levene test. When the premises were met, the analysis of variance (ANOVA) was performed, followed by the Tukey test to compare the means at a 5% significance le
+[71] Principal Component Analysis (PCA) was used as an exploratory multivariate statistical tool to identify latent patterns and reduce the dimensionality of data related to nitrogen stocks in humic fractions distributed at different soil depths. The data were organized into a standardized correlation ma
+[72] The factor loadings of the retained components were interpreted according to the magnitude of the eigenvectors, considering the values ÔÇïÔÇïgreater than |0.40| as representative of the variables most associated with each axis. The visualization of the scores and factor loadings was performed using a bi
+[74] RESULTS AND DISCUSSION
+[75] Total nitrogen content in humic substances
+[76] In all the evaluated coverages, the N content in the humic substances was higher in the surface layer, decreasing with the depth of the soil profile (Table 3). Y. Wang et al. (2024) highlighted that this distribution is typical of soils located in tropical climate regions, which have more condensed 
+[77] The only exception was the Pasture area, which did not show significant differences in the AF-N and Hum-N contents between the different layers (Table 3), although, numerically, a reduction in these averages was observed with the deepening of the soil profile.
+[78] Significant differences were observed in relation to the N contents between the different coverings in the 0-.010 m layer and in relation to the Hum-N content in the 0.10-0.20 m layer, and the other comparisons did not show significant differences between the areas (Table 3).
+[80] Table 3. N contents (g kg-1) in fulvic acids (N-AF), humic acids (N-AH) and humins (N-Hum) in Plinthosol P├®trico in southern Tocantins state, Brazil, at different depths (0-0.10. 0.10-0.20. 0.20-0.30. 0.30-0.40 e 0.40-0.50 m), in the coverages of Eucalyptus, Agriculture, Pasture and Cerrado sensu st
+[81] Note: Means followed by the same letter in the column do not differ statistically from each other by Tukey's test, at the 5% probability level. Capital letters compare the different types of land cover within the same layer, while lowercase letters compare the means of the same cover between the dif
+[83] As shown in Table 3, the highest mean values ÔÇïÔÇïof N-FA, N-HA and N-Hum were observed in the eucalyptus area, with statistically significant differences in relation to Cerrado in the 0ÔÇô0.10 m layer (p < 0.05). For N-FA, the eucalyptus showed an increase of 41% with high effect power in relation to th
+[84] In N-Hum, Eucalyptus stood out with an increase of 38% in relation to Cerrado (╬öM = 0.196 g kgÔü╗┬╣; 95%CI [0.100ÔÇô0.292]; *d* = 1.250), while Pasture showed a reduction of 21%.
+[85] This pattern of enrichment of humic fractions was maintained up to a depth of 0.40 m, with increases ranging from 11% to 41% for N-FA, 3% to 18% for N-HA and 8% to 38% for N-Hum in Eucalyptus in relation to Cerrado (Figure 2-A). However, in the 0.30ÔÇô0.40 m layer, N-HA showed an 8% reduction (╬öM = ÔÇô0
+[86] These patterns suggest that the greater contribution of plant residues associated with the Eucalyptus forest cover contributed to the accumulation of nitrogen in the humic fractions of the soil, especially in the superficial layers. According to Oliveira et al. (2021), the maintenance of harvest res
+[87] Among the factors that influence the total nitrogen content in the humic fractions of soil organic matter, the main ones are the quantity and quality of incorporated plant residues, as well as agricultural management practices (Bincy et al., 2023). These results reinforce the sensitivity of humic fr
+[89] Figure 2. Balance of losses and gains (%) in N contents in fulvic acids (N-AF), humic acids (N-AH) and humins (N-Hum) (%) in Plinthosol P├®trico in southern Tocantins, Brazil, at different depths (0-10, 10-20, 20-30, 30-40 and 40-50 m), after conversion of Cerrado sensu stricto to Eucalyptus crops (a
+[91] The increase in average nitrogen levels in humic substances between 0ÔÇô0.40 m may be associated with the greater accumulation of litter in the Eucalyptus area, combined with reduced soil disturbance resulting from the absence of intensive preparation. These factors favor the processes of humification
+[92] Physical and chemical characteristics of eucalyptus litter, in which coarser and more lignified materials are deposited in greater quantities than in pastures, increasing the C/N ratio of plant residues and reducing the speed of mineralization, and probably contributing to the humification process o
+[93] The reduction in the levels of N-AF, N-AH and N-Hum observed in the last layer of the eucalyptus area (Figure 2-A) may be associated with the slow replacement of native vegetation and the transition in land use. However, studies have shown that, over time, the return of litter and low soil disturban
+[94] In relation to the Agriculture area, an increase in the average values ÔÇïÔÇïof N-FA (between 8% and 23%) and N-Hum (between 9% and 26%), and a reduction in N-HA contents (between 3% and 16%) were observed along the 0ÔÇô0.50 m profile, when compared to the reference area (Cerrado) (Figure 2-B). In the 0ÔÇô0
+[95] The reductions in the average levels of N-HA in this area (Figure 2-B) may be related to changes in soil chemical conditions due to reduced soil acidity caused by liming. In this regard, L. Wang et al. (2025) highlighted the positive correlation between the soil acidity (pH < 5.5) and the formation 
+[96] On the other hand, Persson et al. (2021) associated liming with increased SOM mineralization, arguing that adjusting the pH to levels close to neutrality (5.5ÔÇô7.0) favors the activity of heterotrophic bacteria. This hypothesis is reinforced by Mitsuta et al. (2025), who, in intensive corn systems un
+[97] The reduction in N-HA levels observed in the conversion of Cerrado areas for agricultural use may be associated with soil disturbance, which intensifies microbial activity and the decomposition of organic matter, reducing the stability of humic fractions. In this sense, Silva et al. (2024) showed th
+[98] The greater degradation of soil organic matter observed in pasture areas may be related to the chemical composition of plant residues, especially the lower C/N ratio characteristic of grasses, which favors rapid microbial decomposition. In addition, the low recalcitrance of these residues contribute
+[99] These same factors may be related to the lower N stocks in the humic substances of the pasture in this study, considering the advanced age of the area (over 40 years) and the lack of appropriate techniques in local management, which also impacted the N contents in the most stable fraction (N-Hum) of
+[100] Total nitrogen stocks in humic substances
+[101] Figure 3 shows the nitrogen stocks associated with the humic fractions (EstN) throughout the 0ÔÇô0.50 m depth layer. For the N-FA fraction (Figure 3), the Eucalyptus area presented the highest significant mean value (0.911 Mg haÔü╗┬╣), differing from the Pasture (0.691 Mg haÔü╗┬╣) and the Cerrado (0.746 Mg 
+[102] The Agriculture area presented an intermediate stock (0.824 Mg haÔü╗┬╣), statistically similar to the other covers, as indicated by the overlap of the confidence intervals (╬öM = 0.087 Mg haÔü╗┬╣ in relation to the Cerrado; 95%CI [ÔÇô0.030 to 0.200]; d = 0.510), configuring a statistically homogeneous behavi
+[103] Figure 3. Stocks (Mg ha-1) of N in fulvic acids (EstN-AF) (A), humic acids (EstN-AH) (B) and humins (EstN-Hum) (C) in a Plinthosol in southern Tocantins state, Brazil, between 0-0.50 m depth, in the areas of Eucalyptus, Agriculture, Pasture and Cerrado sensu stricto. Means followed by the same lette
+[105] The highest significant mean values ÔÇïÔÇïof EstN-AH occurred in Eucalyptus (1,276 Mg haÔü╗┬╣), Pasture (1,244 Mg haÔü╗┬╣) and Cerrado (1,243 Mg haÔü╗┬╣) areas, which were statistically equal, while the Agriculture area presented the lowest significant mean value (1,071 Mg haÔü╗┬╣), differing statistically from the
+[106] The highest significant mean values ÔÇïÔÇïof EstN-Hum occurred in the Eucalyptus (3,281 Mg haÔü╗┬╣) and Agriculture (3,048 Mg haÔü╗┬╣) areas, which were statistically equal, while the Pasture area presented the lowest significant mean value (2,418 Mg haÔü╗┬╣), differing statistically from these covers (Figure 3)
+[107] It can be seen that the average values ÔÇïÔÇïof EstN-FA and EstN-Hum decreased numerically in the following order: Eucalyptus > Agriculture > Cerrado > Pasture, while the average values ÔÇïÔÇïof EstN-AH decreased in the following order: Eucalyptus > Pasture Ôëê Cerrado > Agriculture. 
+[108] When compared to the reference area, the Eucalyptus area promoted an increase in the average N stocks in all humic substances, with increases of 22% (╬öM = 0.165 Mg haÔü╗┬╣), 3% (╬öM = 0.033 Mg haÔü╗┬╣) and 20% (╬öM = 0.547 Mg haÔü╗┬╣), respectively in EstN-FA, EstN-AH and EstN-Hum.
+[109] These results demonstrate the superiority of the Eucalyptus cover in the incorporation of N in the humic fractions of the MOS, compared to the Cerrado and other land uses. This pattern is associated with the input of plant residues with greater recalcitrance (e.g., high C/N ratio, ~80:1) as observed
+[110] On the other hand, in the Cerrado-Agriculture conversion, an increase of 10% (0.078 Mg haÔü╗┬╣) was observed in EstN-AF and 11% (0.314 Mg haÔü╗┬╣) in EstN-Hum, but a reduction of 14% (-0.172 Mg haÔü╗┬╣) in EstN-AH. This contrasting dynamic can be attributed to intensive soil disturbance, which favors the des
+[111] In addition, reducing soil acidity through liming also influences these dynamics, promoting increased nitrogen mineralization and modifying the availability of inorganic forms, which can negatively impact the incorporation of nitrogen into humic fractions (Mkhonza et al., 2020), as well as the possi
+[112] Regarding the Cerrado-Pasture conversion, there was an average reduction of 7% (-0.055 Mg ha-1) and 12% (-0.316 Mg ha-1), respectively in EstN-AF and EstN-Hum, while EstN-AH practically equaled that of the reference area.
+[113] Although no statistically significant differences were observed between the mean nitrogen values ÔÇïÔÇïin the humic fractions in the Pasture and Cerrado areas, the observed reductions may indicate changes in soil organic matter (SOM), possibly associated with the extensive form of management predominant
+[114] This type of management, characterized by the absence of control over animal stocking, low technicalization and lack of investment in the soil correction and conservation, compromises the deposition of plant residues and reduces pasture productivity, contributing to the progressive degradation of SO
+[116] Representation of organic nitrogen in humic substances
+[117] The representation of nitrogen present in humic substances in relation to the total nitrogen stock in the soil (N-S) was significant, corresponding to approximately 61%, 59%, 61% and 74% of the total N in the areas of Eucalyptus, Agriculture, Pasture and Cerrado, respectively (Figure 4-A). These val
+[118] Figure 4. Distribution (%) of soil N stock among humic and non-humic substances (a) and among humic fractions (b) in Plinthosol Petric in southern Tocantins state, Brazil, between 0-0.50 m depth, in the areas of Eucalyptus, Agriculture, Pasture and Cerrado sensu stricto. EstN-S = soil N stock; EstSH
+[120] In all environments evaluated, the average nitrogen stocks in humic substances were highest in the humin fraction, followed by the humic acid (HA) and fulvic acid (FA) fractions (Figure 4-B). These results are consistent with the findings of Freitas et al. (2022a), who reported greater nitrogen accu
+[121] The fulvic acid (FA) fraction constitutes the least recalcitrant compartment of humic substances, being the most soluble and mobile, which makes it particularly susceptible to losses by leaching, especially in sandy textured soils. This characteristic may justify the lower nitrogen contents observed
+[122] In general, systems that promote greater addition of plant residues and avoid soil disturbance create more favorable conditions for the formation of humic substances. This is due to the intensification of the condensation and polymerization reactions of organic material, resulting in more stable and
+[123] The principal component Analysis ÔÇô ACP
+[124] The projection of the samples onto the plane formed by the first two principal components resulted in a joint explanation of 98.86% of the total variance, with PC1 explaining 94.02% and PC2 explaining 4.84% (Table 4). The separation of the samples along PC1 reflected a gradient of humic nitrogen acc
+[125] The vertical distribution also influenced the clusters, with surface samples (0ÔÇô0.10 m) concentrated in extreme regions of PC1, and deeper samples close to the center of the projection. These patterns suggest that both depth and land use type significantly influence the functional composition of org
+[126] Table 4. Principal components (PC), eigenvalues, explained variance (%) and cumulative variance (%).
+[128] The PCA revealed multivariate patterns consistent with the influence of land use and management on the dynamics of nitrogen in the soil humic fractions (Figure 7). The first principal component (PC1) showed high positive correlations with all variables analyzed, being interpreted as an axis of gener
+[129] The PCA results are shown in figure 5. The intermediate position of the Eucalyptus cover along PC1, but still in the positive region, indicates a pattern of progressive and vertical accumulation of nitrogen, mainly in the recalcitrant fractions. This dynamic is associated with the constant depositio
+[130] For the Cerrado sensu stricto, the negative position observed in PC1 reflects a stable dynamic of soil organic matter, marked by a lower contribution of plant residues and reduced mineralization rates, typical characteristics of preserved natural ecosystems. This stability is related to the presence
+[131] The stratification of the samples by soil depth also revealed a clear gradient of humic enrichment along the profile. The samples from the most superficial layers (0ÔÇô0.10 m and 0.10ÔÇô0.20 m) were positioned primarily in positive regions of PC1, evidencing greater accumulation of humic N, while the sa
+[132] The second component (PC2) presented a strongly negative charge for N-HA (ÔÇô0.855), contrasting with positive charges for total N and N-Hum, being interpreted as a gradient of functional dissociation, sensitive to qualitative changes in organic matter. This axis may reflect processes of structural tr
+[133] Figure 5. Principal component analysis (PCA) of nitrogen stocks in the humic fractions (N-FA, N-HA, N-Hum) and total nitrogen (N total) to evaluate the effects of land use systems and soil depth in a Plinthosol under Cerrado conditions. Land uses include: AGR ÔÇô agricultural system with corn residue;
+[136] In functional terms, PC1 was interpreted as an axis of total nitrogen enrichment in soil humic fractions, with a balanced contribution of all variables (N-FA, N-AH, N-Hum, and total N). PC2 reflected a dissociation between nitrogen associated with humic acid (N-AH), with a high negative factorial lo
+[138] CONCLUSION
+[139] In all evaluated coverings, the N-SH contents were numerically higher in the surface layers, decreasing in the subsequent layers, with emphasis on the Hum fraction.
+[140] In general, the Eucalyptus area stood out for the greatest increases in the N-SH contents and stocks, demonstrating the benefits of this system on the soil.
+[141] The losses in N-SH stocks in these systems indicated that the SOM was negatively altered, demonstrating the need for adaptations in the form of use and management, in order to promote greater contribution of organic matter and reduce soil disturbance.
+[142] The Principal Component Analysis (PCA) revealed the formation of structural groupings between the use systems based on the composition of humic nitrogen. The separation of the samples along the PC1 axis indicated a functional gradient of N-SH accumulation, with emphasis on Agriculture and Eucalyptus
+[143] The distribution of the samples evidenced the influence of depth, with a greater contribution of the superficial layers to the total stocks.
+[144] FUNDING
+[145] This work was supported by the Coordination for the Improvement of Higher Education Personnel (CAPES), through the Science without Borders Program ÔÇô Special Visiting Researcher Project (PVEs 073/2012); by the National Council for Scientific and Technological Development (CNPq); and by the Texas A&M 
+[147] REFERENCES
+[148] Ab├ín, C. L., Larama, G., Ducci, A., Huidobro, J., Sabat├®, D. C., Vargas Gil, S., & P├®rez Brand├ín, C. (2025). Restoration of degraded soils with perennial pastures shifts soil microbial communities and enhances soil structure. Agriculture, Ecosystems & Environment, 382, 109472. https://doi.org/10.101
+[149] Amoakwah, E., Rahman, M. A., Islam, K. R., Frimpong, K. A., Phares, C. A., Sackey, L., Asirifi, I., & Arthur, E. (2024). Increased humic materials explain aggregate-protected carbon and nitrogen accumulation in biochar-amended tropical soils. Pedosphere, 34(6), 1086ÔÇô1099. https://doi.org/10.1016/j.p
+[150] An├®sio AHC, Santos MV, Dumont MA, Barboza JA de S, Fraz├úo LA, Teixeira RB, Santos LDT, Pegoraro RF, Silva KP (2024) Management of marandu grass pasture increases soil carbon and nitrogen stocks in silvopastoral systems in the Brazilian Cerrado. Revista Brasileira de Ci├¬ncia do Solo 48: e057. https:/
+[151] An├®sio, A. H. C., Santos, M. V., Dumont, M. A., Barboza, J. A. de S., Fraz├úo, L. A., Teixeira, R. B., Santos, L. D. T., Pegoraro, R. F., & Silva, K. P. e. (2024). Management of marandu grass pasture increases soil carbon and nitrogen stocks in silvopastoral systems in the Brazilian Cerrado. Revista 
+[152] Bagherifam, S., Brown, T. C., Bagherifam, S., & Baglieri, A. (2023). Sequential extraction of labile and recalcitrant fractions of soil organic matter: A case study focusing on antimony (Sb) in humic acids, fulvic acids and humin fractions of long-term aged contaminated soils. Environmental Pollutio
+[153] Banach-Szott, M., Jaskulska, I., Debska, B., & Jaskulski, D. (2020). Effect of the Tillage System on the Properties of Humic Acids of Soil of the Kujawy Region in Poland. Journal of Agricultural Science, 12(8), 14. https://doi.org/10.5539/jas.v12n8p14
+[154] Bincy, B., Gladis, R., Rani, B., Aparna, B., Sandeep, S., & Bindhu, J. S. (2023). Impact of Diverse Agricultural Land Uses on Soil Organic Matter Fractions: A Comprehensive Evaluation. International Journal of Plant & Soil Science, 35(23), 23ÔÇô31. https://doi.org/10.9734/ijpss/2023/v35i234211
+[155] Bingham AH, Cotrufo MF (2016) Organic nitrogen storage in mineral soil: Implications for policy and management. Science of The Total Environment 551ÔÇô552:116ÔÇô126. https://doi.org/10.1016/j.scitotenv.2016.02.020
+[156] Bingham, A. H., & Cotrufo, M. F. (2016). Organic nitrogen storage in mineral soil: Implications for policy and management. Science of The Total Environment, 551ÔÇô552, 116ÔÇô126. https://doi.org/10.1016/j.scitotenv.2016.02.020
+[157] Cohen, J. (2013). Statistical Power Analysis for the Behavioral Sciences. Statistical Power Analysis for the Behavioral Sciences. https://doi.org/10.4324/9780203771587
+[158] Costa, C., Villegas, D. M., Bastidas, M., Matiz-Rubio, N., Rao, I., & Arango, J. (2022). Soil carbon stocks and nitrous oxide emissions of pasture systems in Orinoqu├¡a region of Colombia: Potential for developing land-based greenhouse gas removal projects. Frontiers in Climate, 4. https://doi.org/10
+[159] Dias, D. do N., Lima, A. M. N., Cunha, J. C., Cavalcante, ├ì. H. L., Soares, E. M. B., Silva, K. A. da, Rodrigues, M. S., & Silva, T. S. da. (2023). Soil chemical attributes under west indian cherry fertigated with nitrogen and humic substances. Comunicata Scientiae, 14, e3990. https://doi.org/10.142
+[160] Ferreira, G. W. D., Oliveira, F. C. C., Soares, E. M. B., Schnecker, J., Silva, I. R., & Grandy, A. S. (2021). Retaining eucalyptus harvest residues promotes different pathways for particulate and mineralÔÇÉassociated organic matter. Ecosphere, 12(3). https://doi.org/10.1002/ecs2.3439
+[161] Forrester, D. I., Bauhus, J., Cowie, A. L., & Vanclay, J. K. (2006). Mixed-species plantations of Eucalyptus with nitrogen-fixing trees: A review. Forest Ecology and Management, 233(2ÔÇô3), 211ÔÇô230. https://doi.org/10.1016/j.foreco.2006.05.012
+[162] Freitas IC, Alves MA, Magalh├úes JR, Dias RF, Albuquerque CJB, Ferreira EA, Fernandes LA, Pegoraro RF, Fraz├úo LA (2022a) Soil carbon and nitrogen stocks under agrosilvopastoral systems with different arrangements in a transition area between Cerrado and Caatinga biomes in Brazil. Agronomy 12:2926. ht
+[163] Freitas IC, Alves MA, Magalh├úes JR, Dias RF, Albuquerque CJB, Ferreira EA, Fernandes LA, Pegoraro RF, Fraz├úo LA (2022b) Soil carbon and nitrogen stocks under agrosilvopastoral systems with different arrangements in a transition area between Cerrado and Caatinga biomes in Brazil. Agronomy 12:2926. ht
+[164] Freitas, I. C. de, Alves, M. A., Magalh├úes, J. R., Dias, R. F., Albuquerque, C. J. B., Ferreira, E. A., Fernandes, L. A., Pegoraro, R. F., & Fraz├úo, L. A. (2022a). Soil Carbon and Nitrogen Stocks under Agrosilvopastoral Systems with Different Arrangements in a Transition Area between Cerrado and Caa
+[165] Freitas, I. C. de, Alves, M. A., Magalh├úes, J. R., Dias, R. F., Albuquerque, C. J. B., Ferreira, E. A., Fernandes, L. A., Pegoraro, R. F., & Fraz├úo, L. A. (2022b). Soil Carbon and Nitrogen Stocks under Agrosilvopastoral Systems with Different Arrangements in a Transition Area between Cerrado and Caa
+[166] Jim├®nez-Gonz├ílez, M. A., ├ülvarez, A. M., Carral, P., Abd-Elmabod, S. K., & Almendros, G. (2022). The pyrolytical fingerprint of nitrogen compounds reflects the content and quality of soil organic carbon. Geoderma, 428, 116187. https://doi.org/10.1016/j.geoderma.2022.116187
+[167] Jin Y, Yuan Y, Liu Z, Gai S, Cheng K, Yang F (2024) Effect of humic substances on nitrogen cycling in soil-plant ecosystems: Advances, issues, and future perspectives. Journal of Environmental Management 351:119738. https://doi.org/10.1016/j.jenvman.2023.119738
+[168] Jin, Y., Yuan, Y., Liu, Z., Gai, S., Cheng, K., & Yang, F. (2024). Effect of humic substances on nitrogen cycling in soil-plant ecosystems: Advances, issues, and future perspectives. Journal of Environmental Management, 351, 119738. https://doi.org/10.1016/j.jenvman.2023.119738
+[169] Kim, N., Riggins, C. W., Rodr├¡guez-Zas, S., Zabaloy, M. C., & Villamil, M. B. (2021). Long-term residue removal under tillage decreases amoA-nitrifiers and stimulates nirS-denitrifier groups in the soil. Applied Soil Ecology, 157, 103730. https://doi.org/10.1016/j.apsoil.2020.103730
+[170] Kou B, Hui K, Miao F, He Y, Qu C, Yuan Y, Tan W (2022) Differential responses of the properties of soil humic acid and fulvic acid to nitrogen addition in the North China Plain. Environmental Research 214:113980. https://doi.org/10.1016/j.envres.2022.113980
+[171] Kou, B., Hui, K., Miao, F., He, Y., Qu, C., Yuan, Y., & Tan, W. (2022). Differential responses of the properties of soil humic acid and fulvic acid to nitrogen addition in the North China Plain. Environmental Research, 214, 113980. https://doi.org/10.1016/j.envres.2022.113980
+[172] Laclau, J.-P., Ranger, J., de Moraes Gon├ºalves, J. L., Maqu├¿re, V., Krusche, A. V., MÔÇÖBou, A. T., Nouvellon, Y., Saint-Andr├®, L., Bouillet, J.-P., de Cassia Piccolo, M., & Deleporte, P. (2010). Biogeochemical cycles of nutrients in tropical Eucalyptus plantations. Forest Ecology and Management, 259(
+[173] Leal, O. dos A., Santana, G. S., Knicker, H., Gonz├ílez-Vila, F. J., Gonz├ílez-P├®rez, J. A., & Dick, D. P. (2024). Acacia and Eucalyptus plantations modify the molecular composition of density organic matter fractions of subtropical native pasture soils. Geoderma, 441, 116745. https://doi.org/10.1016/
+[174] Marinho Junior, J. L., Ara├║jo Filho, R. N. de, Cunha Filho, M., Gomes Filho, R. R., Fernandes, M. M., & Piscoya, V. C. (2021). Soil carbon stocks and labile fractions of organic matter under differents vegetations coverages in Gurupi ÔÇô to. FLORESTA, 51(3), 767. https://doi.org/10.5380/rf.v51i3.72868
+[175] Marinho Junior, J. L., Piscoya, V. C., Fernandes, M. M., Gon├ºalves, S. B., Holanda, F. S. R., Cunha Filho, M., Gomes Filho, R. R., Pedrotti, A., & Ara├║jo Filho, R. N. (2021). Carbon Dynamics in Humic Fractions of Soil Organic Matter Under Different Vegetation Cover in Southern Tocantins. Floresta e 
+[176] Melo, A. V. de, Taubinger, M., Santos, V. M. dos, Cardoso, D. P., & DoVale, J. C. (2017). Capacidade combinat├│ria de milho para produ├º├úo de gr├úos sob n├¡veis de f├│sforo. REVISTA DE AGRICULTURA NEOTROPICAL, 4(4), 15ÔÇô25. https://doi.org/10.32404/rean.v4i4.1666
+[177] Mitsuta, A., Louren├ºo, K. S., Chang, J., Ros, M., Schils, R., Uchida, Y., & Kuramae, E. E. (2025). Liming enhances the abundance and stability of nitrogen-cycling microbes: the buffering effect of long-term lime application. Biology and Fertility of Soils, 61(4), 761ÔÇô772. https://doi.org/10.1007/s00
+[178] Mkhonza, N. P., Buthelezi-Dube, N. N., & Muchaonyerwa, P. (2020). Effects of lime application on nitrogen and phosphorus availability in humic soils. Scientific Reports, 10(1), 8634. https://doi.org/10.1038/s41598-020-65501-3
+[179] Mockeviciene, I., Karcauskiene, D., Slepetiene, A., Vilkiene, M., Repsiene, R., Braziene, Z., & Anne, O. (2022). Influence of Liming Intensity on Fractions of Humified Organic Carbon in Acid Soil: A Case Study. Sustainability, 14(9), 5297. https://doi.org/10.3390/su14095297
+[180] Moraes WS, Dionisio LFS, Schwartz G, Pereira JA, Damascena JF, Rizzo FA, Neto ABB, Almeida Milhomem C, Alves JMA, Araujo Filho RN, Almeida Sarmento R, Silva A, Moraes CB (2024) Carbon and nitrogen, humic and labile fractions in soil under clonal eucalyptus stands from Cerrado. European Journal of Fo
+[181] Moraes, W. dos S., Dionisio, L. F. S., Schwartz, G., Pereira, J. A., Damascena, J. F., Rizzo, F. A., Neto, A. B. B., de Almeida Milhomem, C., Alves, J. M. A., Araujo Filho, R. N., de Almeida Sarmento, R., da Silva, A., & Moraes, C. B. de. (2024). Carbon and nitrogen, humic and labile fractions in so
+[182] Ndzelu, B. S., Dou, S., Zhang, X., Zhang, Y., Ma, R., & Liu, X. (2021). Tillage effects on humus composition and humic acid structural characteristics in soil aggregate-size fractions. Soil and Tillage Research, 213, 105090. https://doi.org/10.1016/j.still.2021.105090
+[183] Oliveira, F. C. C., Ferreira, G. W. D., Dungait, J. A. J., Ara├║jo, E. F., Soares, E. M. B., & Silva, I. R. (2021). Eucalypt harvest residue management influences microbial community structure and soil organic matter fractions in an afforested grassland. Soil and Tillage Research, 205, 104787. https:
+[184] Ortner, M., Seidel, M., Semella, S., Udelhoven, T., Vohland, M., & Thiele-Bruhn, S. (2022). Content of soil organic carbon and labile fractions depend on local combinations of mineral-phase characteristics. SOIL, 8(1), 113ÔÇô131. https://doi.org/10.5194/soil-8-113-2022
+[185] Pegoraro, R. F., Moreira, C. G., Dias, D. G., & Silveira, T. C. (2018). Carbon and nitrogen stocks in the soil and humic substances of agricultural crops in the semi-arid region. REVISTA CI├èNCIA AGRON├öMICA, 49(4). https://doi.org/10.5935/1806-6690.20180065
+[186] Pegoraro, R. F., Silva, I. R. da, Novais, R. F. de, Barros, N. F. de, Fonseca, S., & Dambroz, C. S. (2011). Estoques de carbono e nitrog├¬nio nas fra├º├Áes da mat├®ria org├ónica em argissolo sob eucalipto e pastagem. Ci├¬ncia Florestal, 21(2), 261ÔÇô273. https://doi.org/10.5902/198050983230
+[187] Persson, T., Andersson, S., Bergholm, J., Gr├Ânqvist, T., H├Âgbom, L., Vegerfors, B., & Wir├®n, A. (2021). Long-Term Impact of Liming on Soil C and N in a Fertile Spruce Forest Ecosystem. Ecosystems, 24(4), 968ÔÇô987. https://doi.org/10.1007/s10021-020-00563-y
+[188] Pittarello M, Dal Ferro N, Chiarini F, Morari F, Carletti P (2021) Influence of tillage and crop rotations in organic and conventional farming systems on soil organic matter, bulk density and enzymatic activities in a short-term field experiment. Agronomy 11:724. https://doi.org/10.3390/agronomy1104
+[189] Pittarello, M., Dal Ferro, N., Chiarini, F., Morari, F., & Carletti, P. (2021). Influence of Tillage and Crop Rotations in Organic and Conventional Farming Systems on Soil Organic Matter, Bulk Density and Enzymatic Activities in a Short-Term Field Experiment. Agronomy, 11(4), 724. https://doi.org/10
+[190] Powlson, D. S., Gregory, P. J., Whalley, W. R., Quinton, J. N., Hopkins, D. W., Whitmore, A. P., Hirsch, P. R., & Goulding, K. W. T. (2011). Soil management in relation to sustainable agriculture and ecosystem services. Food Policy, 36, S72ÔÇôS87. https://doi.org/10.1016/j.foodpol.2010.11.025
+[191] Rosset JS, Tavares OCH, Pereira MG, Lana M do C, Schiavo JA, Oz├│rio JMB, Silva MV da, Andrade LHC da C, Lima SM (2024) Chemical and spectroscopic characteristics of humic acids under no-tillage and forest systems. Communications in Soil Science and Plant Analysis 55:796ÔÇô813. https://doi.org/10.1080/
+[192] Rosset, J. S., Tavares, O. C. H., Pereira, M. G., do Carmo Lana, M., Schiavo, J. A., Barros Oz├│rio, J. M., da Silva, M. V., da Cunha Andrade, L. H., & Lima, S. M. (2024). Chemical and Spectroscopic Characteristics of Humic Acids Under No-Tillage and Forest Systems. Communications in Soil Science and
+[193] Santos, S. R. dos, Costa, L. M. da, Souza, C. M. M., Leal, G. P., Mello, D. C. de, Silva, W. T. L. da, Cam├¬lo, D. de L., & Schaefer, C. E. G. R. (2024). Thermodegradation of organic matter in soils of different mineral composition in Brazil. Geoderma Regional, 37, e00798. https://doi.org/10.1016/j.g
+[194] SEPLAN, G. de I. E. e S. (2017). Projeto de Desenvolvimento Regional Integrado e Sustent├ível: Zoneamento Ecol├│gico-Econ├┤mico do Estado do Tocantins. Seplan/GIES.
+[195] Shah, T., Lateef, S., & Noor, M. A. (2020). Carbon and Nitrogen Cycling in Agroecosystems: An Overview. In Carbon and Nitrogen Cycling in Soil (pp. 1ÔÇô15). Springer Singapore. https://doi.org/10.1007/978-981-13-7264-3_1
+[196] Sharma R, Kamble SS, Gunasekaran A, Kumar V, Kumar A (2020) A systematic literature review on machine learning applications for sustainable agriculture supply chain performance. Computers & Operations Research 119:104926. https://doi.org/10.1016/j.cor.2020.104926
+[197] Sharma, R., Kamble, S. S., Gunasekaran, A., Kumar, V., & Kumar, A. (2020). A systematic literature review on machine learning applications for sustainable agriculture supply chain performance. Computers & Operations Research, 119, 104926. https://doi.org/10.1016/j.cor.2020.104926
+[198] Silva, B. de O., Moitinho, M. R., Panosso, A. R., Oliveira, D. M. da S., Montanari, R., Moraes, M. L. T. de, Milori, D. M. B. P., Bicalho, E. da S., & La Scala, N. (2024). Implications of converting native forest areas to agricultural systems on the dynamics of CO2 emission and carbon stock in a Cer
+[199] Swift, R. S. (1996). Organic matter characterization. In D. L. Sparks, A. L. Page, P. A. Helmke, R. H. Loeppert, P. N. Soltanpour, M. A. Tabatabai, C. T. Johnston, & M. E. Sumner (Eds.), Methods of Soil Analysis. Part 3: Chemical Methods (pp. 1011ÔÇô1069). Soil Science Society of America.
+[200] Tadini, A. M., MartinÔÇÉNeto, L., Goranov, A. I., Milori, D. M. B. P., Bernardi, A. C. C., Oliveira, P. P. A., Pezzopane, J. R. M., Colnago, L. A., & Hatcher, P. G. (2022). Chemical characteristics of soil organic matter from integrated agricultural systems in southeastern Brazil. European Journal of 
+[201] Team, Rs. (2023). RStudio: Integrated Development Environment for R. RStudio, Inc. http://www.rstudio.com/
+[202] Teixeira, P. C., Donagemma, G. K., Fontana, A., & Teixeira, W. G. (2017). Manual de M├®todos de An├ílise de Solo (3rd ed.). Embrapa Solos.
+[203] Wang, L., Ren, Y., Jia, M., Yang, J., Liu, H., Zhao, P., Tang, J., Ma, J., Weng, L., & Li, Y. (2025). pH-Dependent preferential adsorption and stability of humic substances on goethite: The dual role of aromatic and aliphatic moieties. Ecotoxicology and Environmental Safety, 291, 117838. https://doi
+[204] Wang, X., Wang, G., Guo, T., Xing, Y., Mo, F., Wang, H., Fan, J., & Zhang, F. (2021). Effects of plastic mulch and nitrogen fertilizer on the soil microbial community, enzymatic activity and yield performance in a dryland maize cropping system. European Journal of Soil Science, 72(1), 400ÔÇô412. https
+[205] Wang, Y., Hu, H., Zhou, Y., Zhang, B., Li, S., Liu, J., & Tong, X. (2024). Evolving characteristics of dissolved organic matter in soil profiles during 56┬áyears of revegetation in Mu Us Sandy Land. Plant and Soil, 497(1ÔÇô2), 567ÔÇô584. https://doi.org/10.1007/s11104-023-06414-8
+[206] Yang L, Liu W, Jia Z, Li P, Wu Y, Chen Y, Liu C, Chang P, Liu L (2022) Land-use change reduces soil nitrogen retention of both particulate and mineral-associated organic matter in a temperate grassland. Catena 216:106432. https://doi.org/10.1016/j.catena.2022.106432
+[207] Yang, L., Liu, W., Jia, Z., Li, P., Wu, Y., Chen, Y., Liu, C., Chang, P., & Liu, L. (2022). Land-use change reduces soil nitrogen retention of both particulate and mineral-associated organic matter in a temperate grassland. CATENA, 216, 106432. https://doi.org/10.1016/j.catena.2022.106432
+[208] Zhang, X., Zhao, Y., Meng, H., Li, L., Cui, H., Wei, Z., Yang, T., & Dang, Q. (2020). Revealing the Inner Dynamics of Fulvic Acid from Different Compost-Amended Soils through Microbial and Chemical Analyses. Journal of Agricultural and Food Chemistry, 68(12), 3722ÔÇô3728. https://doi.org/10.1021/acs.j

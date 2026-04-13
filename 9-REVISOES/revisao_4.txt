@@ -1,0 +1,65 @@
+Dear Dr Santos,
+
+Your manuscript, "Impact of Land Use Change on Soil Nitrogen Stocks and Humic Fractions in Latosol from Brazilian Cerrado", has now been assessed.
+
+We invite you to revise your paper, carefully addressing the comments from the reviewers and the editor. Please ensure the results are accurately reported, any overstated conclusions are rewritten and the limitations of the work fully explained. When your revision is ready, please submit the updated manuscript and a point-by-point response. This will help us move to a swift decision.
+
+ADDRESS ALL THE PREVIOUS COMMENTS FROM THE REVIEVER
+
+We recommend submitting all revisions within the mentioned deadline.
+
+If you need more time, please contact us and include your submission ID.
+
+Kind regards,
+
+Godfred Darko
+Editor
+Environmental Monitoring and Assessment
+
+Support contact: Rheycel.Monsanto@springernature.com
+
+Submission ID: 32475c9a-405f-4ae6-98fd-94cd39ef717a
+
+General comments
+
+This manuscript proposes a new Fuzzy Soil Nutritional Sustainability Index (FSNSI) to investigate how land-use change from native Cerrado vegetation to agricultural land alters nitrogen (N) and phosphorus (P) stabilization in tropical Oxisols. Advanced statistical and modeling approaches were employed to integrate soil nutrient indicators (e.g., N and P fractions) and bulk density into the FSNSI framework. The results suggest that the co-stabilization of N and P in humic fractions underlies nutrient sustainability, and that FSNSI can serve as a useful integrated metric for monitoring and managing soil nutrient dynamics.
+
+Overall, the study has sufficient scientific value and applies comprehensive analytical methods. However, the quality of the manuscript could be further improved by: (1) better validating the application of humification theory; (2) improving figure interpretation and the description of statistical methods; and (3) more clearly explaining how the proposed FSNSI enhances our understanding of N and P sustainability through modeling.
+
+Detailed comments
+
+Lines 69–73
+Humification is a traditional theory explaining soil organic matter (SOM) persistence, but it has been increasingly debated and criticized. The cited references (e.g., Lehmann & Kleber, 2015) themselves propose alternative conceptual frameworks that move beyond the classical humification model. This does not imply that the use of humification theory in this study is inappropriate; however, recent advances in SOM persistence theory should at least be acknowledged in the Introduction. In addition, the application of humification theory in this study should be better justified or validated. I would expect relevant discussion or justification to be included in the Introduction.
+
+Line 151
+The sampling procedure is oversimplified. For example, it is unclear whether and how replication was implemented during the sampling process. In addition, it would be helpful to provide more details on how replicates and soil layers were statistically structured and analyzed.
+
+Lines 204–205
+The meaning and purpose of these citations are unclear. Please clarify how they support the statements made in this section.
+
+Line 210
+More details on the Partial Least Squares Regression (PLSR) analysis are needed, such as whether the data were normalized or standardized, and whether cross-validation was applied.
+
+Lines 215–216 and 219–220
+It is unclear where the data used in this analysis originated. Please provide a table or figure summarizing the dataset used for modeling.
+
+Lines 219–220
+The statement “…Labile fractions contributed a median of 12.18%...” is unclear. Please specify contributed to what (e.g., total N, total P, FSNSI, or another variable).
+
+Line 225 and onwards
+Because PLSR is a regression-based approach, it would be helpful to clearly define the dependent variables (DVs) and independent variables (IVs). Additional information, such as the proportion of variance explained by extracted components for both DVs and IVs, should be provided. These clarifications also apply to Figures 3 and 4.
+
+Line 364
+The modeling approach and data interpretation are generally clear and convincing. However, the Results and Discussion sections are largely descriptive. In my view, the manuscript would benefit from an additional subsection explicitly elucidating how the application of FSNSI improves the evaluation of functional dynamics of N and P in humic and labile soil fractions under different land-use types, in direct relation to the stated research question.
+
+Figures and Tables
+
+Figure 2
+Please consider merging the five panels into a single composite figure and clearly labeling each panel as (a)–(e).
+
+Figures 3 and 4
+These figures are difficult to interpret because:(1) full names of abbreviations are not provided; and (2) abbreviations are inconsistent between figures and figure captions (e.g., LabileN vs. NLabil).
+Please standardize terminology and define all abbreviations clearly.
+
+Figure 5
+The conceptual model appears overly complex, and the text within the figure is difficult to read due to the small font size. Please simplify the model where possible and improve figure readability.

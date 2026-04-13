@@ -50,17 +50,17 @@ loadings_df <- as.data.frame(loadings_scaled)
 colnames(loadings_df) <- c("LV1", "LV2")
 loadings_df$var <- rownames(loadings_df)
 label_map_p <- c(
-  "PLabil" = "P_labile",
-  "PMOL" = "P_LOM",
-  "PTAF" = "P_HAF",
-  "PTAH" = "P_HAH",
-  "PTHum" = "P_humic",
-  "EstPT" = "TP_stock",
-  "EstPLabil" = "P_labile_stock",
-  "EstPMOL" = "P_LOM_stock",
-  "EstPAF" = "P_HAF_stock",
-  "EstPAH" = "P_HAH_stock",
-  "EstPTHum" = "P_humic_stock"
+  "PLabil" = "Labile P",
+  "PMOL" = "LOM-P",
+  "PTAF" = "FA-P",
+  "PTAH" = "HA-P",
+  "PTHum" = "Humin-P",
+  "EstPT" = "Total P stock",
+  "EstPLabil" = "Labile P stock",
+  "EstPMOL" = "LOM-P stock",
+  "EstPAF" = "FA-P stock",
+  "EstPAH" = "HA-P stock",
+  "EstPTHum" = "Humin-P stock"
 )
 loadings_df$label <- dplyr::recode(loadings_df$var, !!!label_map_p, .default = loadings_df$var)
 
@@ -217,9 +217,9 @@ grafico_pred_pt <- ggplot(df_pred, aes(x = Observado, y = Predito)) +
   geom_line(data = linha_trend, aes(x = Observado, y = Predito), color = "black", linewidth = 1) +
   scale_fill_brewer(palette = "Dark2") +
   labs(
-    title = "Observed versus predicted total phosphorus (PLSR)",
-    x = "Observed PT",
-    y = "Predicted PT",
+    title = "Observed versus predicted total phosphorus stock (PLSR)",
+    x = "Observed total P stock",
+    y = "Predicted total P stock",
     fill = "Land use"
   ) +
   theme_minimal(base_size = 14) +
