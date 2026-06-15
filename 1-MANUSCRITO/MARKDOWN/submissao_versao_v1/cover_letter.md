@@ -1,15 +1,15 @@
-Aracaju, December 28, 2025
+Aracaju, June 9, 2026
 
-Editor-in-Chief
-Environmental Monitoring and Assessment
+The Editors-in-Chief
+Annals of Forest Science
 
-Dear Editor,
+Dear Editors,
 
-On behalf of my co-authors, I submit the manuscript "Soil nutritional sustainability in Cerrado Oxisols using a fuzzy index (FSNSI)" for consideration in Environmental Monitoring and Assessment. The study is grounded in a tropical savanna region and focuses on highly weathered tropical soils, in which nutrient limitation and strong organomineral stabilization impose constraints on productivity and ecosystem function. This study develops and validates the Fuzzy Soil Nutritional Sustainability Index, an indicator designed for monitoring and assessment that integrates nitrogen and phosphorus stocks with soil physical integrity, expressed as bulk density, to quantify edaphic functionality under land-use change.
+On behalf of my co-authors, I submit the manuscript "Tree species modulate nitrogen and phosphorus stabilization in humic fractions of plantation soils in the Brazilian Cerrado" for consideration in Annals of Forest Science. The study addresses how plantation tree species modulate the stabilization of nitrogen and phosphorus in the humic and labile fractions of highly weathered tropical forest soils, where root-derived organic inputs and organomineral protection govern nutrient persistence and long-term site fertility. By resolving N and P jointly across humic and labile pools to a depth of 1 m under three commercial plantations (Eucalyptus, African mahogany Khaya ivorensis, and teak Tectona grandis), with native Cerrado and conventional agriculture as contrasting references, the work links belowground forest inputs and soil physical integrity to the functional nutrient capital that sustains plantation productivity.
 
-Field data from native Cerrado, agricultural land use, and Eucalyptus plantations show that FSNSI discriminates land uses under a Gamma GLM framework with bootstrap resampling. The proposed workflow couples multivariate causal modeling with fuzzy inference to translate coupled N and P dynamics and soil physical constraints into an operational output that supports prioritization and, when combined with GIS layers, hotspot screening.
+The contrasts in fraction partitioning among plantation species are interpreted mechanistically through differences in litter chemistry, fine-root turnover, and post-establishment soil disturbance, anchored in independent root-stock measurements from the same Cerrado region. These stand-level differences are synthesized into a Fuzzy Soil Nutritional Sustainability Index that integrates N and P stocks with soil bulk density, allowing tree species to be ranked by their capacity to rebuild soil nutritional functionality after afforestation, under a Gamma GLM framework with bootstrap resampling and convergent PLS-SEM evidence. Because the index translates soil biogeochemical functioning into a decision-support metric for species choice in tropical silviculture, we believe the work is well aligned with the scope of Annals of Forest Science and its interest in forest soils, silviculture, and the long-term sustainability of planted forests.
 
-We confirm that this manuscript is original, has not been published previously, and is not under consideration elsewhere. All authors have approved the final version and agree with its submission. The authors declare no conflicts of interest. The underlying dataset used in the analyses is available at artigo_5/fsni/6-ESTATISTICA/dados.csv. No experiments involving humans or animals were conducted.
+We confirm that this manuscript is original, has not been published previously, and is not under consideration elsewhere. All authors have approved the final version and agree with its submission. The authors declare no conflicts of interest. The underlying dataset is openly available at <https://doi.org/10.5281/zenodo.18077256>. No experiments involving humans or animals were conducted.
 
 Sincerely,
 

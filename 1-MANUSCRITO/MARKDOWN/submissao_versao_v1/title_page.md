@@ -2,7 +2,7 @@
 
 **Manuscript title**
 
-Soil nutritional sustainability in Cerrado Oxisols using a fuzzy index (FSNSI)
+Tree species modulate nitrogen and phosphorus stabilization in humic fractions of plantation soils in the Brazilian Cerrado
 
 **Authors and affiliations**
 
@@ -15,20 +15,14 @@ E-mail: renisson.neponuceno@ufrpe.br
 **Luiz Diego Vidal Santos**  
 Professor doutor, Departamento de Ciências Humanas e Filosofia  
 Universidade Estadual de Feira de Santana, Feira de Santana, BA, Brazil  
-ORCID: 0000-0002-9747-1276  
+ORCID: 0000-0001-8659-8557  
 E-mail: ldvsantos@uefs.br
 
-**Francisco Sandro Rodrigues Holanda**  
-Professor doutor, Departamento de Engenharia Agronômica  
+**Emersson Guedes da Silva**  
+Departamento de Engenharia Agronômica  
 Universidade Federal de Sergipe, São Cristóvão, SE, Brazil  
-ORCID: 0000-0001-6812-6679  
-E-mail: fholanda@academico.ufs.br
-
-**Alceu Pedrotti**  
-Professor doutor, Departamento de Engenharia Agronômica  
-Universidade Federal de Sergipe, São Cristóvão, SE, Brazil  
-ORCID: 0000-0003-3086-8399  
-E-mail: alceupedrotti@gmail.com
+ORCID: 0009-0004-9742-6215  
+E-mail: academicoguedes@gmail.com
 
 **Olavo da Costa Leite**  
 Professor doutor, Colégio Agropecuário de Natividade  

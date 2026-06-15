@@ -284,7 +284,7 @@ fig3 <- ggplot(dados_norm, aes(x = amb, y = if_valor_fuzzy)) +
   scale_y_continuous(limits = c(0, 10), expand = expansion(mult = c(0.05, 0.05))) +
   labs(
     title = "Fuzzy Soil Nutrient Sustainability Index",
-    x = "Uso da Terra",
+    x = "Land use",
     y = "FSNSI (0–10)"
   ) +
   guides(
